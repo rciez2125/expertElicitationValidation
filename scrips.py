@@ -70,5 +70,24 @@ def scrapeSummaryData(page_link):
 		d = c.strip('</div>')
 		f = d.strip('</p>\n')
 		project_description.append(f)
-	dataOut = pd.DataFrame({'companies':companies, 'tagline':taglines, 'program':program, 'startDate':project_term1, 'endDate':project_term2, 'projectStatus':project_status, 'state':project_state,'description':project_description})
+	holder = page_content.find_all(class_='panel-panel panel-col-last')
+	techCategories1 = []
+	techCategories2 = []
+	for x in range(len(holder)):
+		if x%2 == 0:
+			a = str(holder[x])
+			d = a.find('skos:Concept')
+			f = a[d+14:]
+			g = f.find('skos:Concept')
+			h = f.find('</a>')
+			k = f[:h]
+			if g > 0:
+				m = f[g+14:]
+				n = m.find('</a>')
+				p = m[:n]
+				techCategories2.append(p)
+			else:
+				techCategories2.append(' ')
+			techCategories1.append(k)
+	dataOut = pd.DataFrame({'companies':companies, 'tagline':taglines, 'program':program, 'startDate':project_term1, 'endDate':project_term2, 'projectStatus':project_status, 'state':project_state,'description':project_description, 'techCat1':techCategories1, 'techCat2':techCategories2})
 	return(dataOut)
