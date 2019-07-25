@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import pandas as pd
 import requests
-from scrips import scrapeSummaryData
+from scrips import scrapeSummaryData, scrapeFundingData
 import csv 
 
 # try not to run this every time, load data from csv file 
@@ -21,3 +21,7 @@ z = scrapeSummaryData(page_link)
 result = pd.concat([x, y, z], axis=0)
 resultOut = result.reset_index(drop = True)
 resultOut.to_csv('arpaeSummaryData.csv')
+
+# this takes ~15-20 minutes to run
+a = scrapeFundingData('arpaeSummaryData.csv')
+a.to_csv('arpaeSummaryDataWithAward.csv')
