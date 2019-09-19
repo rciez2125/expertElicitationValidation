@@ -276,3 +276,83 @@ def startDateHistogram(df):
 
 	plt.savefig('startDateHistogram.png', dpi=300)
 	plt.clf()
+
+def cleanCoderData(df):
+	# remove active projects
+	df = df[df.Status != 'nan']
+	df = df[df.Status != 'ACTIVE']
+	df = df[df.Status != 'EXCLUDE']
+	df = df.reset_index(drop=True)
+	return(df)
+
+def matchCodedData(df, cf, col):
+	for n in range(cf.shape[0]):
+		x = df.index[df['tagline']==cf.Tagline[n]].tolist()
+		y = df.index[df['companies']==cf.Companies[n]].tolist()
+		z = set(x).intersection(y)
+
+		if len(z)<1:
+			print(cf.Tagline[n], cf.Companies[n])
+		df[col][z] = cf.Outcome[n]
+		if col == 'coder1':
+			df['recipientType'] = cf['Recipient Type'][n]
+	df = df.reset_index(drop=True)
+	return(df)
+
+def addCodedData(df):
+	x = pd.read_csv('coder1.csv')
+	y = cleanCoderData(x)
+	df['recipientType'] = ['blank']*(df.shape[0])
+	df['coder1'] = ['blank']*(df.shape[0])
+	df['coder2'] = ['blank']*(df.shape[0])
+	df['coder3'] = ['blank']*(df.shape[0])
+	df['coder4'] = ['blank']*(df.shape[0])
+	df['dummyCoder'] = ['blank']*(df.shape[0])
+
+	#print(df.head)
+	df = matchCodedData(df, y, 'coder1')
+
+	x = pd.read_csv('dummyCoder.csv')
+	y = cleanCoderData(x)
+	df = matchCodedData(df, y, 'dummyCoder')
+
+	#x = pd.read_csv('coder2.csv')
+	#y = cleanCoderData(x)
+	#df = matchCodedData(df, y, 'coder2')
+
+	#x = pd.read_csv('coder3.csv')
+	#y = cleanCoderData(x)
+	#df = matchCodedData(df, y, 'coder3')
+
+	#x = pd.read_csv('coder4.csv')
+	#y = cleanCoderData(x)
+	#df = matchCodedData(df, y, 'coder4')
+	return(df)
+
+def cohensKappa(df, coderA, coderB):
+	# raw agreement
+	p0 = 0
+	# keep only non-blank for coder B
+	dropList = np.array([])
+	for n in range(len(df[coderA])):
+		if df[coderB][n] == 'blank':
+			dropList = np.append(dropList, n)
+	df = df.drop(dropList, axis = 0)
+	df = df.reset_index(drop = True)
+	for n in range(len(df[coderA])):
+		if df[coderA][n] == df[coderB][n]:
+			p0 = p0 + 1
+	x = df[coderA].value_counts(sort=False)
+	x1 = df[coderA].value_counts(sort=False).index.tolist()
+	y = df[coderB].value_counts(sort=False)
+	y1 = df[coderB].value_counts(sort=False).index.tolist()
+
+	data = [[coderA, len(df[coderA])], [coderB, len(df[coderB])]]
+	ck = pd.DataFrame(data, columns = ['Coder', 'Total'])
+	ck['Persist'] = [x[x1.index('Persist')], y[y1.index('Persist')]]
+	ck['Pivot'] = [x[x1.index('Pivot')], y[y1.index('Pivot')]]
+	ck['Perish'] = [x[x1.index('Perish')], y[y1.index('Perish')]]
+
+	pe = (np.product(ck.Persist/ck.Total)) + (np.product(ck.Pivot/ck.Total)) + (np.product(ck.Perish/ck.Total))
+	c = (p0 - pe)/(1-pe)
+	return(c)
