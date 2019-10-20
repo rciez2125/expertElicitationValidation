@@ -3,6 +3,7 @@ import requests
 import time 
 import pandas as pd
 import numpy as np
+from scipy import stats
 import matplotlib.pyplot as plt
 from matplotlib.dates import DayLocator, HourLocator, DateFormatter, drange
 from datetime import datetime
@@ -265,7 +266,6 @@ def startDateHistogram(df):
 	plt.hist(data, bins=[2009,2012, 2015, 2017])
 	plt.ylim(0,250)
 
-
 	plt.subplot(1,3,2)
 	plt.hist(openData, bins = [2009,2012, 2015, 2017]) #bins = np.linspace(2010, 2018, 3))
 	plt.ylim(0,250)
@@ -285,7 +285,7 @@ def cleanCoderData(df):
 	df = df.reset_index(drop=True)
 	return(df)
 
-def matchCodedData(df, cf, col):
+def matchCodedData(df, cf, col, notes):
 	for n in range(cf.shape[0]):
 		x = df.index[df['tagline']==cf.Tagline[n]].tolist()
 		y = df.index[df['companies']==cf.Companies[n]].tolist()
@@ -293,44 +293,61 @@ def matchCodedData(df, cf, col):
 
 		if len(z)<1:
 			print(cf.Tagline[n], cf.Companies[n])
-		df[col][z] = cf.Outcome[n]
+		if hasattr(cf, 'Outcome'):
+			df[col][z] = cf.Outcome[n]
+		elif hasattr(cf, 'Final Decision'):
+			df[col][z] = cf['Final Decision'][n]
 		if col == 'coder1':
-			df['recipientType'] = cf['Recipient Type'][n]
+			df['recipientType'][z] = cf['Recipient Type'][n]
+			df['coder1notes'][z] = cf['Comments'][n]
+		else:
+			df[notes][z]=cf['Comments'][n]
 	df = df.reset_index(drop=True)
 	return(df)
 
 def addCodedData(df):
-	x = pd.read_csv('coder1.csv')
+	#x = pd.read_csv('coder1.csv')
+	x = pd.read_csv('Coder1 - Sheet1.csv')
 	y = cleanCoderData(x)
 	df['recipientType'] = ['blank']*(df.shape[0])
 	df['coder1'] = ['blank']*(df.shape[0])
 	df['coder2'] = ['blank']*(df.shape[0])
 	df['coder3'] = ['blank']*(df.shape[0])
 	df['coder4'] = ['blank']*(df.shape[0])
+	df['coder5'] = ['blank']*(df.shape[0])
+	df['coder1notes'] = ['blank']*(df.shape[0])
+	df['coder2notes'] = ['blank']*(df.shape[0])
+	df['coder3notes'] = ['blank']*(df.shape[0])
+	df['coder4notes'] = ['blank']*(df.shape[0])
+	df['coder5notes'] = ['blank']*(df.shape[0])
 	df['dummyCoder'] = ['blank']*(df.shape[0])
+	
+	df = matchCodedData(df, y, 'coder1', 'coder1notes')
+	
+	#x = pd.read_csv('dummyCoder.csv')
+	#y = cleanCoderData(x)
+	#df = matchCodedData(df, y, 'dummyCoder')
 
-	#print(df.head)
-	df = matchCodedData(df, y, 'coder1')
-
-	x = pd.read_csv('dummyCoder.csv')
+	x = pd.read_csv('Coder2.csv') #tom 
 	y = cleanCoderData(x)
-	df = matchCodedData(df, y, 'dummyCoder')
+	df = matchCodedData(df, y, 'coder2', 'coder2notes')
 
-	#x = pd.read_csv('coder2.csv')
-	#y = cleanCoderData(x)
-	#df = matchCodedData(df, y, 'coder2')
+	x = pd.read_csv('Resource Efficiency, Building Efficiency, Grid Projects - Projects.csv') #erin  
+	y = cleanCoderData(x)
+	df = matchCodedData(df, y, 'coder3', 'coder3notes')
 
-	#x = pd.read_csv('coder3.csv')
-	#y = cleanCoderData(x)
-	#df = matchCodedData(df, y, 'coder3')
+	x = pd.read_csv('Transportation Fuels.csv') #sarah 
+	y = cleanCoderData(x)
+	df = matchCodedData(df, y, 'coder4', 'coder4notes')
 
-	#x = pd.read_csv('coder4.csv')
+	#x = pd.read_csv('coder5.csv') # jeff
 	#y = cleanCoderData(x)
-	#df = matchCodedData(df, y, 'coder4')
+	#df = matchCodedData(df, y, 'coder5')
+
+
 	return(df)
 
 def cohensKappa(df, coderA, coderB):
-	# raw agreement
 	p0 = 0
 	# keep only non-blank for coder B
 	dropList = np.array([])
@@ -356,3 +373,68 @@ def cohensKappa(df, coderA, coderB):
 	pe = (np.product(ck.Persist/ck.Total)) + (np.product(ck.Pivot/ck.Total)) + (np.product(ck.Perish/ck.Total))
 	c = (p0 - pe)/(1-pe)
 	return(c)
+
+def idDisagreements(df, coderA, coderB):
+	dropList = np.array([])
+	for n in range(len(df[coderA])):
+		if df[coderB][n] == 'blank' or df[coderA][n] == df[coderB][n]:
+			dropList = np.append(dropList, n)
+	df = df.drop(dropList, axis = 0)
+	df = df.reset_index(drop = True)
+	outDF = df[['companies', 'description', 'endDate', 'program', 'projectStatus', 'projecturl', 'startDate', 'state', 'tagline', 'techCat1', 'techCat2', 'awardAmount', 'OPEN', 'recipientType', coderA, coderB, (coderA+'notes'), (coderB+'notes')]]
+	
+	# save a csv file 
+	outDF.to_csv(('disagreements'+coderA+coderB+'.csv'))
+	return(outDF)
+		
+def addFollowOnData(df):
+	print('hello world')
+
+def loadFinalData(df):
+	x = pd.read_csv('Coder1 - Sheet1.csv') # change file name after this is done 
+	y = cleanCoderData(x)
+	df['recipientType'] = ['blank']*(df.shape[0])
+	df['coder1'] = ['blank']*(df.shape[0])
+	df['coder1notes'] = ['blank']*(df.shape[0])
+	df['FinalDecision'] = ['blank']*(df.shape[0])
+	df['Notes'] = ['blank']*(df.shape[0])
+	df = matchCodedData(df, y, 'coder1', 'coder1notes')
+	
+	# add follow-on funding info 
+
+	# add final decision info from other docs
+	#x = pd.read_csv('disagreementscoder1coder2.csv') #tom 
+	#y = cleanCoderData(x)
+	#df = matchCodedData(df, y, 'FinalDecision', 'Notes')
+
+	x = pd.read_csv('reconciledcoder1coder3.csv') # erin
+	#y = cleanCoderData(x)
+	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
+
+	x = pd.read_csv('reconciledcoder1coder4.csv') # sarah
+	#y = cleanCoderData(x)
+	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
+
+	#x = pd.read_csv('reconciledcoder1coder5.csv') # jeff
+	#y = cleanCoderData(x)
+	#df = matchCodedData(df, y, 'FinalDecision', 'Notes')
+
+	# for now, keep only coder 1 data for blank info 
+	for n in range(df.shape[0]):
+		if df.FinalDecision[n] == 'blank':
+			df.FinalDecision[n] = df.coder1[n]
+	return(df)
+
+def disagreementsSummary(df):
+	print('hello world')
+	#run some summary statistics to find commonalities in disagreements. look within coder pairs and as a group 
+
+def chi2calc(df, outcomeCol):
+	count_series = df.groupby(['OPEN', outcomeCol]).size()
+	new_df = count_series.to_frame(name = 'breakdown').reset_index()
+	new_df = new_df[new_df.FinalDecision !='blank']
+	print(new_df)
+	stat, p, dof, expected = stats.chi2_contingency([new_df.breakdown[0:3], new_df.breakdown[3:6]])# ddof = 2)
+	return(stat, p, dof, expected)
+
+

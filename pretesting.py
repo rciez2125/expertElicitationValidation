@@ -85,6 +85,8 @@ def runBasicModel(target):
     #exog = sm.add_constant(testData[['OpenDummy', 'startingYear']])
     #exog = testData[['OpenDummy', 'startingYear']]
     exog = testData.OpenDummy
+    print(type(exog))
+    print(target)
     mdl1 = sm.MNLogit(target, exog).fit()
     print(mdl1.summary())
     return(mdl1.params, mdl1.pvalues, mdl1._results.conf_int())

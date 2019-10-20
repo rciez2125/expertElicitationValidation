@@ -1,616 +1,616 @@
-Program,Companies,Status,Recipient Type,Start Date,End Date,Tech Category,Tagline,Outcome
-OPEN 2009,1366 Technologies,ALUMNI,For-profit,3/1/10,6/30/12,Distributed Generation,Cost-Effective Silicon Wafers for Solar Cells,Pivot
-OPEN 2009,Agrivida,ALUMNI,For-profit,1/15/10,3/31/15,Transportation Fuels,Engineering Enzymes in Energy Crops,Pivot
-OPEN 2009,Algaeventure Systems (AVS),ALUMNI,For-profit,1/15/10,1/31/12,Transportation Fuels,Fuel from Algae,Perish
-OPEN 2009,Arizona State University (ASU),ALUMNI,Non-profit,12/21/09,6/30/12,Transportation Storage,Metal-Air Electric Vehicle Battery,Pivot
-OPEN 2009,Arizona State University (ASU),ALUMNI,Non-profit,1/1/10,6/30/13,Transportation Fuels,Turning Bacteria into Fuel,Pivot
-OPEN 2009,Bio Architecture Lab,ALUMNI,For-profit,4/30/12,6/30/13,Transportation Fuels,Macroalgae Butanol,Perish
-OPEN 2009,Ceres,ALUMNI,For-profit,1/1/10,12/31/13,Transportation Fuels,Improving Biomass Yields,Perish
-OPEN 2009,Delphi Automotive Systems,ALUMNI,For-profit,2/1/10,12/31/13,Electrical Efficiency,More Efficient Power Conversion for EVs,Persist
-OPEN 2009,Envia Systems,ALUMNI,For-profit,1/1/10,12/31/11,Transportation Storage,Long-Range Electric Vehicle Batteries,Perish
-OPEN 2009,Exelus,ALUMNI,For-profit,12/1/09,5/31/12,Transportation Fuels,High-Octane Fuel from Refinery Exhaust Gas,Persist
-OPEN 2009,FastCAP Systems,ALUMNI,For-profit,4/1/10,12/31/13,Transportation Storage,High Energy Density Ultracapacitors,Pivot
-OPEN 2009,FloDesign Wind Turbine,ALUMNI,For-profit,2/22/10,3/31/13,Distributed Generation,Mixer-Ejector Wind Turbine,Perish
-OPEN 2009,Foro Energy,ALUMNI,For-profit,1/15/10,9/30/13,Centralized Generation,Laser-Mechanical Drilling for Geothermal Energy,Persist
-OPEN 2009,General Electric (GE) Global Research,ALUMNI,For-profit,10/1/10,9/30/13,Transportation Vehicles,Nanocomposite Magnets,Pivot
-OPEN 2009,General Motors (GM),ALUMNI,For-profit,1/1/10,3/31/12,Resource Efficiency,Waste Heat Recovery System,Pivot
-OPEN 2009,ITN Energy Systems,ALUMNI,For-profit,1/1/10,6/30/13,Building Efficiency,Electrochromic Film for More Efficient Windows,Persist
-OPEN 2009,Lehigh University,ALUMNI,Non-profit,1/1/10,6/30/12,Resource Efficiency,CO2 Capture Using Electric Fields,Persist
-OPEN 2009,Makani Power,ALUMNI,For-profit,9/1/10,10/16/13,Distributed Generation,Airborne Wind Turbine,Persist
-OPEN 2009,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,1/15/10,9/30/13,Storage,Electroville: Grid-Scale Batteries,Persist
-OPEN 2009,Michigan State University (MSU),ALUMNI,Non-profit,1/14/10,9/30/13,Distributed Generation,Shockwave Engine,Perish
-OPEN 2009,Phononic Devices,ALUMNI,For-profit,12/11/09,3/30/12,Storage,Improved Thermoelectric Devices,Pivot
-OPEN 2009,Porifera,ALUMNI,For-profit,3/1/10,3/31/13,Resource Efficiency,Carbon Nanotube Membranes,Perish
-OPEN 2009,Research Triangle Institute (RTI),ALUMNI,Non-profit,1/1/10,9/30/13,Transportation Fuels,Biofuels from Pyrolysis,Persist
-OPEN 2009,Soraa,ALUMNI,For-profit,6/6/12,1/31/16,Building Efficiency,Ammonothermal Growth of GaN Substrates for LEDs,Persist
-OPEN 2009,Stanford University,ALUMNI,Non-profit,1/14/10,11/30/16,Resource Efficiency,Behavioral Initiatives for Energy Efficiency,Perish
-OPEN 2009,Sun Catalytix,ALUMNI,For-profit,12/31/09,12/31/12,Resource Efficiency,Energy from Water and Sunlight,Perish
-OPEN 2009,Teledyne Scientific & Imaging,ALUMNI,For-profit,10/1/10,4/19/13,Distributed Generation,Efficient Solar Concentrators,Perish
-OPEN 2009,The Ohio State University,ALUMNI,Non-profit,4/1/10,9/30/14,Resource Efficiency,Syngas into Fuel,Pivot
-OPEN 2009,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,2/1/11,9/30/16,Storage,Cost-Effective Solar Thermal Energy Storage,Pivot
-OPEN 2009,University of Delaware (UD),ALUMNI,Non-profit,2/15/10,9/30/13,Transportation Vehicles,High-Energy Composite Permanent Magnets,Perish
-OPEN 2009,University of Delaware (UD),ALUMNI,Non-profit,2/15/12,12/31/14,Distributed Generation,Affordable Hydrogen Fuel Cell Vehicles,Pivot
-OPEN 2009,"University of Illinois, Urbana-Champaign (UIUC)",ALUMNI,Non-profit,3/1/10,8/31/12,Resource Efficiency,Silicon-Based Thermoelectrics,Perish
-OPEN 2009,University of Minnesota (UMN),ALUMNI,Non-profit,1/1/10,8/31/12,Transportation Fuels,Biofuel from Bacteria and Sunlight,Perish
-OPEN 2009,EaglePicher Technologies,CANCELLED,For-profit,2/1/10,3/31/16,Storage,Sodium-Beta Batteries for Grid-Scale Storage,Pivot
-OPEN 2009,Inorganic Specialists,CANCELLED,For-profit,12/1/09,11/3/11,Transportation Storage,Long-Range Li-Ion Batteries for Electric Vehicles,Perish
-OPEN 2009,Iowa State University (ISU),CANCELLED,Non-profit,1/15/10,10/14/11,Transportation Fuels,Optimized Breeding of Microalgae for Biofuels,Perish
-OPEN 2009,Kohana Technologies,CANCELLED,For-profit,3/8/13,10/1/17,Distributed Generation,Dynamically Adjustable Wind Turbine Blades,Persist
-OPEN 2009,Nalco,CANCELLED,For-profit,1/18/10,10/13/11,Resource Efficiency,Using Enzymes to Capture CO2 in Smokestacks,Perish
-OPEN 2009,NanOasis Technologies,CANCELLED,For-profit,1/1/10,10/14/11,Resource Efficiency,Use of Carbon Nanotubes for Efficient Reverse Osmosis,Perish
-OPEN 2009,Pennsylvania State University (Penn State),CANCELLED,Non-profit,12/14/09,7/9/10,Transportation Fuels,Solar Conversion of CO2 and Water Vapor to Hydrocarbon Fuels,Perish
-OPEN 2009,United Technologies Research Center (UTRC),CANCELLED,For-profit,12/15/09,1/9/12,Resource Efficiency,Using Synthetic Enzymes for Carbon Capture,Perish
-OPEN 2012,Adaptive Surface Technologies,ACTIVE,For-profit,4/26/13,9/7/19,Transportation Fuels,Slippery Coatings to Promote Energy Conversion,
-OPEN 2012,Case Western Reserve University,ACTIVE,Non-profit,1/9/13,2/11/19,Storage,All-Iron Flow Battery,
-OPEN 2012,Alveo Energy,ALUMNI,For-profit,2/21/13,3/31/16,Storage,Prussian Blue Dye Batteries,Persist
-OPEN 2012,Applied Materials,ALUMNI,For-profit,6/1/13,9/30/16,Centralized Generation,Low-Cost Silicon Wafers for Solar Modules,Persist
-OPEN 2012,Arizona State University (ASU),ALUMNI,Non-profit,3/12/13,2/28/17,Resource Efficiency,Electrochemical Carbon Capture,Pivot
-OPEN 2012,Bio2Electric,ALUMNI,For-profit,2/1/13,12/31/18,Transportation Fuels,Electrogenerative Gas-to-Liquid Reactor,Persist
-OPEN 2012,Brown University,ALUMNI,Non-profit,3/20/13,5/31/17,Distributed Generation,Customized Tidal Power Conversion Devices,Perish
-OPEN 2012,California Institute of Technology (Caltech),ALUMNI,Non-profit,3/28/13,9/27/16,Distributed Generation,Improving Solar Generation Efficiency with Solar Modules,Pivot
-OPEN 2012,Ceramatec,ALUMNI,For-profit,2/1/13,3/31/17,Transportation Storage,Mid-Temperature Fuel Cells for Vehicles,Pivot
-OPEN 2012,Ceramatec,ALUMNI,For-profit,2/1/13,2/15/15,Resource Efficiency,"A One-Step, Gas-to-Liquid Chemical Converter",Perish
-OPEN 2012,Colorado State University (CSU),ALUMNI,Non-profit,4/4/13,10/3/15,Transportation Fuels,More Options for Bioenergy Crops,Pivot
-OPEN 2012,Cornell University,ALUMNI,Non-profit,2/1/13,5/1/14,Transportation Fuels,Efficient Photobioreactor for Algae-Based Fuel,Perish
-OPEN 2012,Dioxide Materials,ALUMNI,For-profit,2/1/13,3/6/17,Resource Efficiency,Converting CO2 into Fuel and Chemicals,Pivot
-OPEN 2012,Electron Energy Corporation (EEC),ALUMNI,For-profit,4/15/13,2/14/17,Transportation Vehicles,New Processing Technology for Permanent Magnets,Pivot
-OPEN 2012,eNova,ALUMNI,For-profit,5/1/13,2/17/14,Resource Efficiency,Waste Heat-Powered Gas Compressor,Perish
-OPEN 2012,Evolva,ALUMNI,For-profit,4/11/13,9/30/16,Transportation Fuels,High Performance Aviation Fuels from Terpenes,Pivot
-OPEN 2012,Gas Technology Institute (GTI),ALUMNI,Non-profit,1/1/13,9/30/15,Transportation Fuels,Efficient Natural Gas-to-Methanol Conversion,Pivot
-OPEN 2012,General Electric (GE) Global Research,ALUMNI,For-profit,4/30/13,7/31/17,Grid,High-Power Gas Tube Switches,Persist
-OPEN 2012,Georgia Tech Research Corporation,ALUMNI,Non-profit,4/17/13,10/17/16,Distributed Generation,High-Efficiency Solar Fuel Reactor,Perish
-OPEN 2012,Georgia Tech Research Corporation,ALUMNI,Non-profit,3/20/13,3/19/16,Transportation Storage,Graphene-Based Supercapacitors,Perish
-OPEN 2012,Georgia Tech Research Corporation,ALUMNI,Non-profit,5/3/13,9/30/16,Distributed Generation,Power Generation Using Solar-Heated Ground Air,Perish
-OPEN 2012,Glint Photonics,ALUMNI,For-profit,4/1/13,3/31/17,Distributed Generation,Self-Tracking Concentrator Photovoltaics,Perish
-OPEN 2012,Grid Logic,ALUMNI,For-profit,3/5/13,6/4/16,Electrical Efficiency,High-Power Superconductors,Perish
-OPEN 2012,Harvard University,ALUMNI,Non-profit,2/1/13,3/25/17,Storage,Organic Flow Battery for Energy Storage,Pivot
-OPEN 2012,HexaTech,ALUMNI,For-profit,2/5/13,5/31/16,Grid,Semiconductors that Improve Electricity Flow,Persist
-OPEN 2012,Integral Consulting,ALUMNI,For-profit,4/5/13,8/31/17,Distributed Generation,Measuring Real-Time Wave Data with Ocean Wave Buoy,Persist
-OPEN 2012,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,6/1/13,12/31/14,Resource Efficiency,"Scalable, Low-Power Water Treatment System",Perish
-OPEN 2012,National Renewable Energy Laboratory (NREL),ALUMNI,Non-profit,2/1/13,12/30/18,Distributed Generation,Solar Thermoelectric Generator,Pivot
-OPEN 2012,National Renewable Energy Laboratory (NREL),ALUMNI,Non-profit,2/1/13,4/30/14,Electrical Efficiency,Efficient Plastic Solar Cells,Pivot
-OPEN 2012,Otherlab,ALUMNI,For-profit,2/19/13,9/30/17,Distributed Generation,Small Mirrors for Solar Power Tower Plants,Pivot
-OPEN 2012,Pacific Northwest National Laboratory (PNNL),ALUMNI,Non-profit,4/12/13,7/17/16,Grid,Real-Time Transmission Optimization,Persist
-OPEN 2012,Palo Alto Research Center (PARC),ALUMNI,For-profit,3/1/13,6/11/14,Transportation Storage,Innovative Manufacturing Process for Li-Ion Batteries,Persist
-OPEN 2012,Plant Sensory Systems (PSS),ALUMNI,For-profit,3/15/13,6/14/17,Transportation Fuels,Better Biofuel Feedstock from Beets,Persist
-OPEN 2012,PolyPlus Battery Company,ALUMNI,For-profit,2/6/13,3/31/16,Storage,"Low-Cost, High-Performance Lithium-Sulfur Batteries",Pivot
-OPEN 2012,Pratt & Whitney Rocketdyne (PWR),ALUMNI,For-profit,6/14/13,3/15/15,Distributed Generation,Continuous Detonation Engine Combustors,Pivot
-OPEN 2012,Pratt & Whitney Rocketdyne (PWR),ALUMNI,For-profit,5/1/13,3/15/16,Transportation Fuels,Efficient Conversion of Natural Gas,Pivot
-OPEN 2012,RamGoss,ALUMNI,For-profit,2/11/13,8/10/14,Grid,High-Performance Transistors,Perish
-OPEN 2012,Rensselaer Polytechnic Institute (RPI),ALUMNI,Non-profit,3/7/13,3/6/16,Grid,High-Power Transistor Switch,Pivot
-OPEN 2012,Research Triangle Institute (RTI),ALUMNI,Non-profit,3/15/13,6/30/17,Transportation Fuels,Compact Inexpensive Reformers for Natural Gas,Perish
-OPEN 2012,Sharp Laboratories of America,ALUMNI,For-profit,3/28/13,3/27/16,Storage,Sodium-Based Energy Storage,Perish
-OPEN 2012,Stanford University,ALUMNI,Non-profit,2/20/13,3/19/18,Building Efficiency,Radiative Coolers for Rooftops and Cars,Pivot
-OPEN 2012,Tai-Yang Research Company (TYRC),ALUMNI,For-profit,2/15/13,3/6/17,Transportation Storage,"High-Power, Low-Cost Superconducting Cable",Perish
-OPEN 2012,Teledyne Scientific & Imaging,ALUMNI,For-profit,2/4/13,1/31/14,Storage,High Energy Density Potassium-Based Flow Battery,Perish
-OPEN 2012,Texas Engineering Experiment Station (TEES),ALUMNI,Non-profit,4/1/13,9/30/15,Distributed Generation,Electricity from Low-Temperature Waste Heat,Perish
-OPEN 2012,United Technologies Research Center (UTRC),ALUMNI,For-profit,2/12/13,3/31/16,Manufacturing Efficiency,Additive Manufacturing for Electric Vehicle Motors,Pivot
-OPEN 2012,"University of California, Berkeley (UC Berkeley)",ALUMNI,Non-profit,4/8/13,11/30/16,Building Efficiency,Rapid Building Energy Modeler - RAPMOD,Persist
-OPEN 2012,"University of California, Berkeley (UC Berkeley)",ALUMNI,Non-profit,3/1/13,6/30/18,Grid,Measuring Phase Angle Change in Power Lines,Persist
-OPEN 2012,"University of California, Santa Barbara (UCSB)",ALUMNI,Non-profit,3/15/13,6/30/16,Transportation Storage,Boosted Capacitors,Pivot
-OPEN 2012,University of Delaware (UD),ALUMNI,Non-profit,1/9/13,3/6/17,Storage,High-Storage Double-Membrane Flow Battery,Pivot
-OPEN 2012,"University of Illinois, Urbana-Champaign (UIUC)",ALUMNI,Non-profit,4/5/13,8/31/16,Grid,Power Grid Security,Persist
-OPEN 2012,University of Minnesota (UMN),ALUMNI,Non-profit,3/22/13,9/21/16,Resource Efficiency,Ultra-Thin Membranes for Biofuels Production,Pivot
-OPEN 2012,"University of Nevada, Las Vegas (UNLV)",ALUMNI,Non-profit,2/14/13,2/13/16,Transportation Storage,Fire-Resistant Solid Electrolytes,Pivot
-OPEN 2012,University of North Dakota Energy & Environmental Research Center (UND-EERC),ALUMNI,Non-profit,4/1/13,6/30/14,Resource Efficiency,Water-Efficient Power Generation,Pivot
-OPEN 2012,University of Pittsburgh,ALUMNI,Non-profit,5/1/13,4/30/16,Resource Efficiency,CO2 Thickeners for Enhanced Oil and Gas Recovery,Persist
-OPEN 2012,University of Southern California (USC),ALUMNI,Non-profit,3/1/13,3/19/18,Storage,"Inexpensive, Metal-free, Organic Flow Battery",Pivot
-OPEN 2012,University of Tennessee (UT),ALUMNI,Non-profit,2/1/13,7/31/16,Transportation Fuels,High Throughput Bioengineering of Switchgrass,Pivot
-OPEN 2012,University of Texas at Austin (UT Austin),ALUMNI,Non-profit,3/28/13,9/26/16,Building Efficiency,Smart Window Coatings,Pivot
-OPEN 2012,University of Washington (UW),ALUMNI,Non-profit,2/1/13,6/30/16,Transportation Fuels,Microbe-Based Methane to Diesel Conversion,Pivot
-OPEN 2012,Vorbeck Materials,ALUMNI,For-profit,3/6/13,6/5/15,Transportation Vehicles,"High-Performance, Low-Cost Lithium-Sulfur Batteries",Perish
-OPEN 2012,Yale University,ALUMNI,Non-profit,4/24/13,12/31/15,Resource Efficiency,Closed-Loop System Using Waste Heat for Electricity,Perish
-OPEN 2012,General Electric (GE) Power & Water,CANCELLED,For-profit,5/1/13,12/31/14,Distributed Generation,Fabric-Based Wind Turbine Blades,Pivot
-OPEN 2012,MicroLink Devices,CANCELLED,For-profit,3/20/13,9/1/15,Distributed Generation,High-Efficiency Solar Cells,Pivot
-OPEN 2012,Silicon Power,CANCELLED,For-profit,5/15/13,8/10/15,Grid,Optical Switches for High-Power Systems,Perish
-OPEN 2012,"University of California, Santa Cruz (UC Santa Cruz)",CANCELLED,Non-profit,5/1/13,12/31/14,Distributed Generation,Efficient Collection of Concentrated Solar,Perish
-OPEN 2012,"University of Colorado, Boulder (CU-Boulder)",CANCELLED,Non-profit,5/1/13,6/29/17,Transportation Fuels,Small-Scale Reactors for Natural Gas Conversion,Perish
-OPEN 2012,University of Wisconsin-Madison (UW-Madison),CANCELLED,Non-profit,2/12/13,5/31/14,Transportation Fuels,"Turning Sunlight, CO2, and Water into Fuel",Pivot
-OPEN 2015,Achates Power,ACTIVE,,4/1/16,4/13/19,Transportation Vehicles,Efficient Engine Design,
-OPEN 2015,Case Western Reserve University,ACTIVE,Non-profit,5/10/16,5/9/19,Building Efficiency,Virtual Building Energy Audits,
-OPEN 2015,Colorado State University (CSU),ACTIVE,Non-profit,5/5/16,8/20/19,Building Efficiency,Heat-Reflective Window Coating,
-OPEN 2015,Dioxide Materials,ACTIVE,,2/1/16,1/31/19,Grid,High-Efficiency Hydrogen Production,
-OPEN 2015,General Electric (GE) Global Research,ACTIVE,For-profit,5/10/16,5/9/19,Electrical Efficiency,Silicon Carbide Superjunction,
-OPEN 2015,Marine BioEnergy,ACTIVE,,6/6/16,6/5/19,Transportation Fuels,Biofuel Production from Kelp,
-OPEN 2015,National Renewable Energy Laboratory (NREL),ACTIVE,Non-profit,4/22/16,4/21/19,Distributed Generation,High-Efficiency PV Cells,
-OPEN 2015,Newton Energy Group,ACTIVE,,4/11/16,4/19/19,Grid,Gas-Electric Co-Optimization,
-OPEN 2015,Oak Ridge National Laboratory (ORNL),ACTIVE,Non-profit,4/5/16,4/14/19,Manufacturing Efficiency,Robust Metal Alloys,
-OPEN 2015,Oak Ridge National Laboratory (ORNL),ACTIVE,Non-profit,5/1/16,9/30/20,Distributed Generation,High-Efficiency Energy Converters,
-OPEN 2015,Ocean Renewable Power Company (ORPC),ACTIVE,,4/1/16,3/31/19,Distributed Generation,Marine Hydrokinetic Turbine,
-OPEN 2015,Oregon State University (OSU),ACTIVE,Non-profit,5/16/16,5/15/19,Transportation Fuels,Natural Gas to Fuels,
-OPEN 2015,Pacific Northwest National Laboratory (PNNL),ACTIVE,Non-profit,7/19/16,8/29/19,Grid,Power-Grid Optimization,
-OPEN 2015,Pajarito Powder,ACTIVE,,5/1/16,4/30/19,Transportation Vehicles,High-Efficiency Hydrogen Production,
-OPEN 2015,ProsumerGrid,ACTIVE,,6/1/16,5/30/19,Grid,Distribution Operator Simulation Studio,
-OPEN 2015,Proton Energy Systems,ACTIVE,,5/6/16,5/5/19,Distributed Generation,Energy Conversion and Storage System,
-OPEN 2015,RedWave Energy,ACTIVE,,5/26/16,5/25/19,Distributed Generation,Electricity from Waste-Heat Harvesting,
-OPEN 2015,Starfire Energy,ACTIVE,,3/1/16,5/28/19,Transportation Fuels,Efficient Ammonia Production,
-OPEN 2015,Texas A&M Agrilife Research,ACTIVE,Non-profit,4/13/16,4/12/19,Transportation Fuels,Radar for Bioenergy Crop Imaging,
-OPEN 2015,"University of California, Santa Barbara (UCSB)",ACTIVE,Non-profit,4/7/16,4/6/19,Electrical Efficiency,High-Efficiency Data Transfer,
-OPEN 2015,"University of California, Santa Barbara (UCSB)",ACTIVE,Non-profit,4/14/16,10/13/19,Electrical Efficiency,Laser-Based Solid State Lighting,
-OPEN 2015,"University of Illinois, Urbana-Champaign (UIUC)",ACTIVE,Non-profit,4/1/16,9/30/19,Transportation Fuels,Biomass Water Efficiency,
-OPEN 2015,University of Michigan,ACTIVE,Non-profit,6/9/16,7/14/19,Transportation Storage,"Low-Cost, Robust Battery",
-OPEN 2015,University of Michigan,ACTIVE,Non-profit,7/14/16,7/13/19,Transportation Vehicles,Enhanced Engine Improvements,
-OPEN 2015,University of New Mexico,ACTIVE,Non-profit,3/22/16,5/22/19,Storage,Efficient Ammonia Production,
-OPEN 2015,University of Tennessee (UT),ACTIVE,Non-profit,2/4/16,2/3/20,Transportation Fuels,Advanced Bioengineering for Biofuels,
-OPEN 2015,University of Tennessee (UT),ACTIVE,Non-profit,6/24/16,6/23/19,Grid,Smart and Flexible Microgrid,
-OPEN 2015,University of Virginia (UVA),ACTIVE,Non-profit,4/1/16,3/31/19,Distributed Generation,Ultra-Large Wind Turbine,
-OPEN 2015,Vanderbilt University,ACTIVE,Non-profit,4/4/16,4/3/19,Grid,Software for Smarter Grids,
-OPEN 2015,Boston Electrometallurgical Corporation,ALUMNI,For-profit,5/5/16,7/31/18,Manufacturing Efficiency,High-Efficiency Titanium Production,Pivot
-OPEN 2015,Cummins Corporate Research & Technology,ALUMNI,For-profit,2/9/16,8/8/18,Distributed Generation,High-Efficiency Engines,Persist
-OPEN 2015,Gas Technology Institute (GTI),ALUMNI,For-profit,3/1/16,2/28/18,Manufacturing Efficiency,Reactor Engine,Perish
-OPEN 2015,Princeton Optronics,ALUMNI,For-profit,2/26/16,9/30/17,Electrical Efficiency,High-Efficiency Data Transfer,Perish
-OPEN 2015,Stanford University,ALUMNI,Non-profit,6/1/16,12/31/18,Distributed Generation,High-Efficiency Energy Converters,Pivot
-OPEN 2015,The Mackinac Technology Company,ALUMNI,For-profit,4/1/16,3/31/18,Building Efficiency,Single Pane Window Retrofit System,Pivot
-OPEN 2015,Accio Energy,EXCLUDE,For-profit,4/1/16,3/31/17,Distributed Generation,New Option for Wind Energy,Perish
-OPEN 2015,INFINIUM,EXCLUDE,For-profit,2/5/16,5/19/17,Manufacturing Efficiency,Low-Energy Magnesium Recycling,Pivot
-OPEN 2015,Iowa State University (ISU),EXCLUDE,Non-profit,6/1/16,6/30/18,Distributed Generation,"Low-Cost, Robust Battery",Pivot
-OPEN 2015,Tibbar Technologies,EXCLUDE,For-profit,5/2/16,8/29/17,Distributed Generation,Plasma-Based Electrical Transformers,Perish
-ADEPT,Arkansas Power Electronics International (APEI),ALUMNI,For-profit,9/14/10,3/31/14,Electrical Efficiency,"Powerful, Efficient Electric Vehicle Chargers",Persist
-ADEPT,Case Western Reserve University,ALUMNI,Non-profit,9/1/10,11/30/12,Electrical Efficiency,Titanium-Alloy Power Capacitor,Perish
-ADEPT,Center for Power Electronics Systems (CPES) at Virginia Tech,ALUMNI,Non-profit,9/1/10,7/31/14,Electrical Efficiency,Voltage Regulator Chip,Persist
-ADEPT,Center for Power Electronics Systems (CPES) at Virginia Tech,ALUMNI,Non-profit,9/1/10,11/30/13,Electrical Efficiency,Integrated Power Adapter,Pivot
-ADEPT,City University of New York (CUNY) Energy Institute,ALUMNI,Non-profit,9/2/10,2/28/14,Electrical Efficiency,Metacapacitors for LED Lighting,Perish
-ADEPT,Cree,ALUMNI,For-profit,9/1/10,12/31/14,Electrical Efficiency,Utility-Scale Silicon Carbide Power Transistors,Pivot
-ADEPT,GeneSiC Semiconductor,ALUMNI,For-profit,9/1/10,2/28/13,Electrical Efficiency,Utility-Scale Silicon Carbide Semiconductor,Pivot
-ADEPT,Georgia Tech Research Corporation,ALUMNI,Non-profit,9/1/10,2/28/14,Electrical Efficiency,"Compact, Low-Profile Power Converters",Perish
-ADEPT,Georgia Tech Research Corporation,ALUMNI,Non-profit,9/1/10,1/31/13,Electrical Efficiency,Utility-Scale Power Router,Pivot
-ADEPT,HRL Laboratories,ALUMNI,For-profit,10/1/10,6/30/14,Electrical Efficiency,"Compact, Interactive Electric Vehicle Charger",Pivot
-ADEPT,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,9/1/10,12/31/13,Electrical Efficiency,Advanced Power Electronics for LED Drivers,Persist
-ADEPT,Teledyne Scientific & Imaging,ALUMNI,For-profit,10/1/10,7/31/13,Electrical Efficiency,Chip-Scale Power Conversion for LED Lighting,Perish
-ADEPT,Transphorm,ALUMNI,For-profit,9/1/10,5/28/13,Electrical Efficiency,Transistors for Electric Motor Drives,Persist
-ADEPT,General Electric (GE) Global Research,CANCELLED,For-profit,1/1/11,7/17/12,Electrical Efficiency,Scalable Thick-Film Magnetics,Perish
-ALPHA,Los Alamos National Laboratory (LANL),ACTIVE,Non-profit,8/1/15,4/30/19,Centralized Generation,Plasma Liners For Fusion,
-ALPHA,"Magneto-Inertial Fusion Technologies, Inc. (MIFTI)",ACTIVE,,10/1/15,3/31/19,Centralized Generation,Staged Z-Pinch Target For Fusion,
-ALPHA,Swarthmore College,ACTIVE,Non-profit,9/28/15,7/31/19,Centralized Generation,Plasma Accelerator on the SSX,
-ALPHA,University of Washington (UW),ACTIVE,Non-profit,8/24/15,3/31/19,Centralized Generation,Flow Z-Pinch for Fusion,
-ALPHA,California Institute of Technology (Caltech),ALUMNI,Non-profit,10/1/15,12/31/18,Centralized Generation,Heating and Compression Mechanisms for Fusion,Perish
-ALPHA,Helion Energy,ALUMNI,For-profit,9/30/15,9/29/18,Centralized Generation,Compression of FRC Targets for Fusion,Pivot
-ALPHA,Lawrence Berkeley National Laboratory (LBNL),ALUMNI,Non-profit,8/1/15,6/30/18,Centralized Generation,MEMS Based Drivers For Fusion,Pivot
-ALPHA,NumerEx,ALUMNI,For-profit,10/1/15,10/31/18,Centralized Generation,Stabilized Liner Compressor For Low-Cost Fusion,Pivot
-ALPHA,Sandia National Laboratories,ALUMNI,Non-profit,8/15/15,11/24/18,Centralized Generation,Magnetization and Heating Tools for Low-Cost Fusion,Persist
-AMPED,Feasible,ACTIVE,For-profit,8/23/17,8/22/19,Storage,Sound Wave-Enabled Battery Analysis,
-AMPED,Battelle Memorial Institute,ALUMNI,Non-profit,11/1/12,9/30/14,Storage,Optical Fault Sensors for Lithium-Ion Batteries,Pivot
-AMPED,Det Norske Veritas (DNV KEMA),ALUMNI,For-profit,10/1/12,4/1/15,Storage,Gas-Based Battery Monitoring System,Persist
-AMPED,Eaton Corporation,ALUMNI,For-profit,1/1/13,3/31/16,Storage,Advanced Battery Management for Hybrid Vehicles,Pivot
-AMPED,Ford Motor Company,ALUMNI,For-profit,1/1/13,3/31/16,Storage,Ultra-Precise Battery Tester,Persist
-AMPED,General Electric (GE) Global Research,ALUMNI,For-profit,1/1/13,12/31/16,Storage,Thin-Film Temperature Sensors for Batteries,Pivot
-AMPED,Lawrence Livermore National Laboratory (LLNL),ALUMNI,Non-profit,10/1/12,9/30/15,Storage,Wireless Sensor System for Battery Packs,Perish
-AMPED,Oak Ridge National Laboratory (ORNL),ALUMNI,Non-profit,10/1/12,2/15/15,Storage,Temperature-Regulated Batteries,Pivot
-AMPED,Palo Alto Research Center (PARC),ALUMNI,For-profit,10/1/12,3/6/17,Storage,Embedded Fiber Optic Sensing System for Battery Packs,Persist
-AMPED,Pennsylvania State University (Penn State),ALUMNI,Non-profit,1/1/13,3/31/16,Storage,Reconfigurable Battery Packs,Pivot
-AMPED,Robert Bosch,ALUMNI,For-profit,1/1/13,3/6/17,Storage,Battery Management and Control Software,Pivot
-AMPED,Southwest Research Institute (SwRI),ALUMNI,Non-profit,10/1/12,2/15/15,Storage,Sensor Technology for Lithium-Ion Batteries,Perish
-AMPED,University of Washington (UW),ALUMNI,Non-profit,1/1/13,12/31/18,Storage,Optimal Battery Management System,Perish
-AMPED,Utah State University (USU),ALUMNI,Non-profit,1/1/13,4/6/17,Storage,Dynamic Cell-Level Control for Battery Packs,Persist
-AMPED,Gayle Technologies,CANCELLED,For-profit,10/1/12,12/31/14,Storage,"Laser-Guided, Ultrasonic Battery Monitoring",Perish
-ARID,Applied Research Associates (ARA),ACTIVE,,9/1/15,2/28/19,Resource Efficiency,Cooling Using Thermochemical Cycle,
-ARID,Colorado State University (CSU),ACTIVE,Non-profit,11/10/15,5/9/19,Resource Efficiency,Ultra-Efficient Turbo-Compression Cooling,
-ARID,Electric Power Research Institute (EPRI),ACTIVE,,8/19/15,2/18/19,Resource Efficiency,Enhanced Air-Cooled Heat Exchanger,
-ARID,The Boeing Company,ACTIVE,For-profit,3/17/16,6/30/19,Resource Efficiency,Additive Manufacturing for Heat Exchangers,
-ARID,The State University of New York (SUNY) at Stony Brook,ACTIVE,Non-profit,8/23/15,2/22/19,Resource Efficiency,Water Recovery for Cooling,
-ARID,University of Cincinnati (UC),ACTIVE,Non-profit,9/8/15,3/7/19,Resource Efficiency,Air-Cooled Condenser and Storage System,
-ARID,University of Maryland (UMD),ACTIVE,Non-profit,9/1/15,2/28/19,Resource Efficiency,Advanced Heat Exchangers,
-ARID,University of Wisconsin-Madison (UW-Madison),ACTIVE,Non-profit,10/1/15,6/30/19,Resource Efficiency,Advanced Heat Exchangers,
-ARID,Advanced Cooling Technologies (ACT),ALUMNI,For-profit,8/15/15,12/31/18,Resource Efficiency,Cool Storage for Supplemental Cooling,Pivot
-ARID,General Electric (GE) Global Research,ALUMNI,For-profit,9/1/15,3/2/17,Resource Efficiency,Absorption Heat Pump,Pivot
-ARID,Palo Alto Research Center (PARC),ALUMNI,For-profit,8/6/15,5/5/17,Resource Efficiency,Radiative Film for Supplemental Cooling,Perish
-ARID,SRI International,ALUMNI,Non-profit,8/5/15,6/6/17,Resource Efficiency,Radiative Film for Supplemental Cooling,Perish
-ARID,"University of Colorado, Boulder (CU-Boulder)",ALUMNI,Non-profit,7/31/15,9/30/18,Resource Efficiency,Radiative Cooling and Cold Storage,Pivot
-ARID,TDA Research,CANCELLED,For-profit,8/6/15,8/5/16,Resource Efficiency,Water Recovery for Cooling,Perish
-ARID,University of Maryland (UMD),CANCELLED,Non-profit,9/1/15,8/13/18,Resource Efficiency,Advanced Absorption Cooling,Perish
-BEEST,24M Technologies,ALUMNI,For-profit,9/1/10,2/28/14,Transportation Storage,Semi-Solid Flowable Battery Electrodes,Pivot
-BEEST,Applied Materials,ALUMNI,For-profit,7/1/10,9/30/13,Transportation Storage,New Electrode Manufacturing Process Equipment,Persist
-BEEST,Pellion Technologies,ALUMNI,For-profit,9/1/10,12/31/12,Transportation Storage,Rechargeable Magnesium Batteries,Pivot
-BEEST,PolyPlus Battery Company,ALUMNI,For-profit,7/1/10,12/31/12,Transportation Storage,Rechargeable Lithium-Air Batteries,Persist
-BEEST,Recapping,ALUMNI,For-profit,7/1/10,12/31/12,Transportation Storage,High Energy Density Capacitors,Perish
-BEEST,Sila Nanotechnologies,ALUMNI,For-profit,10/1/12,3/31/16,Transportation Storage,Double Energy Density Anodes for Lithium-Ion Batteries,Pivot
-BEEST,Sion Power,ALUMNI,For-profit,10/1/10,9/30/13,Transportation Storage,Lithium-Sulfur Batteries,Pivot
-BEEST,Stanford University,ALUMNI,Non-profit,7/1/10,6/30/12,Transportation Storage,The All-Electron Battery,Pivot
-BEEST,Xilectric,ALUMNI,For-profit,10/1/12,9/30/15,Transportation Storage,Reinventing the Edison Battery,Pivot
-BEEST,Missouri University of Science & Technology (Missouri S&T),CANCELLED,Non-profit,8/1/10,1/16/13,Transportation Storage,Lithium-Air Battery,Perish
-BEEST,Planar Energy Devices,CANCELLED,For-profit,7/1/10,4/10/12,Transportation Storage,Solid State Lithium Batteries,Persist
-BEEST,ReVolt Technology,CANCELLED,For-profit,10/1/10,6/30/12,Transportation Storage,Rechargeable Zinc-Air Batteries,Perish
-BEETIT,American Superconductor (AMSC),ACTIVE,,5/20/14,10/31/19,Building Efficiency,High-Efficiency Air Conditioner,
-BEETIT,ADMA Products,ALUMNI,For-profit,9/1/10,7/31/14,Building Efficiency,Membrane Dehumidifier,Pivot
-BEETIT,Architectural Applications (A2),ALUMNI,For-profit,10/15/10,10/14/11,Building Efficiency,Energy Efficient Building Ventilation Systems,Pivot
-BEETIT,Astronautics Corporation of America,ALUMNI,For-profit,9/1/10,4/30/14,Building Efficiency,Air Conditioning with Magnetic Refrigeration,Pivot
-BEETIT,Battelle Memorial Institute,ALUMNI,Non-profit,9/1/10,12/30/11,Building Efficiency,Cascade Reverse Osmosis Air Conditioning System,Perish
-BEETIT,Dais Analytic Corporation,ALUMNI,For-profit,10/1/10,2/29/12,Building Efficiency,Dehumidifying Air for Cooling & Refrigeration,Persist
-BEETIT,Georgia Tech Research Corporation,ALUMNI,Non-profit,9/1/10,6/30/14,Building Efficiency,Innovative Miniaturized Heat Pumps for Buildings,Pivot
-BEETIT,Pacific Northwest National Laboratory (PNNL),ALUMNI,Non-profit,9/15/10,7/31/15,Building Efficiency,High-Efficiency Adsorption Chillers,Persist
-BEETIT,Pennsylvania State University (Penn State),ALUMNI,Non-profit,9/1/10,7/31/14,Building Efficiency,Helium-Based Soundwave Chiller,Perish
-BEETIT,Sheetak,ALUMNI,For-profit,9/1/10,6/30/15,Building Efficiency,High-Efficiency Solid State Cooling Technologies,Perish
-BEETIT,United Technologies Research Center (UTRC),ALUMNI,For-profit,9/2/10,8/31/14,Building Efficiency,Liquid Desiccant in Air Conditioners,Perish
-BEETIT,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,10/1/10,9/30/12,Building Efficiency,Compact Solid State Cooling Systems,Pivot
-BEETIT,University of Florida,ALUMNI,Non-profit,9/1/10,8/31/15,Building Efficiency,Membrane-Based Absorption Refrigeration Systems,Pivot
-BEETIT,University of Maryland (UMD),ALUMNI,Non-profit,10/1/10,3/6/17,Building Efficiency,Elastic Metal Alloy Refrigerants,Pivot
-BEETIT,University of Notre Dame,ALUMNI,Non-profit,10/1/10,9/30/13,Building Efficiency,Carbon Dioxide and Ionic Liquid Refrigerants,Pivot
-BEETIT,Material Methods,CANCELLED,For-profit,9/15/10,9/21/11,Building Efficiency,Sound Wave Refrigerants,Perish
-BEETIT,United Technologies Research Center (UTRC),CANCELLED,For-profit,9/2/10,3/16/12,Building Efficiency,Water-Based Refrigerants,Perish
-DELTA,Otherlab,ACTIVE,For-profit,5/8/15,5/7/19,Building Efficiency,Passive Thermo-Adaptive Textiles,
-DELTA,Syracuse University,ACTIVE,Non-profit,5/1/15,10/31/19,Building Efficiency,Micro-Environmental Control System,
-DELTA,Cornell University,ALUMNI,Non-profit,4/27/15,8/15/18,Building Efficiency,Thermoregulatory Clothing System,Perish
-DELTA,SRI International,ALUMNI,Non-profit,5/1/15,9/30/18,Building Efficiency,Wearable Electroactive Textile,Pivot
-DELTA,The State University of New York (SUNY) at Stony Brook,ALUMNI,Non-profit,5/5/15,7/30/18,Building Efficiency,Electroactive Smart Air-Conditioner VEnt Registers (eSAVER),Pivot
-DELTA,"University of California, Berkeley (UC Berkeley)",ALUMNI,Non-profit,5/14/15,6/30/18,Building Efficiency,Wirelessly Powered Heating and Cooling Devices,Perish
-DELTA,"University of California, Irvine (UC Irvine)",ALUMNI,Non-profit,4/20/15,4/19/18,Building Efficiency,Thermocomfort Cloth,Pivot
-DELTA,"University of California, San Diego (UC San Diego)",ALUMNI,Non-profit,5/7/15,9/6/18,Building Efficiency,Adaptive Textiles Technology,Pivot
-DELTA,University of Maryland (UMD),ALUMNI,Non-profit,4/15/15,5/12/18,Building Efficiency,Robotic Personal Conditioning Device,Persist
-DELTA,University of Maryland (UMD),ALUMNI,Non-profit,5/1/15,9/30/18,Building Efficiency,Meta-Cooling Textile,Pivot
-DELTA,Stanford University,CANCELLED,Non-profit,4/30/15,9/30/17,Building Efficiency,Photonic Structure Textiles,Pivot
-Electrofuels,Columbia University,ALUMNI,Non-profit,7/1/10,6/30/14,Transportation Fuels,"Biofuels from Bacteria, Electricity, and CO2",Pivot
-Electrofuels,Ginkgo Bioworks,ALUMNI,For-profit,7/16/10,1/15/14,Transportation Fuels,Biofuels from E. Coli,Pivot
-Electrofuels,Harvard University,ALUMNI,Non-profit,7/1/10,9/30/13,Transportation Fuels,"Fuel from Bacteria, CO2, Water, and Solar Energy",Pivot
-Electrofuels,Lawrence Berkeley National Laboratory (LBNL),ALUMNI,Non-profit,7/16/10,12/31/14,Transportation Fuels,Turning Bacteria into Biofuel,Pivot
-Electrofuels,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,7/15/10,3/31/14,Transportation Fuels,Natural Oil Production from Microorganisms,Pivot
-Electrofuels,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,7/15/10,10/1/13,Transportation Fuels,Liquid Fuel from Bacteri,Perish
-Electrofuels,Medical University of South Carolina (MUSC),ALUMNI,Non-profit,7/9/10,2/15/15,Transportation Fuels,Liquid Fuel from Microbial Communities,Perish
-Electrofuels,North Carolina State University (NC State),ALUMNI,Non-profit,7/1/10,12/31/14,Transportation Fuels,Liquid Fuel from Heat-Loving Microorganisms,Pivot
-Electrofuels,OPX Biotechnologies,ALUMNI,For-profit,7/12/10,3/31/14,Transportation Fuels,Engineering Bacteria for Efficient Fuel Production,Perish
-Electrofuels,Pennsylvania State University (Penn State),ALUMNI,Non-profit,7/1/10,6/30/14,Transportation Fuels,Genetically Modified Bacteria for Fuel Production,Pivot
-Electrofuels,The Ohio State University,ALUMNI,Non-profit,7/1/10,6/30/14,Transportation Fuels,Fuel from Bacteria,Pivot
-Electrofuels,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,7/15/10,4/30/14,Transportation Fuels,Liquid Fuel from Renewable Electricity and Bacteria,Pivot
-Electrofuels,University of Massachusetts at Amherst (UMass Amherst),ALUMNI,Non-profit,7/1/10,6/30/14,Transportation Fuels,Biofuels from Solar Energy and Bacteria,Pivot
-FOCUS,Arizona State University (ASU),ALUMNI,Non-profit,5/30/14,8/29/17,Distributed Generation,High-Temperature Topping Cells from LED Materials,Perish
-FOCUS,Arizona State University (ASU),ALUMNI,Non-profit,6/1/14,8/31/17,Distributed Generation,Solar-Concentrating Photovoltaic Mirror,Pivot
-FOCUS,Cogenra Solar,ALUMNI,For-profit,7/10/14,7/9/16,Distributed Generation,Hybrid Solar Converter with Light-Filtering Mirror,Pivot
-FOCUS,Gas Technology Institute (GTI),ALUMNI,Non-profit,5/13/14,1/31/18,Distributed Generation,Double-Reflector Hybrid Solar Energy System,Persist
-FOCUS,General Electric (GE) Global Research,ALUMNI,For-profit,8/1/14,12/31/18,Distributed Generation,Electrochemical Energy Storage with a Supercritical CO2 Cycle,Pivot
-FOCUS,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,6/17/14,9/16/17,Distributed Generation,Stacked Hybrid Solar Converter,Pivot
-FOCUS,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,5/15/14,7/31/15,Distributed Generation,Low-Cost Hetero-Epitaxial Solar Cell for Hybrid Converter,Pivot
-FOCUS,Tulane University,ALUMNI,Non-profit,8/1/14,9/30/18,Distributed Generation,Hybrid Solar Converter,Pivot
-FOCUS,University of Arizona,ALUMNI,Non-profit,8/11/17,8/10/18,Distributed Generation,Partially Transmitting Mirror,Pivot
-FOCUS,University of Tulsa,ALUMNI,Non-profit,5/15/14,2/14/17,Distributed Generation,Liquid Filter with Plasmonic Nanoparticles,Pivot
-FOCUS,University of Tulsa,ALUMNI,Non-profit,11/7/16,12/31/18,Distributed Generation,Hybrid Solar Converter with Light-Filtering Mirror,Pivot
-FOCUS,Yale University,ALUMNI,Non-profit,7/15/14,12/31/17,Distributed Generation,High-Temperature Dual-Junction Topping Cells,Pivot
-FOCUS,MicroLink Devices,CANCELLED,For-profit,6/11/14,8/4/16,Distributed Generation,Dual-Junction Photovoltaic Topping Device for High-Temp Operation,Pivot
-FOCUS,Northrop Grumman Aerospace Systems,CANCELLED,For-profit,6/15/14,8/4/16,Distributed Generation,Thermo-Acoustic Hybrid Solar Energy System,Perish
-GENI,AutoGrid,ALUMNI,For-profit,1/11/12,3/31/14,Grid,Integration of Renewables via Demand Management,Persist
-GENI,Boston University (BU),ALUMNI,Non-profit,4/19/13,3/31/16,Grid,Decision-Support Software for Grid Operators,Persist
-GENI,California Institute of Technology (Caltech),ALUMNI,Non-profit,3/1/12,6/1/15,Grid,Scalable Distributed Automation System,Pivot
-GENI,Cornell University,ALUMNI,Non-profit,2/8/12,8/7/15,Grid,Cloud Computing for the Grid,Persist
-GENI,General Atomics,ALUMNI,For-profit,1/9/12,7/31/13,Grid,Low-Insertion HVDC Circuit Breaker,Pivot
-GENI,General Electric (GE) Global Research,ALUMNI,For-profit,2/24/12,5/31/14,Grid,Cost-Effective Cable Insulation,Perish
-GENI,General Electric (GE) Global Research,ALUMNI,For-profit,1/23/12,1/22/15,Grid,Connecting Renewables Directly to the Grid,Perish
-GENI,Georgia Tech Research Corporation,ALUMNI,Non-profit,1/11/12,2/15/15,Grid,"Autonomous, Decentralized Grid Architecture",Pivot
-GENI,Michigan State University (MSU),ALUMNI,Non-profit,2/8/12,11/15/15,Grid,Power Flow Controller for Renewables,Persist
-GENI,Oak Ridge National Laboratory (ORNL),ALUMNI,Non-profit,2/24/12,6/30/17,Grid,Magnetic Amplifier for Power Flow Control,Pivot
-GENI,Sandia National Laboratories,ALUMNI,Non-profit,4/1/12,1/16/15,Grid,Probability-Based Software for Grid Optimization,Persist
-GENI,Smart Wire Grid,ALUMNI,For-profit,4/23/12,9/30/14,Grid,Distributed Power Flow Control,Persist
-GENI,Texas Engineering Experiment Station (TEES),ALUMNI,Non-profit,3/1/12,6/30/15,Grid,Automated Grid Disruption Response System,Pivot
-GENI,University of Washington (UW),ALUMNI,Non-profit,3/1/12,10/14/15,Grid,Renewable Energy Positioning System,Pivot
-GENI,Varentec,ALUMNI,For-profit,1/3/12,5/31/16,Grid,Dynamic Power Flow Controller,Persist
-GENSETS,Aerodyne Research,ALUMNI,For-profit,11/1/15,12/31/18,Distributed Generation,Single-Cylinder Two-Stroke Free-Piston Internal Combustion Generator,Perish
-GENSETS,Air Square,ACTIVE,,5/1/16,4/30/19,Distributed Generation,High Efficiency Generator System,
-GENSETS,American Superconductor (AMSC),ACTIVE,,11/30/15,3/31/19,Distributed Generation,Sustainable Economic mCHP Stirling (SEmS) Generator,
-GENSETS,Brayton Energy,ALUMNI,For-profit,11/9/15,11/8/18,Distributed Generation,1kW Recuperated Brayton-Cycle Engine,Persist
-GENSETS,MAHLE Powertrain,ACTIVE,,11/1/15,3/31/19,Distributed Generation,Advanced Lean Burn Micro-CHP Genset,
-GENSETS,Metis Design Corporation (MDC),ALUMNI,For-profit,10/22/15,12/31/18,Distributed Generation,Advanced Microturbine Engine for Residential CHP,Perish
-GENSETS,Sunpower,ACTIVE,,12/1/15,12/31/19,Distributed Generation,Free Piston Stirling Engine Based 1kW Generator,
-GENSETS,Tour Engine,ACTIVE,,11/24/15,9/30/19,Distributed Generation,High Efficiency Split-Cycle Engine for Residential Generators,
-GENSETS,West Virginia University Research Corporation (WVURC),ACTIVE,Non-profit,6/12/17,12/11/19,Distributed Generation,Advanced Stirling Power Generation System for CHP,
-GENSETS,West Virginia University Research Corporation (WVURC),ACTIVE,Non-profit,11/3/15,10/2/19,Distributed Generation,Oscillating Linear Engine and Alternator,
-GENSETS,Wisconsin Engine Research Consultants (WERC),ACTIVE,Non-profit,12/17/15,6/16/19,Distributed Generation,Spark-Assisted HCCI Residential Generator,
-GENSETS,"Mohawk Innovative Technology, Inc. (MiTi)",EXCLUDE,,3/15/16,6/9/16,Distributed Generation,High-Speed Microturbine with Air Foil Bearings for Residential CHP,
-GENSETS,NanoConversion Technologies,CANCELLED,,11/16/15,12/2/16,Distributed Generation,High-Efficiency Thermoelectric CHP,Perish
-GENSETS,Sencera Energy,EXCLUDE,,2/1/16,6/30/17,Distributed Generation,Hybrid Engine Generator for Residential CHP,
-GRID DATA,GridBright,ACTIVE,,5/25/16,5/24/19,Grid,Power Systems Model Repository,
-GRID DATA,National Renewable Energy Laboratory (NREL),ACTIVE,Non-profit,8/24/16,11/30/19,Grid,SMARTDATA Grid Models,
-GRID DATA,Pacific Northwest National Laboratory (PNNL),ACTIVE,Non-profit,7/1/16,6/30/20,Grid,Data Repository for Power System Models,
-GRID DATA,University of Wisconsin-Madison,ACTIVE,Non-profit,8/11/16,11/9/19,Grid,EPIGRIDS Transmission System Models,
-GRID DATA,Pacific Northwest National Laboratory (PNNL),EXCLUDE,Non-profit,9/7/16,1/18/19,Grid,Sustainable Data Evolution Technology,
-GRID DATA,"University of Illinois, Urbana-Champaign (UIUC)",ALUMNI,Non-profit,6/20/16,12/31/18,Grid,Synthetic Data for Power Grid R&D,Perish
-GRID DATA,University of Michigan,ALUMNI,Non-profit,5/27/16,11/26/18,Grid,Transmission System Data Set,Perish
-GRIDS,ABB,ALUMNI,For-profit,10/1/10,6/30/14,Storage,Magnetic Energy Storage System,Pivot
-GRIDS,City University of New York (CUNY) Energy Institute,ALUMNI,Non-profit,9/15/10,3/31/15,Storage,Flow-Assisted Alkaline Battery,Pivot
-GRIDS,Energy Storage Systems (ESS),ALUMNI,For-profit,10/1/12,8/30/17,Storage,Iron Flow Battery,Persist
-GRIDS,Fluidic Energy,ALUMNI,For-profit,10/1/10,3/31/13,Storage,High-Power Zinc-Air Energy Storage,Persist
-GRIDS,General Atomics,ALUMNI,For-profit,9/1/10,8/28/13,Storage,Soluble Lead Flow Battery,Pivot
-GRIDS,General Compression,ALUMNI,For-profit,9/13/10,4/1/11,Storage,Fuel-Free Compressed-Air Energy Storage,Perish
-GRIDS,ITN Energy Systems,ALUMNI,For-profit,10/1/12,6/30/15,Storage,Advanced Vanadium Redox Flow Battery,Persist
-GRIDS,Lawrence Berkeley National Laboratory (LBNL),ALUMNI,Non-profit,10/1/10,9/30/13,Storage,Hydrogen-Bromine Flow Battery,Pivot
-GRIDS,"Materials & Systems Research, Inc. (MSRI)",ALUMNI,For-profit,10/1/12,6/30/16,Storage,Advanced Sodium Battery,Perish
-GRIDS,Primus Power,ALUMNI,For-profit,9/1/10,12/31/12,Storage,Advanced Flow Battery Electrodes,Pivot
-GRIDS,Proton Energy Systems,ALUMNI,For-profit,9/1/10,3/31/14,Storage,Regenerative Fuel Cells,Pivot
-GRIDS,The Boeing Company,ALUMNI,For-profit,10/1/10,9/30/13,Storage,Advanced Flywheel Composite Rotors,Perish
-GRIDS,TVN Systems,ALUMNI,For-profit,10/1/12,6/30/15,Storage,Hydrogen Bromine Battery,Perish
-GRIDS,United Technologies Research Center (UTRC),ALUMNI,For-profit,9/9/10,9/30/13,Storage,Breakthrough Flow Battery Cell Stack,Pivot
-GRIDS,University of Southern California (USC),ALUMNI,Non-profit,10/1/10,9/30/13,Storage,Iron-Air Rechargeable Battery,Pivot
-GRIDS,Beacon Power,CANCELLED,For-profit,3/6/12,10/31/15,Storage,Next-Generation Flywheel Energy Storage,Perish
-HEATS,Abengoa Solar,ALUMNI,For-profit,1/11/12,7/31/14,Storage,Conversion Tower for Dispatchable Solar Power,Pivot
-HEATS,Halotechnics,ALUMNI,For-profit,1/1/12,9/30/15,Storage,Molten Glass for Thermal Storage,Perish
-HEATS,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,11/21/11,11/30/14,Storage,Efficient Heat Storage Materials,Pivot
-HEATS,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,12/13/11,9/30/16,Storage,Advanced Thermo-Adsorptive Battery,Pivot
-HEATS,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,1/9/12,1/8/15,Storage,Solar Thermal Energy Storage Device,Pivot
-HEATS,NAVITASMAX,ALUMNI,For-profit,12/1/11,8/30/13,Storage,Advanced Thermal Energy Storage Technology,Perish
-HEATS,Pacific Northwest National Laboratory (PNNL),ALUMNI,Non-profit,12/5/11,4/30/14,Storage,Metal Hydride Thermal Storage,Pivot
-HEATS,Pacific Northwest National Laboratory (PNNL),ALUMNI,Non-profit,11/21/11,1/4/14,Storage,Efficient Heat Pump for Electric Vehicles,Pivot
-HEATS,Sheetak,ALUMNI,For-profit,11/15/11,3/31/15,Transportation Storage,High Energy Density Thermal Batteries,Pivot
-HEATS,United Technologies Research Center (UTRC),ALUMNI,For-profit,1/4/12,1/3/15,Transportation Storage,Hybrid Vapor Compression Adsorption System,Perish
-HEATS,University of Florida,ALUMNI,Non-profit,12/19/11,7/15/16,Distributed Generation,Solar Thermochemical Fuel Production,Perish
-HEATS,University of Minnesota (UMN),ALUMNI,Non-profit,12/19/11,6/18/15,Storage,Solar Thermochemical Fuels Production,Perish
-HEATS,University of South Florida (USF),ALUMNI,Non-profit,12/13/11,9/30/15,Storage,Efficient Phase-Change Materials,Pivot
-HEATS,University of Texas at Austin (UT Austin),ALUMNI,Non-profit,11/21/11,6/30/15,Transportation Storage,Thermal Batteries for Electric Vehicles,Perish
-HEATS,University of Utah,ALUMNI,Non-profit,12/1/11,2/28/15,Transportation Storage,Advanced Metal-Hydrides-Based Thermal Battery,Pivot
-IDEAS,Harvard University,ACTIVE,Non-profit,8/1/18,7/31/19,Transportation Fuels,More information on Harvard's project is coming soon!,
-IDEAS,New York University (NYU),ACTIVE,Non-profit,1/1/18,5/31/19,Grid,Grid Dynamics from City Light,
-IDEAS,Purdue University,ACTIVE,Non-profit,4/1/18,3/31/19,Manufacturing Efficiency,More information on Purdue's project is coming soon!,
-IDEAS,Stanford University,ACTIVE,Non-profit,7/1/18,6/30/19,Manufacturing Efficiency,CO2 for Commodity Polymer Synthesis,
-IDEAS,Texas Tech University,ACTIVE,Non-profit,6/18/18,6/17/19,Distributed Generation,More information on Texas Tech's project is coming soon!,
-IDEAS,"University of California, San Diego (UC San Diego)",ACTIVE,Non-profit,4/15/18,4/14/19,Manufacturing Efficiency,Production of Large-Sized LOCH Parts,
-IDEAS,University of Maryland (UMD),ACTIVE,Non-profit,6/1/18,5/31/19,Resource Efficiency,Electrochemical Compression for Ammoni,
-IDEAS,University of Washington (UW),ACTIVE,Non-profit,9/29/17,3/28/19,Centralized Generation,Stable Magnetized Target Fusion Plasmas,
-IDEAS,Utah State University (USU),ACTIVE,Non-profit,9/15/17,3/14/19,Transportation Network,Feasibility Analysis of Electric Roadways,
-IDEAS,Bigwood Systems,ALUMNI,For-profit,3/18/15,6/30/16,Grid,Global-Optimal Power Flow (G-OPF),Persist
-IDEAS,California Institute of Technology (Caltech),ALUMNI,Non-profit,8/25/17,8/24/18,Transportation Storage,Nanomechanics of Electrodeposited Li,Pivot
-IDEAS,California Institute of Technology (Caltech),ALUMNI,Non-profit,3/9/15,9/30/17,Transportation Fuels,Acoustic Wave Enhanced Catalysis,Pivot
-IDEAS,Citrine Informatics,ALUMNI,For-profit,12/22/15,3/21/17,Storage,Machine Learning for Solid Ion Conductors,Pivot
-IDEAS,Colorado School of Mines,ALUMNI,Non-profit,3/13/17,9/12/18,Resource Efficiency,Thermoelectric Materials Discovery,Pivot
-IDEAS,Colorado School of Mines,ALUMNI,Non-profit,9/27/16,7/31/18,Storage,Ammonia Synthesis Membrane Reactor,Perish
-IDEAS,Columbia University,ALUMNI,Non-profit,3/4/16,3/3/17,Electrical Efficiency,Computing Through Silicon Photonics,Pivot
-IDEAS,Columbia University,ALUMNI,Non-profit,6/10/16,9/9/17,Distributed Generation,Integrated Power Adapter,Perish
-IDEAS,Columbia University,ALUMNI,Non-profit,3/1/15,5/30/16,Transportation Fuels,Co-Generation of Fuels During Copper Bioleaching,Pivot
-IDEAS,Cornell University,ALUMNI,Non-profit,8/17/16,8/16/17,Transportation Fuels,Secondary Lithium Metal Batteries,Persist
-IDEAS,Cree Fayetteville,ALUMNI,For-profit,2/3/17,2/2/18,Distributed Generation,Diamond Capacitors for Power Electronics,Perish
-IDEAS,Gas Technology Institute (GTI),ALUMNI,For-profit,9/7/16,9/30/17,Transportation Fuels,Methane Soft Oxidation,Perish
-IDEAS,GeneSiC Semiconductor,ALUMNI,For-profit,12/20/16,9/19/18,Distributed Generation,Novel Gallium Nitride Transistors,Perish
-IDEAS,George Washington University (GWU),ALUMNI,Non-profit,8/2/17,11/16/18,Distributed Generation,Transfer Printed Virtual Substrates,Persist
-IDEAS,Georgia Tech Research Corporation,ALUMNI,Non-profit,7/27/16,12/31/17,Manufacturing Efficiency,Hollow Fibers for Separations,Persist
-IDEAS,Grid Logic,ALUMNI,For-profit,6/1/15,6/30/16,Electrical Efficiency,Nanostructured Core/Shell Powders for Magnets,Perish
-IDEAS,Harvard University,ALUMNI,Non-profit,6/1/17,11/30/18,Electrical Efficiency,Transistor-less Power Supply Technology,Perish
-IDEAS,Hi Fidelity Genetics,ALUMNI,For-profit,5/5/16,11/10/17,Transportation Fuels,Plant Root Phenotyping,Persist
-IDEAS,Inventev,ALUMNI,For-profit,1/6/16,4/5/17,Transportation Vehicles,Transmission-Based Power Generator,Perish
-IDEAS,Iowa State University (ISU),ALUMNI,Non-profit,8/11/16,12/31/17,Transportation Fuels,Catalytic Autothermal Pyrolysis,Pivot
-IDEAS,Johns Hopkins University,ALUMNI,Non-profit,10/1/15,3/31/17,Manufacturing Efficiency,Carbon Fiber from Methane,Pivot
-IDEAS,Johns Hopkins University,ALUMNI,Non-profit,2/15/16,12/31/17,Resource Efficiency,Adsorption Compression on Chemical Reactions,Pivot
-IDEAS,Lawrence Berkeley National Laboratory (LBNL),ALUMNI,Non-profit,9/1/17,8/31/18,Transportation Storage,Metal-Supported SOFC for Vehicles,Pivot
-IDEAS,Northeastern University,ALUMNI,Non-profit,9/1/16,12/31/17,Building Efficiency,Materials for Magnetocaloric Applications,Pivot
-IDEAS,Northeastern University,ALUMNI,Non-profit,12/6/16,12/5/17,Distributed Generation,Power Converter for Photovoltaic Applications,Pivot
-IDEAS,Oregon State University (OSU),ALUMNI,Non-profit,7/15/14,7/31/16,Distributed Generation,Home Generator Benchmarking Program,Pivot
-IDEAS,Otherlab,ALUMNI,For-profit,3/1/17,3/19/18,Grid,Visualizing Energy Dat,Perish
-IDEAS,Palo Alto Research Center (PARC),ALUMNI,For-Profit,12/17/15,3/31/17,Resource Efficiency,Large-Area Thermoelectric Generators,Pivot
-IDEAS,Princeton Optronics,ALUMNI,For-Profit,10/1/14,9/30/15,Transportation Vehicles,Development of a New Type of Laser Ignition System,Perish
-IDEAS,Princeton University,ALUMNI,Non-profit,10/1/15,3/30/17,Electrical Efficiency,Acoustic Analysis for Battery Testing,Pivot
-IDEAS,Qromis,ALUMNI,For-Profit,4/1/17,9/30/18,Electrical Efficiency,Reliable and Self-Clamped GaN Switch,Pivot
-IDEAS,Ricardo,ALUMNI,For-Profit,1/1/15,9/30/15,Manufacturing Efficiency,Reducing Automotive CAPEX Entry Barriers,Persist
-IDEAS,Rice University,ALUMNI,Non-profit,9/15/16,12/14/17,Transportation Fuels,Biological Ammonia Production,Pivot
-IDEAS,Saint-Gobain Ceramics & Plastics,ALUMNI,For-Profit,1/19/16,4/30/17,Distributed Generation,High Temperature Ceramics for Solar Fuel Production,Perish
-IDEAS,Sandia National Laboratories,ALUMNI,Non-profit,12/21/16,12/20/17,Distributed Generation,High Gain Step-Up Converters,Pivot
-IDEAS,Sandia National Laboratories,ALUMNI,Non-profit,5/1/17,10/31/18,Electrical Efficiency,Power Conversion with Photoconductive Switches,Pivot
-IDEAS,Signetron,ALUMNI,For-profit,7/6/15,7/5/16,Building Efficiency,Mobile Building Audits,Perish
-IDEAS,Space Orbital Services,ALUMNI,For-profit,8/1/14,12/31/15,Transportation Fuels,Low Temperature Methane Conversion Through Impacting Common Alloy Catalysts,Perish
-IDEAS,Tandem PV,ALUMNI,For-profit,10/31/17,12/15/18,Distributed Generation,Unlock Perovskite Photovoltaics,Pivot
-IDEAS,Tetramer Technologies,ALUMNI,For-profit,3/31/17,6/30/18,Transportation Storage,Enhanced Stability AEM at High Temperatures,Perish
-IDEAS,United Technologies Research Center (UTRC),ALUMNI,For-profit,4/1/17,3/31/18,Manufacturing Efficiency,Design of Ultra-Efficient Thermal-Fluid Components,Pivot
-IDEAS,United Technologies Research Center (UTRC),ALUMNI,For-profit,7/2/15,7/1/16,Storage,High Performance Transportation Redox-Air Flow Cells,Pivot
-IDEAS,"University of California, San Diego (UC San Diego)",ALUMNI,Non-profit,4/1/14,8/31/15,Storage,Novel Electrolytes,Persist
-IDEAS,"University of Colorado, Boulder (CU-Boulder)",ALUMNI,Non-profit,10/15/15,8/14/17,Transportation Vehicles,Capacitive Wireless Power System,Pivot
-IDEAS,University of Maryland (UMD),ALUMNI,Non-profit,4/14/16,4/13/17,Storage,Current Collectors for Aqueous Batteries,Persist
-IDEAS,University of Maryland (UMD),ALUMNI,Non-profit,2/13/15,2/12/16,Electrical Efficiency,High-Capacity Carbon Wires,Perish
-IDEAS,University of Maryland (UMD),ALUMNI,Non-profit,7/25/14,10/24/15,Manufacturing Efficiency,Next-Generation Air-Cooled Heat Exchangers,Pivot
-IDEAS,University of Michigan,ALUMNI,Non-profit,1/1/15,3/31/16,Distributed Generation,Benchtop Growth of High Quality Thin Film Photovoltaics,Pivot
-IDEAS,"University of Nebraska, Lincoln (UNL)",ALUMNI,Non-profit,9/1/16,8/31/17,Electrical Efficiency,Electromagnetic Induction Power Converter,Pivot
-IDEAS,University of Tennessee (UT),ALUMNI,Non-profit,11/10/16,3/19/18,Manufacturing Efficiency,Reversible Air Batteries,Perish
-IMPACCT,Alliant Techsystems (ATK),ALUMNI,For-profit,7/1/10,6/30/13,Resource Efficiency,Supersonic Technology for CO2 Capture,Perish
-IMPACCT,Codexis,ALUMNI,For-profit,7/1/10,6/30/12,Resource Efficiency,Better Enzymes for Carbon Capture,Pivot
-IMPACCT,Columbia University,ALUMNI,Non-profit,7/16/10,1/15/14,Resource Efficiency,Chemically Accelerated Carbon Mineralization,Pivot
-IMPACCT,General Electric (GE) Global Research,ALUMNI,For-profit,10/1/10,9/30/13,Resource Efficiency,CO2 Capture with Liquid-to-Solid Absorbents,Perish
-IMPACCT,Georgia Tech Research Corporation,ALUMNI,Non-profit,7/1/10,10/31/12,Resource Efficiency,Composite Membranes for CO2 Capture,Pivot
-IMPACCT,Lawrence Livermore National Laboratory (LLNL),ALUMNI,Non-profit,8/15/10,12/31/14,Resource Efficiency,Synthetic Catalysts for CO2 Storage,Pivot
-IMPACCT,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,7/1/10,1/31/13,Resource Efficiency,CO2 Capture Using Electrical Energy,Perish
-IMPACCT,Oak Ridge National Laboratory (ORNL),ALUMNI,Non-profit,7/1/10,8/15/13,Resource Efficiency,High Surface-Area CO2 Sponge,Pivot
-IMPACCT,Research Triangle Institute (RTI),ALUMNI,Non-profit,7/1/10,9/30/13,Resource Efficiency,CO2 Capture and Regeneration at Low Temperatures,Persist
-IMPACCT,Sustainable Energy Solutions (SES),ALUMNI,For-profit,7/14/10,3/31/15,Resource Efficiency,Capturing CO2 from Exhaust Gas,Persist
-IMPACCT,Texas A&M University,ALUMNI,Non-profit,7/1/10,9/30/12,Resource Efficiency,Stimuli-Responsive Metal Organic Frameworks,Pivot
-IMPACCT,"University of California, Berkeley (UC Berkeley)",ALUMNI,Non-profit,7/1/10,9/25/15,Resource Efficiency,Metal Organic Framework Research,Pivot
-IMPACCT,"University of Colorado, Boulder (CU-Boulder)",ALUMNI,Non-profit,2/1/11,7/31/14,Resource Efficiency,Gelled Ionic Liquid-Based Membranes,Pivot
-IMPACCT,University of Notre Dame,ALUMNI,Non-profit,7/1/10,12/31/13,Resource Efficiency,Phase-Changing Ionic Liquids,Pivot
-IMPACCT,University of Kentucky,CANCELLED,Non-profit,7/1/10,4/18/13,Resource Efficiency,Hybrid Solvent-Membrane CO2 Capture,Pivot
-IONICS,24M Technologies,ACTIVE,,1/3/17,1/2/20,Storage,Lithium Electrode Sub-Assemblies,
-IONICS,3M,ACTIVE,,1/2/17,1/1/20,Storage,Polymeric Anion Exchange Membranes,
-IONICS,Ionic Materials,ACTIVE,,1/16/17,7/15/19,Storage,Novel Polymer Electrolyte,
-IONICS,Iowa State University (ISU),ACTIVE,,2/1/17,1/31/20,Storage,Glassy Solid Electrolytes,
-IONICS,Oak Ridge National Laboratory (ORNL),ACTIVE,,2/8/17,8/30/19,Storage,Metastable And Glassy Ionic Conductors,
-IONICS,PolyPlus Battery Company,ACTIVE,,1/20/17,7/19/19,Storage,Solid Electrolyte Protected LI Metal Electrodes,
-IONICS,Rensselaer Polytechnic Institute (RPI),ACTIVE,,1/20/17,1/19/20,Storage,Hydroxide Ion Exchange Polymers,
-IONICS,United Technologies Research Center (UTRC),ACTIVE,,2/17/17,8/16/19,Storage,Smart-FBS,
-IONICS,"University of California, San Diego (UC San Diego)",ACTIVE,,1/24/17,7/31/19,Storage,Self-Forming Solid-State Batteries,
-IONICS,"University of Colorado, Boulder (CU-Boulder)",ACTIVE,,12/1/16,11/30/19,Storage,Anion Channel Membranes,
-IONICS,University of Delaware (UD),ACTIVE,,1/1/17,6/30/19,Storage,Hydroxide Exchange Membranes,
-IONICS,Washington University,ACTIVE,,1/1/17,12/31/19,Storage,Reinforced AEM Separators,
-IONICS,American Manufacturing,ALUMNI,For-profit,12/20/16,9/19/18,Storage,Flash Sintering System,Pivot
-IONICS,Pennsylvania State University (Penn State),ALUMNI,Non-profit,1/1/17,12/31/18,Storage,Cold Sintering Composite Structures,Pivot
-IONICS,Sila Nanotechnologies,ALUMNI,For-profit,12/1/16,5/31/18,Storage,Melt-Infiltration Solid Electrolyte,Persist
-IONICS,Colorado School of Mines,EXCLUDE,,1/1/17,11/30/18,Transportation Storage,Hybrid Polyoxometalate Membranes,
-METALS,Materials & Electrochemical Research (MER),ACTIVE,,1/13/15,3/31/19,Manufacturing Efficiency,Advanced Electrowinning of Titanium,
-METALS,UHV Technologies,ACTIVE,,1/1/14,7/15/19,Manufacturing Efficiency,X-Ray Diagnostics for Scrap Metal Sorting,
-METALS,University of Utah,ACTIVE,Non-profit,2/18/14,6/30/19,Manufacturing Efficiency,Direct Titanium Production from Titanium Slag,
-METALS,Alcoa,ALUMNI,For-profit,3/31/14,7/20/18,Manufacturing Efficiency,Aluminum Electrolytic Cell with Heat Recovery,Pivot
-METALS,BlazeTech,ALUMNI,For-profit,1/1/14,3/31/15,Manufacturing Efficiency,Specialized Imaging System for Light Metal Sorting,Perish
-METALS,Case Western Reserve University,ALUMNI,Non-profit,1/1/14,6/30/16,Manufacturing Efficiency,Segmented Cell for Electrowinning Titanium,Perish
-METALS,Energy Research Company (ERCo),ALUMNI,For-profit,1/1/14,9/30/18,Manufacturing Efficiency,Integrated Minimill to Produce Aluminum from Scrap,Pivot
-METALS,Gas Technology Institute (GTI),ALUMNI,Non-profit,1/1/14,3/31/15,Manufacturing Efficiency,Membrane Extraction for Aluminum Production,Perish
-METALS,INFINIUM,ALUMNI,For-profit,12/12/13,12/10/16,Manufacturing Efficiency,Aluminum Production Using Zirconia Solid Electrolyte,Perish
-METALS,Palo Alto Research Center (PARC),ALUMNI,For-profit,12/12/13,5/31/16,Manufacturing Efficiency,Electrochemical Probe for Rapid Scrap Metal Sorting,Perish
-METALS,Phinix,ALUMNI,For-profit,12/3/13,3/1/15,Manufacturing Efficiency,Electrochemical Magnesium Extraction from Scrap,Perish
-METALS,Research Triangle Institute (RTI),ALUMNI,Non-profit,2/6/14,3/6/17,Manufacturing Efficiency,High-Temperature Thermal Storage for Light Metal Production,Perish
-METALS,SRI International,ALUMNI,Non-profit,12/10/13,4/30/15,Manufacturing Efficiency,Direct Production of Titanium Powder,Perish
-METALS,"University of Colorado, Boulder (CU-Boulder)",ALUMNI,Non-profit,1/1/14,6/30/17,Manufacturing Efficiency,Solar/Electric Powered Magnesium Production,Pivot
-METALS,University of Utah,ALUMNI,Non-profit,1/10/14,3/19/18,Manufacturing Efficiency,Electromagnetic Light Metal Sorting,Persist
-METALS,Valparaiso University,ALUMNI,Non-profit,1/1/14,12/29/18,Manufacturing Efficiency,Solar/Electrolytic Production of Magnesium from Ore,Perish
-METALS,iMetalx Group,CANCELLED,For-profit,2/24/14,7/14/14,Manufacturing Efficiency,Advanced Electrowinning of Titanium,Perish
-METALS,Pacific Northwest National Laboratory (PNNL),CANCELLED,Non-profit,1/1/14,6/30/16,Manufacturing Efficiency,Extracting Magnesium from Seawater,Perish
-METALS,Titanium Metals Corporation (TIMET),CANCELLED,For-profit,1/13/14,4/30/16,Manufacturing Efficiency,Electrochemical Cell for Advanced Titanium Production,Perish
-MONITOR,Bridger Photonics,ACTIVE,,6/15/15,4/14/19,Resource Efficiency,Mobile Methane Sensing System,
-MONITOR,Colorado State University (CSU),ACTIVE,,10/1/16,6/30/19,Resource Efficiency,MONITOR Field Test Site,
-MONITOR,Duke University,ACTIVE,,5/14/15,2/13/19,Resource Efficiency,Advanced Spectrometer for Methane Detection,
-MONITOR,"University of Colorado, Boulder (CU-Boulder)",ACTIVE,,5/8/15,3/10/20,Resource Efficiency,Frequency Combs for Methane Detection,
-MONITOR,Aeris Technologies,ALUMNI,For-profit,4/15/15,8/26/18,Resource Efficiency,Methane Leak Detection System,Persist
-MONITOR,General Electric (GE) Global Research,ALUMNI,For-profit,5/8/15,8/7/18,Resource Efficiency,Optical Fibers for Methane Detection,Persist
-MONITOR,IBM T.J. Watson Research Center,ALUMNI,For-profit,8/10/15,8/9/18,Resource Efficiency,Multi-Modal Methane Measurement System,Pivot
-MONITOR,Maxion Technologies,ALUMNI,For-profit,6/2/15,12/1/18,Resource Efficiency,Tunable Laser for Methane Detection,Persist
-MONITOR,Palo Alto Research Center (PARC),ALUMNI,For-profit,5/11/15,9/30/18,Resource Efficiency,System of Printed Hybrid Intelligent Nano-Chemical Sensors (SPHINCS),Persist
-MONITOR,Physical Sciences Inc. (PSI),ALUMNI,For-profit,4/16/15,12/31/18,Resource Efficiency,Methane Leak Detection System,Pivot
-MONITOR,Rebellion Photonics,ALUMNI,For-profit,4/16/15,8/15/18,Resource Efficiency,Portable Methane Detection System,Pivot
-MONITOR,LI-COR Biosciences,CANCELLED,For-profit,5/15/15,8/12/17,Resource Efficiency,Optical Sensors for Methane Detection,Perish
-MOSAIC,California Institute of Technology (Caltech),ACTIVE,,2/11/16,2/10/19,Distributed Generation,Micro-Optical Tandem Luminescent Solar Concentrator,
-MOSAIC,George Washington University (GWU),ACTIVE,,12/15/17,12/14/19,Distributed Generation,Micro-Scale Ultra-High Efficiency CPV/Diffuse Hybrid Arrays Using Transfer Printing,
-MOSAIC,Glint Photonics,ACTIVE,,1/1/16,6/30/19,Distributed Generation,Stationary Wide-Angle Concentrator PV System,
-MOSAIC,Massachusetts Institute of Technology (MIT),ACTIVE,,12/15/15,4/30/19,Distributed Generation,Integrated Micro-Optical Concentrator Photovoltaics,
-MOSAIC,Massachusetts Institute of Technology (MIT),ACTIVE,,1/1/16,4/4/19,Distributed Generation,Wafer-Level Integrated Concentrating Photovoltaics,
-MOSAIC,Palo Alto Research Center (PARC),ACTIVE,For-profit,12/29/15,3/31/19,Distributed Generation,Micro-Chiplet Printer for MOSAIC,
-MOSAIC,Panasonic Boston Laboratory,ACTIVE,,1/15/16,4/14/19,Distributed Generation,Low Profile CPV Panel with Sun Tracking for Rooftop Installation,
-MOSAIC,Pennsylvania State University (Penn State),ACTIVE,,2/10/16,8/9/19,Distributed Generation,Wide-Angle Planar Microtracking Microcell Concentrating Photovoltaics,
-MOSAIC,University of Arizona,ACTIVE,,4/1/17,9/30/19,Distributed Generation,A High Efficiency Flat Plate PV with Integrated Micro-CPV Atop a 1-Sun Panel,
-MOSAIC,University of Rochester,ACTIVE,,1/1/16,9/30/19,Distributed Generation,Planar Light Guide Concentrated Photovoltaics,
-MOSAIC,Texas Engineering Experiment Station (TEES),ALUMNI,Non-profit,2/1/16,12/31/18,Distributed Generation,Waveguiding Solar Concentrator,Pivot
-MOVE,Blackpak,ALUMNI,For-profit,10/1/12,9/30/16,Transportation Fuels,Sorbent-Based Natural Gas Tank,Perish
-MOVE,Eaton Corporation,ALUMNI,For-profit,1/1/13,12/31/15,Transportation Fuels,Liquid-Piston Isothermal Home Natural Gas Compressor,Perish
-MOVE,Gas Technology Institute (GTI),ALUMNI,Non-profit,1/1/13,12/31/14,Transportation Fuels,Adsorbent Materials for Natural Gas Storage,Pivot
-MOVE,Gas Technology Institute (GTI),ALUMNI,Non-profit,10/1/12,3/31/14,Transportation Fuels,Low-Pressure Conformable Natural Gas Vehicle Tank,Pivot
-MOVE,OnBoard Dynamics,ALUMNI,For-profit,10/1/12,1/14/18,Transportation Fuels,On-Vehicle Engine-Compressor System,Pivot
-MOVE,Otherlab,ALUMNI,For-profit,9/3/12,3/31/16,Transportation Fuels,Intestinal Natural Gas Storage,Pivot
-MOVE,Pacific Northwest National Laboratory (PNNL),ALUMNI,Non-profit,10/1/12,9/30/14,Transportation Fuels,Ultra-Light Conformable Natural Gas Tank,Perish
-MOVE,REL,ALUMNI,For-profit,9/1/12,9/30/16,Transportation Fuels,Conformable Core Gas Tank,Persist
-MOVE,Texas A&M University,ALUMNI,Non-profit,9/17/12,12/31/14,Transportation Fuels,Highly Adsorbent Materials for Natural Gas Storage,Pivot
-MOVE,United Technologies Research Center (UTRC),ALUMNI,For-profit,10/1/12,3/31/16,Transportation Fuels,Modular Natural Gas Tank,Persist
-MOVE,University of Texas at Austin (UT Austin),ALUMNI,Non-profit,10/1/12,12/31/15,Transportation Fuels,Single-Piston Natural Gas Compressor,Perish
-MOVE,Ford Motor Company,CANCELLED,For-profit,9/17/12,3/31/15,Transportation Fuels,Low Pressure Material-Based Natural Gas Fuel System,Perish
-MOVE,GE Global Research,CANCELLED,For-profit,1/1/13,4/20/14,Transportation Fuels,Chilled Natural Gas for At-Home Refueling,Perish
-PETRO,Arcadia Biosciences,ALUMNI,For-profit,1/1/12,9/30/15,Transportation Fuels,Vegetable Oil from Leaves and Stems,Perish
-PETRO,Donald Danforth Plant Science Center,ALUMNI,Non-profit,1/1/12,12/31/16,Transportation Fuels,Improved Light Utilization in Camelina,Pivot
-PETRO,Lawrence Berkeley National Laboratory (LBNL),ALUMNI,Non-profit,1/1/12,3/26/15,Transportation Fuels,Oil from Tobacco Leaves,Pivot
-PETRO,North Carolina State University (NC State),ALUMNI,Non-profit,1/1/12,3/31/17,Transportation Fuels,Jet Fuel from Camelina,Pivot
-PETRO,Texas A&M Agrilife Research,ALUMNI,Non-profit,2/15/12,3/6/17,Transportation Fuels,Fuel from Tobacco and Arundo Donax,Pivot
-PETRO,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,1/1/12,9/30/15,Transportation Fuels,Efficient CO2 Fixation Pathways,Perish
-PETRO,University of Florida,ALUMNI,Non-profit,1/1/12,9/9/17,Transportation Fuels,Tappable Pine Trees,Pivot
-PETRO,"University of Illinois, Urbana-Champaign (UIUC)",ALUMNI,Non-profit,2/15/12,3/31/17,Transportation Fuels,Genetically Enhanced Sorghum and Sugarcane,Pivot
-PETRO,University of Massachusetts at Amherst (UMass Amherst),ALUMNI,Non-profit,1/1/12,12/31/15,Transportation Fuels,Enhanced Carbon Concentration in Camelina,Pivot
-PETRO,Chromatin,CANCELLED,For-profit,1/1/12,12/31/15,Transportation Fuels,Biofuels from Sorghum,Perish
-RANGE,University of Maryland (UMD),ACTIVE,Non-profit,1/16/17,1/15/20,Transportation Storage,Solid-State Lithium-Ion Battery With Ceramic Electrolyte,
-RANGE,University of Maryland (UMD),ACTIVE,Non-profit,3/18/14,1/31/20,Transportation Storage,Multiple-Electron Aqueous Battery,
-RANGE,Arizona State University (ASU),ALUMNI,Non-profit,11/25/13,12/31/15,Transportation Storage,Multifunctional Cells for Electric Vehicles,Perish
-RANGE,Bettergy,ALUMNI,For-profit,12/1/13,9/30/15,Transportation Storage,Beyond Lithium-Ion Solid-State Battery,Pivot
-RANGE,Cadenza Innovation,ALUMNI,For-profit,2/10/14,12/1/17,Transportation Storage,Low-Cost Electric Vehicle Battery Architecture,Persist
-RANGE,Ceramatec,ALUMNI,For-profit,1/1/14,1/14/17,Transportation Storage,Advanced Lithium-Sulfur Batteries,Perish
-RANGE,EnZinc,ALUMNI,For-profit,2/19/14,3/27/15,Transportation Storage,"Rechargeable, Long-Life, Zinc-Air Battery",Persist
-RANGE,General Electric (GE) Power & Water,ALUMNI,For-profit,3/28/14,4/2/15,Transportation Storage,Water-Based Flow Battery for EVs,Perish
-RANGE,Jet Propulsion Laboratory (JPL),ALUMNI,Non-profit,4/30/14,5/18/16,Transportation Storage,Metal Hydride-Air Battery,Perish
-RANGE,National Renewable Energy Laboratory (NREL),ALUMNI,Non-profit,1/6/14,2/18/15,Transportation Storage,Renewable Organics for Flow Battery,Perish
-RANGE,Oak Ridge National Laboratory (ORNL),ALUMNI,Non-profit,6/1/14,12/31/15,Transportation Storage,Light-weight Battery with Built-in Safety Features,Pivot
-RANGE,Oak Ridge National Laboratory (ORNL),ALUMNI,Non-profit,11/1/13,10/31/15,Transportation Storage,Impact-Resistant Electrolyte,Pivot
-RANGE,Pennsylvania State University (Penn State),ALUMNI,Non-profit,11/1/13,12/31/15,Transportation Storage,Structural Battery Power Panels,Pivot
-RANGE,Princeton University,ALUMNI,Non-profit,12/11/13,3/31/15,Transportation Storage,Long-Life Rechargeable Alkaline Batteries for EVs,Perish
-RANGE,Purdue University,ALUMNI,Non-profit,12/2/13,12/31/15,Transportation Storage,Impact-Tolerant Electric Vehicle Batteries,Perish
-RANGE,Solid Power,ALUMNI,For-profit,1/1/14,6/30/17,Transportation Storage,All Solid-State Lithium-Ion Battery,Pivot
-RANGE,Stanford University,ALUMNI,Non-profit,2/11/14,9/30/17,Transportation Storage,Multifunctional Battery Chassis Systems,Pivot
-RANGE,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,9/29/16,9/28/17,Transportation Storage,"Long-Life, Acid-Based Battery",Perish
-RANGE,"University of California, San Diego (UC San Diego)",ALUMNI,Non-profit,2/19/14,4/28/17,Transportation Storage,Multifunctional Battery Systems for Electric Vehicles,Pivot
-RANGE,University of Houston,ALUMNI,Non-profit,11/13/13,8/12/15,Transportation Storage,Low-Cost Water-Based Electric Vehicle Batteries,Pivot
-RANGE,BASF,CANCELLED,For-profit,2/18/14,6/30/15,Transportation Storage,Rare-Earth Free EV Batteries,Perish
-RANGE,Illinois Institute of Technology (IIT),CANCELLED,Non-profit,1/1/14,12/31/15,Transportation Storage,Nanoelectrofuel Flow Battery for Electric Vehicles,Perish
-REACT,Ames National Laboratory,ALUMNI,Non-profit,1/1/12,5/31/15,Resource Efficiency,Cerium-Based Magnets,Perish
-REACT,Argonne National Laboratory (ANL),ALUMNI,Non-profit,1/1/12,9/30/15,Resource Efficiency,Exchange-Spring Magnets,Perish
-REACT,Baldor Electric Company,ALUMNI,For-profit,1/31/12,2/15/15,Resource Efficiency,Rare-Earth-Free Traction Motor,Perish
-REACT,Brookhaven National Laboratory,ALUMNI,Non-profit,1/1/12,3/31/16,Resource Efficiency,Improved Superconducting Wire for Wind Generators,Persist
-REACT,Case Western Reserve University,ALUMNI,Non-profit,1/1/12,6/30/15,Resource Efficiency,Iron-Nitride Alloy Magnets,Perish
-REACT,Dartmouth College,ALUMNI,Non-profit,1/1/12,3/30/13,Resource Efficiency,Manganese-Aluminum-Based Magnets,Persist
-REACT,Northeastern University,ALUMNI,Non-profit,2/24/12,12/31/13,Resource Efficiency,Iron-Nickel-Based Supermagnets,Pivot
-REACT,Pacific Northwest National Laboratory (PNNL),ALUMNI,Non-profit,1/1/12,9/30/15,Resource Efficiency,Manganese-Based Magnets,Pivot
-REACT,QM Power,ALUMNI,For-profit,1/1/12,2/28/15,Resource Efficiency,"Efficient, High-Torque Electric Vehicle Motor",Pivot
-REACT,University of Alabama,ALUMNI,Non-profit,2/8/12,9/30/13,Resource Efficiency,Rare-Earth-Free Nanostructure Magnets,Pivot
-REACT,University of Houston,ALUMNI,Non-profit,1/1/12,6/30/15,Resource Efficiency,Low-Cost Superconducting Wire for Wind Generators,Persist
-REACT,University of Minnesota (UMN),ALUMNI,Non-profit,1/1/12,9/30/15,Resource Efficiency,Iron-Nitride-Based Magnets,Pivot
-REACT,University of Texas at Dallas (UT Dallas),ALUMNI,Non-profit,6/7/12,2/15/15,Resource Efficiency,Double-Stator Motor Design,Pivot
-REACT,Virginia Commonwealth University (VCU),ALUMNI,Non-profit,1/1/12,12/31/13,Resource Efficiency,Carbon-Based Magnets,Perish
-REBELS,Colorado School of Mines,ACTIVE,Non-profit,10/1/14,9/21/20,Distributed Generation,Fuel-Flexible Protonic Ceramic Fuel Cell Stack,
-REBELS,Argonne National Laboratory,ALUMNI,Non-profit,10/1/14,3/31/17,Distributed Generation,Electricity and Liquid Fuels from Natural Gas,Perish
-REBELS,Georgia Tech Research Corporation,ALUMNI,Non-profit,10/1/14,9/30/18,Distributed Generation,Fuel Cell Tailored for Efficient Utilization of Methane,Persist
-REBELS,Oak Ridge National Laboratory (ORNL),ALUMNI,Non-profit,10/1/14,10/7/17,Distributed Generation,Nanocomposite Electrodes for a Solid Acid Fuel Cell Stack,Pivot
-REBELS,Redox Power Systems,ALUMNI,For-profit,10/1/14,3/31/18,Distributed Generation,Low-Temperature Solid Oxide Fuel Cells,Perish
-REBELS,SAFCell,ALUMNI,For-profit,10/1/14,6/30/18,Distributed Generation,Solid Acid Fuel Cell Stack,Pivot
-REBELS,United Technologies Research Center (UTRC),ALUMNI,For-profit,10/1/14,3/19/18,Distributed Generation,Intermediate Temperature Solid Oxide Fuel Cell Stack,Pivot
-REBELS,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,11/1/14,4/30/17,Distributed Generation,Fuel Cells with Dynamic Response Capability,Perish
-REBELS,University of South Carolina,ALUMNI,Non-profit,10/1/14,9/30/17,Distributed Generation,Bi-functional Ceramic Fuel Cell Energy System,Pivot
-REBELS,FuelCell Energy,CANCELLED,For-profit,10/1/14,9/30/17,Distributed Generation,Liquid Fuels and Electricity from Intermediate-Temperature Fuel Cells,Pivot
-REBELS,"Materials & Systems Research, Inc. (MSRI)",CANCELLED,For-profit,11/1/14,12/31/16,Distributed Generation,Electrogenerative Cells for Flexible Cogeneration of Power and Liquid Fuel,Perish
-REBELS,Palo Alto Research Center (PARC),CANCELLED,For-profit,10/1/14,3/15/16,Distributed Generation,Reformer-less Fuel Cell,Perish
-REBELS,SiEnergy Systems,CANCELLED,For-Profit,9/17/14,11/20/15,Distributed Generation,Hybrid Fuel Cell-Battery System,Perish
-REFUEL,Bettergy,ACTIVE,,6/9/17,6/8/20,Transportation Fuels,Ammonia Cracking Membrane Reactor,
-REFUEL,Chemtronergy,ACTIVE,,11/15/17,5/14/19,Transportation Fuels,Solid Oxide Fuel Cell System,
-REFUEL,FuelCell Energy,ACTIVE,,5/22/17,5/21/20,Transportation Fuels,Protonic Ceramics for Ammoni,
-REFUEL,Gas Technology Institute (GTI),ACTIVE,Non-profit,6/1/17,5/31/20,Transportation Fuels,Dimethyl Ether Synthesis from Renewables,
-REFUEL,Giner,ACTIVE,,6/1/17,5/31/19,Transportation Fuels,Anion Exchange Membrane Ammonia Production,
-REFUEL,Molecule Works,ACTIVE,,6/6/17,9/5/20,Transportation Fuels,Electrochemical Membrane Reactor for Ammoni,
-REFUEL,Rensselaer Polytechnic Institute (RPI),ACTIVE,,11/30/17,3/31/19,Transportation Fuels,H2 From Thermal Catalytic Ammonia Decomposition,
-REFUEL,Research Triangle Institute (RTI),ACTIVE,,4/10/17,4/9/20,Transportation Fuels,Renewables-Based Catalytic Ammonia Production,
-REFUEL,SAFCell,ACTIVE,,5/22/17,5/21/20,Transportation Fuels,Electrochemical Ammonia Conversion,
-REFUEL,Storagenergy Technologies,ACTIVE,,6/5/17,12/4/20,Transportation Fuels,Solid-State Alkaline Electrolyzer Ammonia Synthesis,
-REFUEL,University of Delaware (UD),ACTIVE,Non-profit,4/1/17,3/31/20,Transportation Fuels,Direct Ammonia Fuel Cells,
-REFUEL,University of Minnesota (UMN),ACTIVE,Non-profit,7/10/17,7/9/19,Transportation Fuels,Wind Energy to Ammonia Synthesis,
-REFUEL,West Virginia University Research Corporation (WVURC),ACTIVE,Non-profit,4/1/17,3/31/19,Transportation Fuels,Microwave-Plasma Ammonia Synthesis,
-REFUEL,Wichita State University,ACTIVE,Non-profit,6/19/17,6/18/19,Transportation Fuels,Alkaline Membrane-Based Ammonia Electrosynthesis,
-REFUEL,Skyre,ALUMNI,,6/9/17,9/30/18,Transportation Fuels,Carbon Dioxide to Dimethyl Ether,Pivot
-REFUEL,Opus 12,EXCLUDE,,6/16/17,10/31/18,Transportation Fuels,Carbon Dioxide Conversion to Ethanol,
-REMOTE,LanzaTech,ACTIVE,For-profit,1/29/14,8/31/19,Transportation Fuels,Bioreactor with Improved Methane Transfer,
-REMOTE,"University of California, Los Angeles (UCLA)",ACTIVE,Non-profit,3/20/15,12/31/19,Manufacturing Efficiency,Renewable Production of Commodity Chemicals,
-REMOTE,University of Delaware (UD),ACTIVE,Non-profit,1/13/14,12/31/19,Transportation Fuels,Methanol to Liquid Fuel,
-REMOTE,ARZEDA,ALUMNI,For-profit,1/1/14,9/30/15,Transportation Fuels,Metalloenzymes for Methane Activation,Perish
-REMOTE,Calysta Energy,ALUMNI,For-profit,1/6/14,1/5/15,Transportation Fuels,Bioreactor Designs for Rapid Fermentation,Perish
-REMOTE,GreenLight Biosciences,ALUMNI,For-profit,2/3/14,3/6/17,Transportation Fuels,Cell-Free Bioconversion of Natural Gas,Perish
-REMOTE,Lawrence Berkeley National Laboratory (LBNL),ALUMNI,Non-profit,1/1/14,12/31/16,Transportation Fuels,Enzymes for Methane Conversion,Perish
-REMOTE,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,2/3/14,6/30/17,Transportation Fuels,Single-Step Methane to Liquid Fuels,Pivot
-REMOTE,MOgene Green Chemicals,ALUMNI,For-profit,1/1/14,6/30/17,Transportation Fuels,Sunlight-Assisted Methane Conversion,Perish
-REMOTE,Northwestern University,ALUMNI,Non-profit,2/12/14,11/15/15,Transportation Fuels,New Synthetic Catalysts for Methane Activation,Pivot
-REMOTE,Oregon State University (OSU),ALUMNI,Non-profit,1/1/14,8/31/17,Transportation Fuels,Bioreactor Using Ultra-Thin Plates,Perish
-REMOTE,Pennsylvania State University (Penn State),ALUMNI,Non-profit,1/1/14,6/30/17,Transportation Fuels,Methane-to-Acetate,Pivot
-REMOTE,"University of California, Davis (UC Davis)",ALUMNI,Non-profit,1/7/14,9/30/17,Transportation Fuels,Ethylene-to-Butanol,Pivot
-REMOTE,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,1/1/14,6/30/17,Transportation Fuels,Synthetic Pathway for Methanol Conversion,Perish
-REMOTE,University of Michigan,ALUMNI,Non-profit,1/23/14,3/6/17,Transportation Fuels,Methane-to-Methanol,Pivot
-REMOTE,Coskata,CANCELLED,For-profit,1/15/14,6/13/14,Transportation Fuels,Methanol Fermentation in Clostridium Bacteri,Perish
-SHIELD,Arizona State University (ASU),ACTIVE,Non-profit,12/13/16,12/12/19,Building Efficiency,Insulating Particulate Coatings,
-SHIELD,Aspen Aerogels,ACTIVE,,11/18/16,11/17/19,Building Efficiency,Aerogel Insulated Pane,
-SHIELD,IR Dynamics,ACTIVE,,1/10/17,4/9/19,Building Efficiency,Dynamic IR Window Film,
-SHIELD,NanoSD,ACTIVE,,10/1/16,9/30/20,Building Efficiency,Nanobubble Thermal Barrier,
-SHIELD,Palo Alto Research Center (PARC),ACTIVE,For-profit,12/8/16,12/7/19,Building Efficiency,Window Thermal Barrier,
-SHIELD,"University of California, Los Angeles (UCLA)",ACTIVE,Non-profit,1/4/17,7/3/19,Building Efficiency,Thinner Coatings,
-SHIELD,"University of California, San Diego (UC San Diego)",ACTIVE,Non-profit,11/3/16,11/2/19,Building Efficiency,Polymer-Based Window Coating,
-SHIELD,"University of Colorado, Boulder (CU-Boulder)",ACTIVE,Non-profit,11/14/16,2/13/19,Building Efficiency,Cellulose Nanocrystal Film,
-SHIELD,Virginia Commonwealth University (VCU),ACTIVE,Non-profit,2/1/17,7/31/19,Building Efficiency,Crosslink Aerogels,
-SHIELD,SRI International,ACTIVE,Non-profit,12/5/16,12/4/19,Building Efficiency,Engineered Polymer Film,
-SHIELD,Triton Systems,ALUMNI,For-profit,2/6/17,3/13/18,Building Efficiency,Multifunctional Glazing System,Perish
-SHIELD,Argonne National Laboratory (ANL),EXCLUDE,Non-profit,1/12/17,1/11/20,Building Efficiency,Transparent Nanofoam Polymer,
-SHIELD,Eclipse Energy Systems,EXCLUDE,,1/23/17,1/22/19,Building Efficiency,Eclipse Shield,
-SHIELD,Oak Ridge National Laboratory (ORNL),EXCLUDE,Non-profit,2/6/17,6/19/17,Building Efficiency,Multilayer Insulating Film,
-Solar ADEPT,Carnegie Mellon University (CMU),ALUMNI,Non-profit,2/27/12,3/28/15,Distributed Generation,Magnet Technology for Power Converters,Pivot
-Solar ADEPT,Cree,ALUMNI,For-profit,1/25/12,7/31/17,Distributed Generation,Utility-Scale Solar Power Converter,Pivot
-Solar ADEPT,Ideal Power,ALUMNI,For-profit,1/30/12,5/29/15,Distributed Generation,Lightweight PV Inverters,Pivot
-Solar ADEPT,SolarBridge Technologies,ALUMNI,For-profit,2/23/12,6/22/15,Distributed Generation,Efficient Power Converters for PV Arrays,Pivot
-Solar ADEPT,Transphorm,ALUMNI,For-profit,2/13/12,3/31/15,Distributed Generation,Efficient Switches for Solar Power Conversion,Pivot
-Solar ADEPT,"University of Colorado, Boulder (CU-Boulder)",ALUMNI,Non-profit,2/9/12,8/31/15,Distributed Generation,Integrated Solar Power Converters,Pivot
-Solar ADEPT,Rutgers University SiCLAB,CANCELLED,Non-profit,12/23/11,1/20/13,Distributed Generation,New Switches for Utility Scale Inverters,Perish
-SWITCHES,Arizona State University (ASU),ACTIVE,Non-profit,2/20/14,2/15/19,Electrical Efficiency,Diamond Power Transistors,
-SWITCHES,Columbia University,ACTIVE,Non-profit,4/1/14,7/31/19,Electrical Efficiency,Spalling GaN Transistors,
-SWITCHES,Beam Materials,ACTIVE,For-profit,3/10/14,3/31/19,Electrical Efficiency,GaN LEDs on Flexible Metal Foils,
-SWITCHES,SixPoint Materials,ACTIVE,For-profit,3/10/14,3/28/19,Electrical Efficiency,Vertical GaN Substrates,
-SWITCHES,"University of California, Santa Barbara (UCSB)",ACTIVE,Non-profit,3/10/14,6/21/19,Electrical Efficiency,Vertical GaN Devices,
-SWITCHES,Cornell University,ALUMNI,Non-profit,8/1/15,10/16/17,Electrical Efficiency,GaN Power Transistor,Pivot
-SWITCHES,Fairfield Crystal Technology,ALUMNI,For-profit,3/5/14,6/22/15,Electrical Efficiency,GaN Crystal Substrates,Perish
-SWITCHES,HRL Laboratories,ALUMNI,For-profit,3/7/14,4/15/18,Electrical Efficiency,Vertical GaN Transistor,Persist
-SWITCHES,Michigan State University (MSU),ALUMNI,Non-profit,2/19/14,9/30/17,Electrical Efficiency,Diamond Semiconductor Devices,Pivot
-SWITCHES,MicroLink Devices,ALUMNI,For-profit,3/10/14,12/9/17,Electrical Efficiency,High-Power Transistor Fabrication,Perish
-SWITCHES,Monolith Semiconductor,ALUMNI,For-profit,1/1/14,9/30/17,Electrical Efficiency,Advanced Manufacturing for SiC MOSFETS,Pivot
-SWITCHES,Soraa,ALUMNI,For-profit,2/17/14,5/17/15,Electrical Efficiency,Low-Cost GaN Substrates,Persist
-SWITCHES,Avogy,CANCELLED,For-profit,1/1/14,12/12/16,Electrical Efficiency,Vertical GaN Transistors,Perish
-SWITCHES,Kyma Technologies,CANCELLED,For-profit,3/10/14,3/9/18,Electrical Efficiency,GaN Substrate Technology,Pivot
-TERRA,Clemson University,ACTIVE,Non-profit,9/30/15,5/28/19,Transportation Fuels,Breeding High Yielding Bioenergy Sorghum,
-TERRA,Donald Danforth Plant Science Center,ACTIVE,,9/15/15,9/14/19,Transportation Fuels,A Reference Phenotyping System for Energy Sorghum,
-TERRA,Pacific Northwest National Laboratory (PNNL),ACTIVE,Non-profit,9/15/15,9/14/19,Transportation Fuels,The Consortium for Advanced Sorghum Phenomics (CASP),
-TERRA,Purdue University,ACTIVE,Non-profit,8/24/15,5/23/19,Transportation Fuels,Automated Sorghum Phenotyping and Trait Development Platform,
-TERRA,"University of Illinois, Urbana-Champaign (UIUC)",ACTIVE,Non-profit,10/1/15,12/31/19,Transportation Fuels,TERRA MEPP (Mobile Energy-crop Phenotyping Platform),
-TERRA,Texas A&M University,ALUMNI,Non-profit,10/1/15,10/31/18,Transportation Fuels,Automated TERRA Phenotyping System,Pivot
-TRANSNET,Georgia Tech Research Corporation,ALUMNI,Non-profit,1/6/16,8/15/18,Transportation Network,Network Performance Monitoring and Distributed Simulation,Perish
-TRANSNET,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,12/11/15,9/10/18,Transportation Network,"Sustainable Travel Incentives with Prediction, Optimization and Personalization (TRIPOD)",Persist
-TRANSNET,National Renewable Energy Laboratory (NREL),ALUMNI,Non-profit,1/20/16,12/31/18,Transportation Network,The Connected Traveler: A Framework to Reduce Energy Use in Transportation,Persist
-TRANSNET,Palo Alto Research Center (PARC),ALUMNI,For-profit,12/28/15,7/27/18,Transportation Network,Collaborative Optimization and Planning for Transportation Energy Reduction (COPTER),Persist
-TRANSNET,University of Maryland (UMD),ALUMNI,Non-profit,11/23/15,8/30/18,Transportation Network,Traveler Information and Incentive Technology,Persist
+Program,Companies,Status,Recipient Type,Start Date,End Date,Tech Category,Tagline,Outcome,Comments
+OPEN 2009,1366 Technologies,ALUMNI,For-profit,3/1/10,6/30/12,Distributed Generation,Cost-Effective Silicon Wafers for Solar Cells,Pivot,
+OPEN 2009,Agrivida,ALUMNI,For-profit,1/15/10,3/31/15,Transportation Fuels,Engineering Enzymes in Energy Crops,Pivot,
+OPEN 2009,Algaeventure Systems (AVS),ALUMNI,For-profit,1/15/10,1/31/12,Transportation Fuels,Fuel from Algae,Perish,Energy to pharmaceuticals
+OPEN 2009,Arizona State University (ASU),ALUMNI,Non-profit,12/21/09,6/30/12,Transportation Storage,Metal-Air Electric Vehicle Battery,Pivot,"Not EV batteries, mostly off-grid"
+OPEN 2009,Arizona State University (ASU),ALUMNI,Non-profit,1/1/10,6/30/13,Transportation Fuels,Turning Bacteria into Fuel,Pivot,"Some of the project people still doing stuff with the same bacteria, but focusing on growth, no recent publications/other grants on extraction or harvesting this specific type of lauric acid"
+OPEN 2009,Bio Architecture Lab,ALUMNI,For-profit,4/30/12,6/30/13,Transportation Fuels,Macroalgae Butanol,Perish,
+OPEN 2009,Ceres,ALUMNI,For-profit,1/1/10,12/31/13,Transportation Fuels,Improving Biomass Yields,Perish,Acquired by land o lakes
+OPEN 2009,Delphi Automotive Systems,ALUMNI,For-profit,2/1/10,12/31/13,Electrical Efficiency,More Efficient Power Conversion for EVs,Persist,
+OPEN 2009,Envia Systems,ALUMNI,For-profit,1/1/10,12/31/11,Transportation Storage,Long-Range Electric Vehicle Batteries,Perish,
+OPEN 2009,Exelus,ALUMNI,For-profit,12/1/09,5/31/12,Transportation Fuels,High-Octane Fuel from Refinery Exhaust Gas,Persist,They licensed the technology to KBR
+OPEN 2009,FastCAP Systems,ALUMNI,For-profit,4/1/10,12/31/13,Transportation Storage,High Energy Density Ultracapacitors,Pivot,
+OPEN 2009,FloDesign Wind Turbine,ALUMNI,For-profit,2/22/10,3/31/13,Distributed Generation,Mixer-Ejector Wind Turbine,Perish,
+OPEN 2009,Foro Energy,ALUMNI,For-profit,1/15/10,9/30/13,Centralized Generation,Laser-Mechanical Drilling for Geothermal Energy,Persist,
+OPEN 2009,General Electric (GE) Global Research,ALUMNI,For-profit,10/1/10,9/30/13,Transportation Vehicles,Nanocomposite Magnets,Pivot,"hold a patent for making nanocomposities, but nothing about the vehicle strategy"
+OPEN 2009,General Motors (GM),ALUMNI,For-profit,1/1/10,3/31/12,Resource Efficiency,Waste Heat Recovery System,Pivot,"They used waste heat for interior heating, but no mechanical work"
+OPEN 2009,ITN Energy Systems,ALUMNI,For-profit,1/1/10,6/30/13,Building Efficiency,Electrochromic Film for More Efficient Windows,Persist,
+OPEN 2009,Lehigh University,ALUMNI,Non-profit,1/1/10,6/30/12,Resource Efficiency,CO2 Capture Using Electric Fields,Persist,"Kai Landskron still pursuing similar research, but only concentrating co2, not really capturing it, still at 46% in the effluent"
+OPEN 2009,Makani Power,ALUMNI,For-profit,9/1/10,10/16/13,Distributed Generation,Airborne Wind Turbine,Persist,
+OPEN 2009,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,1/15/10,9/30/13,Storage,Electroville: Grid-Scale Batteries,Persist,Ambri
+OPEN 2009,Michigan State University (MSU),ALUMNI,Non-profit,1/14/10,9/30/13,Distributed Generation,Shockwave Engine,Perish,
+OPEN 2009,Phononic Devices,ALUMNI,For-profit,12/11/09,3/30/12,Storage,Improved Thermoelectric Devices,Pivot,
+OPEN 2009,Porifera,ALUMNI,For-profit,3/1/10,3/31/13,Resource Efficiency,Carbon Nanotube Membranes,Perish,Nothing for CO2 removal
+OPEN 2009,Research Triangle Institute (RTI),ALUMNI,Non-profit,1/1/10,9/30/13,Transportation Fuels,Biofuels from Pyrolysis,Persist,they built a test facility
+OPEN 2009,Soraa,ALUMNI,For-profit,6/6/12,1/31/16,Building Efficiency,Ammonothermal Growth of GaN Substrates for LEDs,Persist,
+OPEN 2009,Stanford University,ALUMNI,Non-profit,1/14/10,11/30/16,Resource Efficiency,Behavioral Initiatives for Energy Efficiency,Perish,Funded studies of behaviorial stuff
+OPEN 2009,Sun Catalytix,ALUMNI,For-profit,12/31/09,12/31/12,Resource Efficiency,Energy from Water and Sunlight,Perish,
+OPEN 2009,Teledyne Scientific & Imaging,ALUMNI,For-profit,10/1/10,4/19/13,Distributed Generation,Efficient Solar Concentrators,Perish,Don't seem to be doing anything with solar
+OPEN 2009,The Ohio State University,ALUMNI,Non-profit,4/1/10,9/30/14,Resource Efficiency,Syngas into Fuel,Pivot,"They tested at the NCCC facility, had some early projects with Southern Co presumably to use their coal syngas but syngas production still an issue"
+OPEN 2009,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,2/1/11,9/30/16,Storage,Cost-Effective Solar Thermal Energy Storage,Pivot,Not doing supercritical thermal storage sulfur
+OPEN 2009,University of Delaware (UD),ALUMNI,Non-profit,2/15/10,9/30/13,Transportation Vehicles,High-Energy Composite Permanent Magnets,Perish,"Possible to make the nanoparticles, but assmebly into full magnets is tough"
+OPEN 2009,University of Delaware (UD),ALUMNI,Non-profit,2/15/12,12/31/14,Distributed Generation,Affordable Hydrogen Fuel Cell Vehicles,Pivot,Lots of fuel cell work in different areas
+OPEN 2009,"University of Illinois, Urbana-Champaign (UIUC)",ALUMNI,Non-profit,3/1/10,8/31/12,Resource Efficiency,Silicon-Based Thermoelectrics,Perish,"Listed as past project, partner is a healthcare company"
+OPEN 2009,University of Minnesota (UMN),ALUMNI,Non-profit,1/1/10,8/31/12,Transportation Fuels,Biofuel from Bacteria and Sunlight,Perish,"biofuels not listed as a current project, seems to have pivoted to other applications"
+OPEN 2009,EaglePicher Technologies,CANCELLED,For-profit,2/1/10,3/31/16,Storage,Sodium-Beta Batteries for Grid-Scale Storage,Pivot,
+OPEN 2009,Inorganic Specialists,CANCELLED,For-profit,12/1/09,11/3/11,Transportation Storage,Long-Range Li-Ion Batteries for Electric Vehicles,Perish,
+OPEN 2009,Iowa State University (ISU),CANCELLED,Non-profit,1/15/10,10/14/11,Transportation Fuels,Optimized Breeding of Microalgae for Biofuels,Perish,
+OPEN 2009,Kohana Technologies,CANCELLED,For-profit,3/8/13,10/1/17,Distributed Generation,Dynamically Adjustable Wind Turbine Blades,Persist,
+OPEN 2009,Nalco,CANCELLED,For-profit,1/18/10,10/13/11,Resource Efficiency,Using Enzymes to Capture CO2 in Smokestacks,Perish,Nothing about enzymes/CO2 capture
+OPEN 2009,NanOasis Technologies,CANCELLED,For-profit,1/1/10,10/14/11,Resource Efficiency,Use of Carbon Nanotubes for Efficient Reverse Osmosis,Perish,
+OPEN 2009,Pennsylvania State University (Penn State),CANCELLED,Non-profit,12/14/09,7/9/10,Transportation Fuels,Solar Conversion of CO2 and Water Vapor to Hydrocarbon Fuels,Perish,Fraud
+OPEN 2009,United Technologies Research Center (UTRC),CANCELLED,For-profit,12/15/09,1/9/12,Resource Efficiency,Using Synthetic Enzymes for Carbon Capture,Perish,Nothing on their website
+OPEN 2012,Adaptive Surface Technologies,ACTIVE,For-profit,4/26/13,9/7/19,Transportation Fuels,Slippery Coatings to Promote Energy Conversion,,
+OPEN 2012,Case Western Reserve University,ACTIVE,Non-profit,1/9/13,2/11/19,Storage,All-Iron Flow Battery,,
+OPEN 2012,Alveo Energy,ALUMNI,For-profit,2/21/13,3/31/16,Storage,Prussian Blue Dye Batteries,Persist,rebrand
+OPEN 2012,Applied Materials,ALUMNI,For-profit,6/1/13,9/30/16,Centralized Generation,Low-Cost Silicon Wafers for Solar Modules,Persist,
+OPEN 2012,Arizona State University (ASU),ALUMNI,Non-profit,3/12/13,2/28/17,Resource Efficiency,Electrochemical Carbon Capture,Pivot,"not terribly out of date research, but has tried several different chemistries over time"
+OPEN 2012,Bio2Electric,ALUMNI,For-profit,2/1/13,12/31/18,Transportation Fuels,Electrogenerative Gas-to-Liquid Reactor,Persist,"brought in outside parnters, licensed tech"
+OPEN 2012,Brown University,ALUMNI,Non-profit,3/20/13,5/31/17,Distributed Generation,Customized Tidal Power Conversion Devices,Perish,"They didn't seem to hit their cost target, no ongoing work"
+OPEN 2012,California Institute of Technology (Caltech),ALUMNI,Non-profit,3/28/13,9/27/16,Distributed Generation,Improving Solar Generation Efficiency with Solar Modules,Pivot,"$1/W, 50% efficiency"
+OPEN 2012,Ceramatec,ALUMNI,For-profit,2/1/13,3/31/17,Transportation Storage,Mid-Temperature Fuel Cells for Vehicles,Pivot,Subsidiary of coorstek
+OPEN 2012,Ceramatec,ALUMNI,For-profit,2/1/13,2/15/15,Resource Efficiency,"A One-Step, Gas-to-Liquid Chemical Converter",Perish,
+OPEN 2012,Colorado State University (CSU),ALUMNI,Non-profit,4/4/13,10/3/15,Transportation Fuels,More Options for Bioenergy Crops,Pivot,"Pretty limited work on biofuels, focused on crops broadly"
+OPEN 2012,Cornell University,ALUMNI,Non-profit,2/1/13,5/1/14,Transportation Fuels,Efficient Photobioreactor for Algae-Based Fuel,Perish,a few publications (last in 2015) no students/post docs working on it
+OPEN 2012,Dioxide Materials,ALUMNI,For-profit,2/1/13,3/6/17,Resource Efficiency,Converting CO2 into Fuel and Chemicals,Pivot,Focusing on smaller markets first
+OPEN 2012,Electron Energy Corporation (EEC),ALUMNI,For-profit,4/15/13,2/14/17,Transportation Vehicles,New Processing Technology for Permanent Magnets,Pivot,Seems like the main guy left?
+OPEN 2012,eNova,ALUMNI,For-profit,5/1/13,2/17/14,Resource Efficiency,Waste Heat-Powered Gas Compressor,Perish,
+OPEN 2012,Evolva,ALUMNI,For-profit,4/11/13,9/30/16,Transportation Fuels,High Performance Aviation Fuels from Terpenes,Pivot,
+OPEN 2012,Gas Technology Institute (GTI),ALUMNI,Non-profit,1/1/13,9/30/15,Transportation Fuels,Efficient Natural Gas-to-Methanol Conversion,Pivot,"other, similar projects funded more recently through NETL"
+OPEN 2012,General Electric (GE) Global Research,ALUMNI,For-profit,4/30/13,7/31/17,Grid,High-Power Gas Tube Switches,Persist,
+OPEN 2012,Georgia Tech Research Corporation,ALUMNI,Non-profit,4/17/13,10/17/16,Distributed Generation,High-Efficiency Solar Fuel Reactor,Perish,"No one's licensed it, research is for CSP, not solar fuels"
+OPEN 2012,Georgia Tech Research Corporation,ALUMNI,Non-profit,3/20/13,3/19/16,Transportation Storage,Graphene-Based Supercapacitors,Perish,
+OPEN 2012,Georgia Tech Research Corporation,ALUMNI,Non-profit,5/3/13,9/30/16,Distributed Generation,Power Generation Using Solar-Heated Ground Air,Perish,
+OPEN 2012,Glint Photonics,ALUMNI,For-profit,4/1/13,3/31/17,Distributed Generation,Self-Tracking Concentrator Photovoltaics,Perish,They make interior lighting now?
+OPEN 2012,Grid Logic,ALUMNI,For-profit,3/5/13,6/4/16,Electrical Efficiency,High-Power Superconductors,Perish,Doesn't seem like they're doing antying with this
+OPEN 2012,Harvard University,ALUMNI,Non-profit,2/1/13,3/25/17,Storage,Organic Flow Battery for Energy Storage,Pivot,
+OPEN 2012,HexaTech,ALUMNI,For-profit,2/5/13,5/31/16,Grid,Semiconductors that Improve Electricity Flow,Persist,they seem like a thing you can buy
+OPEN 2012,Integral Consulting,ALUMNI,For-profit,4/5/13,8/31/17,Distributed Generation,Measuring Real-Time Wave Data with Ocean Wave Buoy,Persist,
+OPEN 2012,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,6/1/13,12/31/14,Resource Efficiency,"Scalable, Low-Power Water Treatment System",Perish,Working on seawater desalination
+OPEN 2012,National Renewable Energy Laboratory (NREL),ALUMNI,Non-profit,2/1/13,12/30/18,Distributed Generation,Solar Thermoelectric Generator,Pivot,Different materials
+OPEN 2012,National Renewable Energy Laboratory (NREL),ALUMNI,Non-profit,2/1/13,4/30/14,Electrical Efficiency,Efficient Plastic Solar Cells,Pivot,
+OPEN 2012,Otherlab,ALUMNI,For-profit,2/19/13,9/30/17,Distributed Generation,Small Mirrors for Solar Power Tower Plants,Pivot,
+OPEN 2012,Pacific Northwest National Laboratory (PNNL),ALUMNI,Non-profit,4/12/13,7/17/16,Grid,Real-Time Transmission Optimization,Persist,This is a think you can use
+OPEN 2012,Palo Alto Research Center (PARC),ALUMNI,For-profit,3/1/13,6/11/14,Transportation Storage,Innovative Manufacturing Process for Li-Ion Batteries,Persist,
+OPEN 2012,Plant Sensory Systems (PSS),ALUMNI,For-profit,3/15/13,6/14/17,Transportation Fuels,Better Biofuel Feedstock from Beets,Persist,
+OPEN 2012,PolyPlus Battery Company,ALUMNI,For-profit,2/6/13,3/31/16,Storage,"Low-Cost, High-Performance Lithium-Sulfur Batteries",Pivot,Not doing lithium-sulfur
+OPEN 2012,Pratt & Whitney Rocketdyne (PWR),ALUMNI,For-profit,6/14/13,3/15/15,Distributed Generation,Continuous Detonation Engine Combustors,Pivot,test only lasted 7s
+OPEN 2012,Pratt & Whitney Rocketdyne (PWR),ALUMNI,For-profit,5/1/13,3/15/16,Transportation Fuels,Efficient Conversion of Natural Gas,Pivot,
+OPEN 2012,RamGoss,ALUMNI,For-profit,2/11/13,8/10/14,Grid,High-Performance Transistors,Perish,
+OPEN 2012,Rensselaer Polytechnic Institute (RPI),ALUMNI,Non-profit,3/7/13,3/6/16,Grid,High-Power Transistor Switch,Pivot,No pubs directly tied to project
+OPEN 2012,Research Triangle Institute (RTI),ALUMNI,Non-profit,3/15/13,6/30/17,Transportation Fuels,Compact Inexpensive Reformers for Natural Gas,Perish,"No recent pubs, still not economical, no licensee"
+OPEN 2012,Sharp Laboratories of America,ALUMNI,For-profit,3/28/13,3/27/16,Storage,Sodium-Based Energy Storage,Perish,"Nothing specific on website, can't find a patent"
+OPEN 2012,Stanford University,ALUMNI,Non-profit,2/20/13,3/19/18,Building Efficiency,Radiative Coolers for Rooftops and Cars,Pivot,"no real market, just research"
+OPEN 2012,Tai-Yang Research Company (TYRC),ALUMNI,For-profit,2/15/13,3/6/17,Transportation Storage,"High-Power, Low-Cost Superconducting Cable",Perish,Nothing on the website
+OPEN 2012,Teledyne Scientific & Imaging,ALUMNI,For-profit,2/4/13,1/31/14,Storage,High Energy Density Potassium-Based Flow Battery,Perish,Nothing about potassium flow batteries
+OPEN 2012,Texas Engineering Experiment Station (TEES),ALUMNI,Non-profit,4/1/13,9/30/15,Distributed Generation,Electricity from Low-Temperature Waste Heat,Perish,"No publictions, nothing on website"
+OPEN 2012,United Technologies Research Center (UTRC),ALUMNI,For-profit,2/12/13,3/31/16,Manufacturing Efficiency,Additive Manufacturing for Electric Vehicle Motors,Pivot,"Still pretty researchy, no specific product"
+OPEN 2012,"University of California, Berkeley (UC Berkeley)",ALUMNI,Non-profit,4/8/13,11/30/16,Building Efficiency,Rapid Building Energy Modeler - RAPMOD,Persist,
+OPEN 2012,"University of California, Berkeley (UC Berkeley)",ALUMNI,Non-profit,3/1/13,6/30/18,Grid,Measuring Phase Angle Change in Power Lines,Persist,
+OPEN 2012,"University of California, Santa Barbara (UCSB)",ALUMNI,Non-profit,3/15/13,6/30/16,Transportation Storage,Boosted Capacitors,Pivot,"Lots of research, little/no development in transportation sector"
+OPEN 2012,University of Delaware (UD),ALUMNI,Non-profit,1/9/13,3/6/17,Storage,High-Storage Double-Membrane Flow Battery,Pivot,same guy has several projects for different techs
+OPEN 2012,"University of Illinois, Urbana-Champaign (UIUC)",ALUMNI,Non-profit,4/5/13,8/31/16,Grid,Power Grid Security,Persist,seems very researchy
+OPEN 2012,University of Minnesota (UMN),ALUMNI,Non-profit,3/22/13,9/21/16,Resource Efficiency,Ultra-Thin Membranes for Biofuels Production,Pivot,"lots of membrane research, very little on commercialization/applications"
+OPEN 2012,"University of Nevada, Las Vegas (UNLV)",ALUMNI,Non-profit,2/14/13,2/13/16,Transportation Storage,Fire-Resistant Solid Electrolytes,Pivot,
+OPEN 2012,University of North Dakota Energy & Environmental Research Center (UND-EERC),ALUMNI,Non-profit,4/1/13,6/30/14,Resource Efficiency,Water-Efficient Power Generation,Pivot,
+OPEN 2012,University of Pittsburgh,ALUMNI,Non-profit,5/1/13,4/30/16,Resource Efficiency,CO2 Thickeners for Enhanced Oil and Gas Recovery,Persist,Is GE actually selling/using?
+OPEN 2012,University of Southern California (USC),ALUMNI,Non-profit,3/1/13,3/19/18,Storage,"Inexpensive, Metal-free, Organic Flow Battery",Pivot,"Research, but partner still only doing vanadium redox"
+OPEN 2012,University of Tennessee (UT),ALUMNI,Non-profit,2/1/13,7/31/16,Transportation Fuels,High Throughput Bioengineering of Switchgrass,Pivot,Multiple rounds of funding for slightly different projects
+OPEN 2012,University of Texas at Austin (UT Austin),ALUMNI,Non-profit,3/28/13,9/26/16,Building Efficiency,Smart Window Coatings,Pivot,
+OPEN 2012,University of Washington (UW),ALUMNI,Non-profit,2/1/13,6/30/16,Transportation Fuels,Microbe-Based Methane to Diesel Conversion,Pivot,Lanzatech (partner) redesigned digester
+OPEN 2012,Vorbeck Materials,ALUMNI,For-profit,3/6/13,6/5/15,Transportation Vehicles,"High-Performance, Low-Cost Lithium-Sulfur Batteries",Perish,"Nothing in energy, no batteries"
+OPEN 2012,Yale University,ALUMNI,Non-profit,4/24/13,12/31/15,Resource Efficiency,Closed-Loop System Using Waste Heat for Electricity,Perish,
+OPEN 2012,General Electric (GE) Power & Water,CANCELLED,For-profit,5/1/13,12/31/14,Distributed Generation,Fabric-Based Wind Turbine Blades,Pivot,Making bigger regular turbines
+OPEN 2012,MicroLink Devices,CANCELLED,For-profit,3/20/13,9/1/15,Distributed Generation,High-Efficiency Solar Cells,Pivot,"They got another grant as part of FOCUS program, specifically trying to focus on high-temp operations"
+OPEN 2012,Silicon Power,CANCELLED,For-profit,5/15/13,8/10/15,Grid,Optical Switches for High-Power Systems,Perish,"bought original company, not offering product specified"
+OPEN 2012,"University of California, Santa Cruz (UC Santa Cruz)",CANCELLED,Non-profit,5/1/13,12/31/14,Distributed Generation,Efficient Collection of Concentrated Solar,Perish,One publication? Neither partner seems to be making tech.
+OPEN 2012,"University of Colorado, Boulder (CU-Boulder)",CANCELLED,Non-profit,5/1/13,6/29/17,Transportation Fuels,Small-Scale Reactors for Natural Gas Conversion,Perish,"got a patent out of this, but now working mostly on metals?"
+OPEN 2012,University of Wisconsin-Madison (UW-Madison),CANCELLED,Non-profit,2/12/13,5/31/14,Transportation Fuels,"Turning Sunlight, CO2, and Water into Fuel",Pivot,"still doing catalysis work, but catalysts are all over the place"
+OPEN 2015,Achates Power,ACTIVE,,4/1/16,4/13/19,Transportation Vehicles,Efficient Engine Design,,
+OPEN 2015,Case Western Reserve University,ACTIVE,Non-profit,5/10/16,5/9/19,Building Efficiency,Virtual Building Energy Audits,,
+OPEN 2015,Colorado State University (CSU),ACTIVE,Non-profit,5/5/16,8/20/19,Building Efficiency,Heat-Reflective Window Coating,,
+OPEN 2015,Dioxide Materials,ACTIVE,,2/1/16,1/31/19,Grid,High-Efficiency Hydrogen Production,,
+OPEN 2015,General Electric (GE) Global Research,ACTIVE,For-profit,5/10/16,5/9/19,Electrical Efficiency,Silicon Carbide Superjunction,,
+OPEN 2015,Marine BioEnergy,ACTIVE,,6/6/16,6/5/19,Transportation Fuels,Biofuel Production from Kelp,,
+OPEN 2015,National Renewable Energy Laboratory (NREL),ACTIVE,Non-profit,4/22/16,4/21/19,Distributed Generation,High-Efficiency PV Cells,,
+OPEN 2015,Newton Energy Group,ACTIVE,,4/11/16,4/19/19,Grid,Gas-Electric Co-Optimization,,
+OPEN 2015,Oak Ridge National Laboratory (ORNL),ACTIVE,Non-profit,4/5/16,4/14/19,Manufacturing Efficiency,Robust Metal Alloys,,
+OPEN 2015,Oak Ridge National Laboratory (ORNL),ACTIVE,Non-profit,5/1/16,9/30/20,Distributed Generation,High-Efficiency Energy Converters,,
+OPEN 2015,Ocean Renewable Power Company (ORPC),ACTIVE,,4/1/16,3/31/19,Distributed Generation,Marine Hydrokinetic Turbine,,
+OPEN 2015,Oregon State University (OSU),ACTIVE,Non-profit,5/16/16,5/15/19,Transportation Fuels,Natural Gas to Fuels,,
+OPEN 2015,Pacific Northwest National Laboratory (PNNL),ACTIVE,Non-profit,7/19/16,8/29/19,Grid,Power-Grid Optimization,,
+OPEN 2015,Pajarito Powder,ACTIVE,,5/1/16,4/30/19,Transportation Vehicles,High-Efficiency Hydrogen Production,,
+OPEN 2015,ProsumerGrid,ACTIVE,,6/1/16,5/30/19,Grid,Distribution Operator Simulation Studio,,
+OPEN 2015,Proton Energy Systems,ACTIVE,,5/6/16,5/5/19,Distributed Generation,Energy Conversion and Storage System,,
+OPEN 2015,RedWave Energy,ACTIVE,,5/26/16,5/25/19,Distributed Generation,Electricity from Waste-Heat Harvesting,,
+OPEN 2015,Starfire Energy,ACTIVE,,3/1/16,5/28/19,Transportation Fuels,Efficient Ammonia Production,,
+OPEN 2015,Texas A&M Agrilife Research,ACTIVE,Non-profit,4/13/16,4/12/19,Transportation Fuels,Radar for Bioenergy Crop Imaging,,
+OPEN 2015,"University of California, Santa Barbara (UCSB)",ACTIVE,Non-profit,4/7/16,4/6/19,Electrical Efficiency,High-Efficiency Data Transfer,,
+OPEN 2015,"University of California, Santa Barbara (UCSB)",ACTIVE,Non-profit,4/14/16,10/13/19,Electrical Efficiency,Laser-Based Solid State Lighting,,
+OPEN 2015,"University of Illinois, Urbana-Champaign (UIUC)",ACTIVE,Non-profit,4/1/16,9/30/19,Transportation Fuels,Biomass Water Efficiency,,
+OPEN 2015,University of Michigan,ACTIVE,Non-profit,6/9/16,7/14/19,Transportation Storage,"Low-Cost, Robust Battery",,
+OPEN 2015,University of Michigan,ACTIVE,Non-profit,7/14/16,7/13/19,Transportation Vehicles,Enhanced Engine Improvements,,
+OPEN 2015,University of New Mexico,ACTIVE,Non-profit,3/22/16,5/22/19,Storage,Efficient Ammonia Production,,
+OPEN 2015,University of Tennessee (UT),ACTIVE,Non-profit,2/4/16,2/3/20,Transportation Fuels,Advanced Bioengineering for Biofuels,,
+OPEN 2015,University of Tennessee (UT),ACTIVE,Non-profit,6/24/16,6/23/19,Grid,Smart and Flexible Microgrid,,
+OPEN 2015,University of Virginia (UVA),ACTIVE,Non-profit,4/1/16,3/31/19,Distributed Generation,Ultra-Large Wind Turbine,,
+OPEN 2015,Vanderbilt University,ACTIVE,Non-profit,4/4/16,4/3/19,Grid,Software for Smarter Grids,,
+OPEN 2015,Boston Electrometallurgical Corporation,ALUMNI,For-profit,5/5/16,7/31/18,Manufacturing Efficiency,High-Efficiency Titanium Production,Pivot,Another Sadoway project
+OPEN 2015,Cummins Corporate Research & Technology,ALUMNI,For-profit,2/9/16,8/8/18,Distributed Generation,High-Efficiency Engines,Persist,
+OPEN 2015,Gas Technology Institute (GTI),ALUMNI,For-profit,3/1/16,2/28/18,Manufacturing Efficiency,Reactor Engine,Perish,"A few publications, but doesn't seem to be all that efficient. All simulated, some validation"
+OPEN 2015,Princeton Optronics,ALUMNI,For-profit,2/26/16,9/30/17,Electrical Efficiency,High-Efficiency Data Transfer,Perish,Bought by AMS in 2017
+OPEN 2015,Stanford University,ALUMNI,Non-profit,6/1/16,12/31/18,Distributed Generation,High-Efficiency Energy Converters,Pivot,"Tech seems similar, but not much movement on initial market"
+OPEN 2015,The Mackinac Technology Company,ALUMNI,For-profit,4/1/16,3/31/18,Building Efficiency,Single Pane Window Retrofit System,Pivot,
+OPEN 2015,Accio Energy,EXCLUDE,For-profit,4/1/16,3/31/17,Distributed Generation,New Option for Wind Energy,Perish,
+OPEN 2015,INFINIUM,EXCLUDE,For-profit,2/5/16,5/19/17,Manufacturing Efficiency,Low-Energy Magnesium Recycling,Pivot,Seem to be doing more with lithium-ion battery recycling
+OPEN 2015,Iowa State University (ISU),EXCLUDE,Non-profit,6/1/16,6/30/18,Distributed Generation,"Low-Cost, Robust Battery",Pivot,"Solid power is doing lithium metal, not sodium"
+OPEN 2015,Tibbar Technologies,EXCLUDE,For-profit,5/2/16,8/29/17,Distributed Generation,Plasma-Based Electrical Transformers,Perish,"Still doing plasma stuff, but for fusion research"
+ADEPT,Arkansas Power Electronics International (APEI),ALUMNI,For-profit,9/14/10,3/31/14,Electrical Efficiency,"Powerful, Efficient Electric Vehicle Chargers",Persist,(category 2)
+ADEPT,Case Western Reserve University,ALUMNI,Non-profit,9/1/10,11/30/12,Electrical Efficiency,Titanium-Alloy Power Capacitor,Perish,"Partner company has no titanium products, basically no research (nothing recent)"
+ADEPT,Center for Power Electronics Systems (CPES) at Virginia Tech,ALUMNI,Non-profit,9/1/10,7/31/14,Electrical Efficiency,Voltage Regulator Chip,Persist,
+ADEPT,Center for Power Electronics Systems (CPES) at Virginia Tech,ALUMNI,Non-profit,9/1/10,11/30/13,Electrical Efficiency,Integrated Power Adapter,Pivot,
+ADEPT,City University of New York (CUNY) Energy Institute,ALUMNI,Non-profit,9/2/10,2/28/14,Electrical Efficiency,Metacapacitors for LED Lighting,Perish,"Website doesn't work, none? of the authors workign on it"
+ADEPT,Cree,ALUMNI,For-profit,9/1/10,12/31/14,Electrical Efficiency,Utility-Scale Silicon Carbide Power Transistors,Pivot,Category 3
+ADEPT,GeneSiC Semiconductor,ALUMNI,For-profit,9/1/10,2/28/13,Electrical Efficiency,Utility-Scale Silicon Carbide Semiconductor,Pivot,
+ADEPT,Georgia Tech Research Corporation,ALUMNI,Non-profit,9/1/10,2/28/14,Electrical Efficiency,"Compact, Low-Profile Power Converters",Perish,"Listed as a past project, nothing listed on georgia tech tech transfer website"
+ADEPT,Georgia Tech Research Corporation,ALUMNI,Non-profit,9/1/10,1/31/13,Electrical Efficiency,Utility-Scale Power Router,Pivot,I think this got rolled into Varentec?
+ADEPT,HRL Laboratories,ALUMNI,For-profit,10/1/10,6/30/14,Electrical Efficiency,"Compact, Interactive Electric Vehicle Charger",Pivot,"Seems like some of the stuff made it into GM cars, but no bidirectional charging, efficiencies are lower"
+ADEPT,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,9/1/10,12/31/13,Electrical Efficiency,Advanced Power Electronics for LED Drivers,Persist,"Hit targets, founded spinoffs"
+ADEPT,Teledyne Scientific & Imaging,ALUMNI,For-profit,10/1/10,7/31/13,Electrical Efficiency,Chip-Scale Power Conversion for LED Lighting,Perish,"They definitely aren't doing the applications they specified in the target, seem to be out of the energy technology game"
+ADEPT,Transphorm,ALUMNI,For-profit,9/1/10,5/28/13,Electrical Efficiency,Transistors for Electric Motor Drives,Persist,
+ADEPT,General Electric (GE) Global Research,CANCELLED,For-profit,1/1/11,7/17/12,Electrical Efficiency,Scalable Thick-Film Magnetics,Perish,"Can't find anything at GE, seems like research direction changed at Dartmouth?"
+ALPHA,Los Alamos National Laboratory (LANL),ACTIVE,Non-profit,8/1/15,4/30/19,Centralized Generation,Plasma Liners For Fusion,,
+ALPHA,"Magneto-Inertial Fusion Technologies, Inc. (MIFTI)",ACTIVE,,10/1/15,3/31/19,Centralized Generation,Staged Z-Pinch Target For Fusion,,
+ALPHA,Swarthmore College,ACTIVE,Non-profit,9/28/15,7/31/19,Centralized Generation,Plasma Accelerator on the SSX,,
+ALPHA,University of Washington (UW),ACTIVE,Non-profit,8/24/15,3/31/19,Centralized Generation,Flow Z-Pinch for Fusion,,
+ALPHA,California Institute of Technology (Caltech),ALUMNI,Non-profit,10/1/15,12/31/18,Centralized Generation,Heating and Compression Mechanisms for Fusion,Perish,"it worked, but doesn't provide enough info for MIF experiments"
+ALPHA,Helion Energy,ALUMNI,For-profit,9/30/15,9/29/18,Centralized Generation,Compression of FRC Targets for Fusion,Pivot,"Missed performance targets, building another, bigger prototype"
+ALPHA,Lawrence Berkeley National Laboratory (LBNL),ALUMNI,Non-profit,8/1/15,6/30/18,Centralized Generation,MEMS Based Drivers For Fusion,Pivot,Part of OPEN 2018+ Nuclear cohort
+ALPHA,NumerEx,ALUMNI,For-profit,10/1/15,10/31/18,Centralized Generation,Stabilized Liner Compressor For Low-Cost Fusion,Pivot,Ran out of money?
+ALPHA,Sandia National Laboratories,ALUMNI,Non-profit,8/15/15,11/24/18,Centralized Generation,Magnetization and Heating Tools for Low-Cost Fusion,Persist,
+AMPED,Feasible,ACTIVE,For-profit,8/23/17,8/22/19,Storage,Sound Wave-Enabled Battery Analysis,,
+AMPED,Battelle Memorial Institute,ALUMNI,Non-profit,11/1/12,9/30/14,Storage,Optical Fault Sensors for Lithium-Ion Batteries,Pivot,
+AMPED,Det Norske Veritas (DNV KEMA),ALUMNI,For-profit,10/1/12,4/1/15,Storage,Gas-Based Battery Monitoring System,Persist,"Seems like the technology is the same, even if there is relatively little data re: targets"
+AMPED,Eaton Corporation,ALUMNI,For-profit,1/1/13,3/31/16,Storage,Advanced Battery Management for Hybrid Vehicles,Pivot,"Lots of research with NREL, but no products for hybrids (all stationary)"
+AMPED,Ford Motor Company,ALUMNI,For-profit,1/1/13,3/31/16,Storage,Ultra-Precise Battery Tester,Persist,
+AMPED,General Electric (GE) Global Research,ALUMNI,For-profit,1/1/13,12/31/16,Storage,Thin-Film Temperature Sensors for Batteries,Pivot,"got bought, won a bunch of awards, but nothing on website"
+AMPED,Lawrence Livermore National Laboratory (LLNL),ALUMNI,Non-profit,10/1/12,9/30/15,Storage,Wireless Sensor System for Battery Packs,Perish,"Polystor (a partner) is out of business, no one licensing patent"
+AMPED,Oak Ridge National Laboratory (ORNL),ALUMNI,Non-profit,10/1/12,2/15/15,Storage,Temperature-Regulated Batteries,Pivot,"No one seems to be using this, different research direction"
+AMPED,Palo Alto Research Center (PARC),ALUMNI,For-profit,10/1/12,3/6/17,Storage,Embedded Fiber Optic Sensing System for Battery Packs,Persist,
+AMPED,Pennsylvania State University (Penn State),ALUMNI,Non-profit,1/1/13,3/31/16,Storage,Reconfigurable Battery Packs,Pivot,"Seems to do a lot of controls research, but no product/spinnoff/actual arpa-e attribution"
+AMPED,Robert Bosch,ALUMNI,For-profit,1/1/13,3/6/17,Storage,Battery Management and Control Software,Pivot,different performance targets
+AMPED,Southwest Research Institute (SwRI),ALUMNI,Non-profit,10/1/12,2/15/15,Storage,Sensor Technology for Lithium-Ion Batteries,Perish,"some patents, but tech lead left to do ai for building mgmt systems"
+AMPED,University of Washington (UW),ALUMNI,Non-profit,1/1/13,12/31/18,Storage,Optimal Battery Management System,Perish,"Last update was in 2017, he's moving to different university?"
+AMPED,Utah State University (USU),ALUMNI,Non-profit,1/1/13,4/6/17,Storage,Dynamic Cell-Level Control for Battery Packs,Persist,
+AMPED,Gayle Technologies,CANCELLED,For-profit,10/1/12,12/31/14,Storage,"Laser-Guided, Ultrasonic Battery Monitoring",Perish,
+ARID,Applied Research Associates (ARA),ACTIVE,,9/1/15,2/28/19,Resource Efficiency,Cooling Using Thermochemical Cycle,,
+ARID,Colorado State University (CSU),ACTIVE,Non-profit,11/10/15,5/9/19,Resource Efficiency,Ultra-Efficient Turbo-Compression Cooling,,
+ARID,Electric Power Research Institute (EPRI),ACTIVE,,8/19/15,2/18/19,Resource Efficiency,Enhanced Air-Cooled Heat Exchanger,,
+ARID,The Boeing Company,ACTIVE,For-profit,3/17/16,6/30/19,Resource Efficiency,Additive Manufacturing for Heat Exchangers,,
+ARID,The State University of New York (SUNY) at Stony Brook,ACTIVE,Non-profit,8/23/15,2/22/19,Resource Efficiency,Water Recovery for Cooling,,
+ARID,University of Cincinnati (UC),ACTIVE,Non-profit,9/8/15,3/7/19,Resource Efficiency,Air-Cooled Condenser and Storage System,,
+ARID,University of Maryland (UMD),ACTIVE,Non-profit,9/1/15,2/28/19,Resource Efficiency,Advanced Heat Exchangers,,
+ARID,University of Wisconsin-Madison (UW-Madison),ACTIVE,Non-profit,10/1/15,6/30/19,Resource Efficiency,Advanced Heat Exchangers,,
+ARID,Advanced Cooling Technologies (ACT),ALUMNI,For-profit,8/15/15,12/31/18,Resource Efficiency,Cool Storage for Supplemental Cooling,Pivot,"Some research papers for power generator applications, but in 2018 aquired a pumped two-phase cooling business for industrial and defense power electronics"
+ARID,General Electric (GE) Global Research,ALUMNI,For-profit,9/1/15,3/2/17,Resource Efficiency,Absorption Heat Pump,Pivot,"sort of related patent, but couldn't find any products online"
+ARID,Palo Alto Research Center (PARC),ALUMNI,For-profit,8/6/15,5/5/17,Resource Efficiency,Radiative Film for Supplemental Cooling,Perish,"PARC has some patents, but its not clear that their implementation partner is actually making this stuff, main research guy at parc left"
+ARID,SRI International,ALUMNI,Non-profit,8/5/15,6/6/17,Resource Efficiency,Radiative Film for Supplemental Cooling,Perish,"making stuff, but unclear if anyone is buying"
+ARID,"University of Colorado, Boulder (CU-Boulder)",ALUMNI,Non-profit,7/31/15,9/30/18,Resource Efficiency,Radiative Cooling and Cold Storage,Pivot,"Seems like they're sort of still going, but not really targeting thermal power plants (as targeted)"
+ARID,TDA Research,CANCELLED,For-profit,8/6/15,8/5/16,Resource Efficiency,Water Recovery for Cooling,Perish,"one patent, no? publications"
+ARID,University of Maryland (UMD),CANCELLED,Non-profit,9/1/15,8/13/18,Resource Efficiency,Advanced Absorption Cooling,Perish,"one patent, no? publications"
+BEEST,24M Technologies,ALUMNI,For-profit,9/1/10,2/28/14,Transportation Storage,Semi-Solid Flowable Battery Electrodes,Pivot,https://arpa-e.energy.gov/?q=slick-sheet-project/semi-solid-flowable-battery-electrodes
+BEEST,Applied Materials,ALUMNI,For-profit,7/1/10,9/30/13,Transportation Storage,New Electrode Manufacturing Process Equipment,Persist,
+BEEST,Pellion Technologies,ALUMNI,For-profit,9/1/10,12/31/12,Transportation Storage,Rechargeable Magnesium Batteries,Pivot,https://qz.com/1349245/the-next-major-innovation-in-batteries-might-be-here/
+BEEST,PolyPlus Battery Company,ALUMNI,For-profit,7/1/10,12/31/12,Transportation Storage,Rechargeable Lithium-Air Batteries,Persist,
+BEEST,Recapping,ALUMNI,For-profit,7/1/10,12/31/12,Transportation Storage,High Energy Density Capacitors,Perish,
+BEEST,Sila Nanotechnologies,ALUMNI,For-profit,10/1/12,3/31/16,Transportation Storage,Double Energy Density Anodes for Lithium-Ion Batteries,Pivot,
+BEEST,Sion Power,ALUMNI,For-profit,10/1/10,9/30/13,Transportation Storage,Lithium-Sulfur Batteries,Pivot,Not doing li-sulfur
+BEEST,Stanford University,ALUMNI,Non-profit,7/1/10,6/30/12,Transportation Storage,The All-Electron Battery,Pivot,https://www.greentechmedia.com/articles/read/wv-quantumscape-investment#gs.baka1l
+BEEST,Xilectric,ALUMNI,For-profit,10/1/12,9/30/15,Transportation Storage,Reinventing the Edison Battery,Pivot,
+BEEST,Missouri University of Science & Technology (Missouri S&T),CANCELLED,Non-profit,8/1/10,1/16/13,Transportation Storage,Lithium-Air Battery,Perish,Seems like someone graduated and the project died?
+BEEST,Planar Energy Devices,CANCELLED,For-profit,7/1/10,4/10/12,Transportation Storage,Solid State Lithium Batteries,Persist,
+BEEST,ReVolt Technology,CANCELLED,For-profit,10/1/10,6/30/12,Transportation Storage,Rechargeable Zinc-Air Batteries,Perish,https://www.bizjournals.com/portland/blog/sbo/2012/11/taxpayer-backed-revolt-files-bankruptcy.html
+BEETIT,American Superconductor (AMSC),ACTIVE,,5/20/14,10/31/19,Building Efficiency,High-Efficiency Air Conditioner,,
+BEETIT,ADMA Products,ALUMNI,For-profit,9/1/10,7/31/14,Building Efficiency,Membrane Dehumidifier,Pivot,"Make the material, but limited product development"
+BEETIT,Architectural Applications (A2),ALUMNI,For-profit,10/15/10,10/14/11,Building Efficiency,Energy Efficient Building Ventilation Systems,Pivot,"Were doing pilots, can't find really recent info"
+BEETIT,Astronautics Corporation of America,ALUMNI,For-profit,9/1/10,4/30/14,Building Efficiency,Air Conditioning with Magnetic Refrigeration,Pivot,Couldn't find anything on their website about refrigeration/cooling products
+BEETIT,Battelle Memorial Institute,ALUMNI,Non-profit,9/1/10,12/30/11,Building Efficiency,Cascade Reverse Osmosis Air Conditioning System,Perish,"Couldn't find anything on battelle's website, or find partner org at all"
+BEETIT,Dais Analytic Corporation,ALUMNI,For-profit,10/1/10,2/29/12,Building Efficiency,Dehumidifying Air for Cooling & Refrigeration,Persist,
+BEETIT,Georgia Tech Research Corporation,ALUMNI,Non-profit,9/1/10,6/30/14,Building Efficiency,Innovative Miniaturized Heat Pumps for Buildings,Pivot,"Still researching, abandoned patent app"
+BEETIT,Pacific Northwest National Laboratory (PNNL),ALUMNI,Non-profit,9/15/10,7/31/15,Building Efficiency,High-Efficiency Adsorption Chillers,Persist,
+BEETIT,Pennsylvania State University (Penn State),ALUMNI,Non-profit,9/1/10,7/31/14,Building Efficiency,Helium-Based Soundwave Chiller,Perish,
+BEETIT,Sheetak,ALUMNI,For-profit,9/1/10,6/30/15,Building Efficiency,High-Efficiency Solid State Cooling Technologies,Perish,Chip cooling/cooler scale
+BEETIT,United Technologies Research Center (UTRC),ALUMNI,For-profit,9/2/10,8/31/14,Building Efficiency,Liquid Desiccant in Air Conditioners,Perish,No products match this description
+BEETIT,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,10/1/10,9/30/12,Building Efficiency,Compact Solid State Cooling Systems,Pivot,
+BEETIT,University of Florida,ALUMNI,Non-profit,9/1/10,8/31/15,Building Efficiency,Membrane-Based Absorption Refrigeration Systems,Pivot,"No partner/info about partnership, publication focus has changed"
+BEETIT,University of Maryland (UMD),ALUMNI,Non-profit,10/1/10,3/6/17,Building Efficiency,Elastic Metal Alloy Refrigerants,Pivot,
+BEETIT,University of Notre Dame,ALUMNI,Non-profit,10/1/10,9/30/13,Building Efficiency,Carbon Dioxide and Ionic Liquid Refrigerants,Pivot,"""searching for better cofluids"""
+BEETIT,Material Methods,CANCELLED,For-profit,9/15/10,9/21/11,Building Efficiency,Sound Wave Refrigerants,Perish,
+BEETIT,United Technologies Research Center (UTRC),CANCELLED,For-profit,9/2/10,3/16/12,Building Efficiency,Water-Based Refrigerants,Perish,"Couldn't find anyting, not even sure they attended innovation summit"
+DELTA,Otherlab,ACTIVE,For-profit,5/8/15,5/7/19,Building Efficiency,Passive Thermo-Adaptive Textiles,,
+DELTA,Syracuse University,ACTIVE,Non-profit,5/1/15,10/31/19,Building Efficiency,Micro-Environmental Control System,,
+DELTA,Cornell University,ALUMNI,Non-profit,4/27/15,8/15/18,Building Efficiency,Thermoregulatory Clothing System,Perish,"Research focused, moved on"
+DELTA,SRI International,ALUMNI,Non-profit,5/1/15,9/30/18,Building Efficiency,Wearable Electroactive Textile,Pivot,https://science.sciencemag.org/content/357/6356/1130
+DELTA,The State University of New York (SUNY) at Stony Brook,ALUMNI,Non-profit,5/5/15,7/30/18,Building Efficiency,Electroactive Smart Air-Conditioner VEnt Registers (eSAVER),Pivot,Focusing on sensors
+DELTA,"University of California, Berkeley (UC Berkeley)",ALUMNI,Non-profit,5/14/15,6/30/18,Building Efficiency,Wirelessly Powered Heating and Cooling Devices,Perish,Witricity (partner) focusing on automotive charging
+DELTA,"University of California, Irvine (UC Irvine)",ALUMNI,Non-profit,4/20/15,4/19/18,Building Efficiency,Thermocomfort Cloth,Pivot,
+DELTA,"University of California, San Diego (UC San Diego)",ALUMNI,Non-profit,5/7/15,9/6/18,Building Efficiency,Adaptive Textiles Technology,Pivot,more on sensing than temperature regulation
+DELTA,University of Maryland (UMD),ALUMNI,Non-profit,4/15/15,5/12/18,Building Efficiency,Robotic Personal Conditioning Device,Persist,"Its actually close to the cost target (exact #'s not super clear, but within spitting distance)"
+DELTA,University of Maryland (UMD),ALUMNI,Non-profit,5/1/15,9/30/18,Building Efficiency,Meta-Cooling Textile,Pivot,This was a research project
+DELTA,Stanford University,CANCELLED,Non-profit,4/30/15,9/30/17,Building Efficiency,Photonic Structure Textiles,Pivot,
+Electrofuels,Columbia University,ALUMNI,Non-profit,7/1/10,6/30/14,Transportation Fuels,"Biofuels from Bacteria, Electricity, and CO2",Pivot,"Doesn't seem to be doing much with this, but Ironic Chemicals is using mine waste"
+Electrofuels,Ginkgo Bioworks,ALUMNI,For-profit,7/16/10,1/15/14,Transportation Fuels,Biofuels from E. Coli,Pivot,
+Electrofuels,Harvard University,ALUMNI,Non-profit,7/1/10,9/30/13,Transportation Fuels,"Fuel from Bacteria, CO2, Water, and Solar Energy",Pivot,Doesn't seem to be activley working on biofuels anymore
+Electrofuels,Lawrence Berkeley National Laboratory (LBNL),ALUMNI,Non-profit,7/16/10,12/31/14,Transportation Fuels,Turning Bacteria into Biofuel,Pivot,"jbei still working on biofuels, not clear if they're still pursuing the same combination of bacteria/catalysts"
+Electrofuels,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,7/15/10,3/31/14,Transportation Fuels,Natural Oil Production from Microorganisms,Pivot,Different target market
+Electrofuels,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,7/15/10,10/1/13,Transportation Fuels,Liquid Fuel from Bacteri,Perish,
+Electrofuels,Medical University of South Carolina (MUSC),ALUMNI,Non-profit,7/9/10,2/15/15,Transportation Fuels,Liquid Fuel from Microbial Communities,Perish,
+Electrofuels,North Carolina State University (NC State),ALUMNI,Non-profit,7/1/10,12/31/14,Transportation Fuels,Liquid Fuel from Heat-Loving Microorganisms,Pivot,Researchy
+Electrofuels,OPX Biotechnologies,ALUMNI,For-profit,7/12/10,3/31/14,Transportation Fuels,Engineering Bacteria for Efficient Fuel Production,Perish,Sold some other assets to Cargill
+Electrofuels,Pennsylvania State University (Penn State),ALUMNI,Non-profit,7/1/10,6/30/14,Transportation Fuels,Genetically Modified Bacteria for Fuel Production,Pivot,
+Electrofuels,The Ohio State University,ALUMNI,Non-profit,7/1/10,6/30/14,Transportation Fuels,Fuel from Bacteria,Pivot,
+Electrofuels,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,7/15/10,4/30/14,Transportation Fuels,Liquid Fuel from Renewable Electricity and Bacteria,Pivot,"similar research, partner company folded"
+Electrofuels,University of Massachusetts at Amherst (UMass Amherst),ALUMNI,Non-profit,7/1/10,6/30/14,Transportation Fuels,Biofuels from Solar Energy and Bacteria,Pivot,
+FOCUS,Arizona State University (ASU),ALUMNI,Non-profit,5/30/14,8/29/17,Distributed Generation,High-Temperature Topping Cells from LED Materials,Perish,"Some similar research, parnter companies moved on"
+FOCUS,Arizona State University (ASU),ALUMNI,Non-profit,6/1/14,8/31/17,Distributed Generation,Solar-Concentrating Photovoltaic Mirror,Pivot,Missed cost target
+FOCUS,Cogenra Solar,ALUMNI,For-profit,7/10/14,7/9/16,Distributed Generation,Hybrid Solar Converter with Light-Filtering Mirror,Pivot,
+FOCUS,Gas Technology Institute (GTI),ALUMNI,Non-profit,5/13/14,1/31/18,Distributed Generation,Double-Reflector Hybrid Solar Energy System,Persist,
+FOCUS,General Electric (GE) Global Research,ALUMNI,For-profit,8/1/14,12/31/18,Distributed Generation,Electrochemical Energy Storage with a Supercritical CO2 Cycle,Pivot,"still researchy, but got follow-on funding"
+FOCUS,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,6/17/14,9/16/17,Distributed Generation,Stacked Hybrid Solar Converter,Pivot,
+FOCUS,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,5/15/14,7/31/15,Distributed Generation,Low-Cost Hetero-Epitaxial Solar Cell for Hybrid Converter,Pivot,
+FOCUS,Tulane University,ALUMNI,Non-profit,8/1/14,9/30/18,Distributed Generation,Hybrid Solar Converter,Pivot,dont think they hit cost targets
+FOCUS,University of Arizona,ALUMNI,Non-profit,8/11/17,8/10/18,Distributed Generation,Partially Transmitting Mirror,Pivot,Nothing about cost target
+FOCUS,University of Tulsa,ALUMNI,Non-profit,5/15/14,2/14/17,Distributed Generation,Liquid Filter with Plasmonic Nanoparticles,Pivot,
+FOCUS,University of Tulsa,ALUMNI,Non-profit,11/7/16,12/31/18,Distributed Generation,Hybrid Solar Converter with Light-Filtering Mirror,Pivot,New strategies to get to cost target
+FOCUS,Yale University,ALUMNI,Non-profit,7/15/14,12/31/17,Distributed Generation,High-Temperature Dual-Junction Topping Cells,Pivot,
+FOCUS,MicroLink Devices,CANCELLED,For-profit,6/11/14,8/4/16,Distributed Generation,Dual-Junction Photovoltaic Topping Device for High-Temp Operation,Pivot,Mostly space applications
+FOCUS,Northrop Grumman Aerospace Systems,CANCELLED,For-profit,6/15/14,8/4/16,Distributed Generation,Thermo-Acoustic Hybrid Solar Energy System,Perish,"Some publications, nothing on NG website?"
+GENI,AutoGrid,ALUMNI,For-profit,1/11/12,3/31/14,Grid,Integration of Renewables via Demand Management,Persist,
+GENI,Boston University (BU),ALUMNI,Non-profit,4/19/13,3/31/16,Grid,Decision-Support Software for Grid Operators,Persist,
+GENI,California Institute of Technology (Caltech),ALUMNI,Non-profit,3/1/12,6/1/15,Grid,Scalable Distributed Automation System,Pivot,"Using algorithm for EV/storage research questions, but patents not licensed"
+GENI,Cornell University,ALUMNI,Non-profit,2/8/12,8/7/15,Grid,Cloud Computing for the Grid,Persist,
+GENI,General Atomics,ALUMNI,For-profit,1/9/12,7/31/13,Grid,Low-Insertion HVDC Circuit Breaker,Pivot,No mention of the DC circuit breaker anywhere on website
+GENI,General Electric (GE) Global Research,ALUMNI,For-profit,2/24/12,5/31/14,Grid,Cost-Effective Cable Insulation,Perish,can't find anything after project
+GENI,General Electric (GE) Global Research,ALUMNI,For-profit,1/23/12,1/22/15,Grid,Connecting Renewables Directly to the Grid,Perish,nothing on the website
+GENI,Georgia Tech Research Corporation,ALUMNI,Non-profit,1/11/12,2/15/15,Grid,"Autonomous, Decentralized Grid Architecture",Pivot,
+GENI,Michigan State University (MSU),ALUMNI,Non-profit,2/8/12,11/15/15,Grid,Power Flow Controller for Renewables,Persist,
+GENI,Oak Ridge National Laboratory (ORNL),ALUMNI,Non-profit,2/24/12,6/30/17,Grid,Magnetic Amplifier for Power Flow Control,Pivot,"Licensed tech, but SPX seems to only do custom (ie expensive, not 10x cheaper) stuff"
+GENI,Sandia National Laboratories,ALUMNI,Non-profit,4/1/12,1/16/15,Grid,Probability-Based Software for Grid Optimization,Persist,"Made a model, still in use?"
+GENI,Smart Wire Grid,ALUMNI,For-profit,4/23/12,9/30/14,Grid,Distributed Power Flow Control,Persist,
+GENI,Texas Engineering Experiment Station (TEES),ALUMNI,Non-profit,3/1/12,6/30/15,Grid,Automated Grid Disruption Response System,Pivot,"Made a model, don't think its an active control technology, but in simulator"
+GENI,University of Washington (UW),ALUMNI,Non-profit,3/1/12,10/14/15,Grid,Renewable Energy Positioning System,Pivot,"research-based, pivoted"
+GENI,Varentec,ALUMNI,For-profit,1/3/12,5/31/16,Grid,Dynamic Power Flow Controller,Persist,I think they're selling this?
+GENSETS,Aerodyne Research,ALUMNI,For-profit,11/1/15,12/31/18,Distributed Generation,Single-Cylinder Two-Stroke Free-Piston Internal Combustion Generator,Perish,"Were looking to license/deploy in homes, doesnt seem like that's happening (no patent licensee)"
+GENSETS,Air Square,ACTIVE,,5/1/16,4/30/19,Distributed Generation,High Efficiency Generator System,,
+GENSETS,American Superconductor (AMSC),ACTIVE,,11/30/15,3/31/19,Distributed Generation,Sustainable Economic mCHP Stirling (SEmS) Generator,,
+GENSETS,Brayton Energy,ALUMNI,For-profit,11/9/15,11/8/18,Distributed Generation,1kW Recuperated Brayton-Cycle Engine,Persist,
+GENSETS,MAHLE Powertrain,ACTIVE,,11/1/15,3/31/19,Distributed Generation,Advanced Lean Burn Micro-CHP Genset,,
+GENSETS,Metis Design Corporation (MDC),ALUMNI,For-profit,10/22/15,12/31/18,Distributed Generation,Advanced Microturbine Engine for Residential CHP,Perish,"Doing stuff for NASA/NAVY, no distributed power"
+GENSETS,Sunpower,ACTIVE,,12/1/15,12/31/19,Distributed Generation,Free Piston Stirling Engine Based 1kW Generator,,
+GENSETS,Tour Engine,ACTIVE,,11/24/15,9/30/19,Distributed Generation,High Efficiency Split-Cycle Engine for Residential Generators,,
+GENSETS,West Virginia University Research Corporation (WVURC),ACTIVE,Non-profit,6/12/17,12/11/19,Distributed Generation,Advanced Stirling Power Generation System for CHP,,
+GENSETS,West Virginia University Research Corporation (WVURC),ACTIVE,Non-profit,11/3/15,10/2/19,Distributed Generation,Oscillating Linear Engine and Alternator,,
+GENSETS,Wisconsin Engine Research Consultants (WERC),ACTIVE,Non-profit,12/17/15,6/16/19,Distributed Generation,Spark-Assisted HCCI Residential Generator,,
+GENSETS,"Mohawk Innovative Technology, Inc. (MiTi)",EXCLUDE,,3/15/16,6/9/16,Distributed Generation,High-Speed Microturbine with Air Foil Bearings for Residential CHP,,
+GENSETS,NanoConversion Technologies,CANCELLED,,11/16/15,12/2/16,Distributed Generation,High-Efficiency Thermoelectric CHP,Perish,
+GENSETS,Sencera Energy,EXCLUDE,,2/1/16,6/30/17,Distributed Generation,Hybrid Engine Generator for Residential CHP,,
+GRID DATA,GridBright,ACTIVE,,5/25/16,5/24/19,Grid,Power Systems Model Repository,,
+GRID DATA,National Renewable Energy Laboratory (NREL),ACTIVE,Non-profit,8/24/16,11/30/19,Grid,SMARTDATA Grid Models,,
+GRID DATA,Pacific Northwest National Laboratory (PNNL),ACTIVE,Non-profit,7/1/16,6/30/20,Grid,Data Repository for Power System Models,,
+GRID DATA,University of Wisconsin-Madison,ACTIVE,Non-profit,8/11/16,11/9/19,Grid,EPIGRIDS Transmission System Models,,
+GRID DATA,Pacific Northwest National Laboratory (PNNL),EXCLUDE,Non-profit,9/7/16,1/18/19,Grid,Sustainable Data Evolution Technology,,
+GRID DATA,"University of Illinois, Urbana-Champaign (UIUC)",ALUMNI,Non-profit,6/20/16,12/31/18,Grid,Synthetic Data for Power Grid R&D,Perish,Nothing posted to repository
+GRID DATA,University of Michigan,ALUMNI,Non-profit,5/27/16,11/26/18,Grid,Transmission System Data Set,Perish,Nothing posted to repository
+GRIDS,ABB,ALUMNI,For-profit,10/1/10,6/30/14,Storage,Magnetic Energy Storage System,Pivot,Don't see anything about magnetic systems on their website
+GRIDS,City University of New York (CUNY) Energy Institute,ALUMNI,Non-profit,9/15/10,3/31/15,Storage,Flow-Assisted Alkaline Battery,Pivot,
+GRIDS,Energy Storage Systems (ESS),ALUMNI,For-profit,10/1/12,8/30/17,Storage,Iron Flow Battery,Persist,pivoted before they got ARPA-E money
+GRIDS,Fluidic Energy,ALUMNI,For-profit,10/1/10,3/31/13,Storage,High-Power Zinc-Air Energy Storage,Persist,This is a follow-on project to an OPEN?
+GRIDS,General Atomics,ALUMNI,For-profit,9/1/10,8/28/13,Storage,Soluble Lead Flow Battery,Pivot,they go other $ for very different projects (similar to ge?)
+GRIDS,General Compression,ALUMNI,For-profit,9/13/10,4/1/11,Storage,Fuel-Free Compressed-Air Energy Storage,Perish,Was going to merge with SustainX to be come GCX Energy Storage --> no website/any info
+GRIDS,ITN Energy Systems,ALUMNI,For-profit,10/1/12,6/30/15,Storage,Advanced Vanadium Redox Flow Battery,Persist,check to see if contacts work
+GRIDS,Lawrence Berkeley National Laboratory (LBNL),ALUMNI,Non-profit,10/1/10,9/30/13,Storage,Hydrogen-Bromine Flow Battery,Pivot,"Doesn't seem like the research group is continuing this line, bosch is focusing on other tech"
+GRIDS,"Materials & Systems Research, Inc. (MSRI)",ALUMNI,For-profit,10/1/12,6/30/16,Storage,Advanced Sodium Battery,Perish,
+GRIDS,Primus Power,ALUMNI,For-profit,9/1/10,12/31/12,Storage,Advanced Flow Battery Electrodes,Pivot,"powerpod design proposed too expensive, new strategy in DAYS proposal"
+GRIDS,Proton Energy Systems,ALUMNI,For-profit,9/1/10,3/31/14,Storage,Regenerative Fuel Cells,Pivot,
+GRIDS,The Boeing Company,ALUMNI,For-profit,10/1/10,9/30/13,Storage,Advanced Flywheel Composite Rotors,Perish,"They've been working on this for forever, but utility/grid applications seem limited"
+GRIDS,TVN Systems,ALUMNI,For-profit,10/1/12,6/30/15,Storage,Hydrogen Bromine Battery,Perish,
+GRIDS,United Technologies Research Center (UTRC),ALUMNI,For-profit,9/9/10,9/30/13,Storage,Breakthrough Flow Battery Cell Stack,Pivot,"Still going, doubt they've hit cost targets"
+GRIDS,University of Southern California (USC),ALUMNI,Non-profit,10/1/10,9/30/13,Storage,Iron-Air Rechargeable Battery,Pivot,"Has a patent, but these definitely aren't commercialized/at the cost target"
+GRIDS,Beacon Power,CANCELLED,For-profit,3/6/12,10/31/15,Storage,Next-Generation Flywheel Energy Storage,Perish,
+HEATS,Abengoa Solar,ALUMNI,For-profit,1/11/12,7/31/14,Storage,Conversion Tower for Dispatchable Solar Power,Pivot,keep redesigning collector system
+HEATS,Halotechnics,ALUMNI,For-profit,1/1/12,9/30/15,Storage,Molten Glass for Thermal Storage,Perish,
+HEATS,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,11/21/11,11/30/14,Storage,Efficient Heat Storage Materials,Pivot,Different project w/ combined pv/thermal solar collectors
+HEATS,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,12/13/11,9/30/16,Storage,Advanced Thermo-Adsorptive Battery,Pivot,
+HEATS,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,1/9/12,1/8/15,Storage,Solar Thermal Energy Storage Device,Pivot,
+HEATS,NAVITASMAX,ALUMNI,For-profit,12/1/11,8/30/13,Storage,Advanced Thermal Energy Storage Technology,Perish,Literally nothing on the website.
+HEATS,Pacific Northwest National Laboratory (PNNL),ALUMNI,Non-profit,12/5/11,4/30/14,Storage,Metal Hydride Thermal Storage,Pivot,"still researching, not at cost target"
+HEATS,Pacific Northwest National Laboratory (PNNL),ALUMNI,Non-profit,11/21/11,1/4/14,Storage,Efficient Heat Pump for Electric Vehicles,Pivot,
+HEATS,Sheetak,ALUMNI,For-profit,11/15/11,3/31/15,Transportation Storage,High Energy Density Thermal Batteries,Pivot,"Still make thermoelectric chips, no mention of EVs"
+HEATS,United Technologies Research Center (UTRC),ALUMNI,For-profit,1/4/12,1/3/15,Transportation Storage,Hybrid Vapor Compression Adsorption System,Perish,nothing for EV climate control
+HEATS,University of Florida,ALUMNI,Non-profit,12/19/11,7/15/16,Distributed Generation,Solar Thermochemical Fuel Production,Perish,
+HEATS,University of Minnesota (UMN),ALUMNI,Non-profit,12/19/11,6/18/15,Storage,Solar Thermochemical Fuels Production,Perish,Way off on efficiency target
+HEATS,University of South Florida (USF),ALUMNI,Non-profit,12/13/11,9/30/15,Storage,Efficient Phase-Change Materials,Pivot,research project
+HEATS,University of Texas at Austin (UT Austin),ALUMNI,Non-profit,11/21/11,6/30/15,Transportation Storage,Thermal Batteries for Electric Vehicles,Perish,
+HEATS,University of Utah,ALUMNI,Non-profit,12/1/11,2/28/15,Transportation Storage,Advanced Metal-Hydrides-Based Thermal Battery,Pivot,
+IDEAS,Harvard University,ACTIVE,Non-profit,8/1/18,7/31/19,Transportation Fuels,More information on Harvard's project is coming soon!,,
+IDEAS,New York University (NYU),ACTIVE,Non-profit,1/1/18,5/31/19,Grid,Grid Dynamics from City Light,,
+IDEAS,Purdue University,ACTIVE,Non-profit,4/1/18,3/31/19,Manufacturing Efficiency,More information on Purdue's project is coming soon!,,
+IDEAS,Stanford University,ACTIVE,Non-profit,7/1/18,6/30/19,Manufacturing Efficiency,CO2 for Commodity Polymer Synthesis,,
+IDEAS,Texas Tech University,ACTIVE,Non-profit,6/18/18,6/17/19,Distributed Generation,More information on Texas Tech's project is coming soon!,,
+IDEAS,"University of California, San Diego (UC San Diego)",ACTIVE,Non-profit,4/15/18,4/14/19,Manufacturing Efficiency,Production of Large-Sized LOCH Parts,,
+IDEAS,University of Maryland (UMD),ACTIVE,Non-profit,6/1/18,5/31/19,Resource Efficiency,Electrochemical Compression for Ammoni,,
+IDEAS,University of Washington (UW),ACTIVE,Non-profit,9/29/17,3/28/19,Centralized Generation,Stable Magnetized Target Fusion Plasmas,,
+IDEAS,Utah State University (USU),ACTIVE,Non-profit,9/15/17,3/14/19,Transportation Network,Feasibility Analysis of Electric Roadways,,
+IDEAS,Bigwood Systems,ALUMNI,For-profit,3/18/15,6/30/16,Grid,Global-Optimal Power Flow (G-OPF),Persist,software product?
+IDEAS,California Institute of Technology (Caltech),ALUMNI,Non-profit,8/25/17,8/24/18,Transportation Storage,Nanomechanics of Electrodeposited Li,Pivot,research project
+IDEAS,California Institute of Technology (Caltech),ALUMNI,Non-profit,3/9/15,9/30/17,Transportation Fuels,Acoustic Wave Enhanced Catalysis,Pivot,
+IDEAS,Citrine Informatics,ALUMNI,For-profit,12/22/15,3/21/17,Storage,Machine Learning for Solid Ion Conductors,Pivot,"Have open source options, platform designed for more than just ionic conductors"
+IDEAS,Colorado School of Mines,ALUMNI,Non-profit,3/13/17,9/12/18,Resource Efficiency,Thermoelectric Materials Discovery,Pivot,
+IDEAS,Colorado School of Mines,ALUMNI,Non-profit,9/27/16,7/31/18,Storage,Ammonia Synthesis Membrane Reactor,Perish,They literally did the opposite thing (decomposition vs synthesis)
+IDEAS,Columbia University,ALUMNI,Non-profit,3/4/16,3/3/17,Electrical Efficiency,Computing Through Silicon Photonics,Pivot,"Didn't hit efficiency target, still research project"
+IDEAS,Columbia University,ALUMNI,Non-profit,6/10/16,9/9/17,Distributed Generation,Integrated Power Adapter,Perish,"Published some stuff, no further research/patents"
+IDEAS,Columbia University,ALUMNI,Non-profit,3/1/15,5/30/16,Transportation Fuels,Co-Generation of Fuels During Copper Bioleaching,Pivot,"some work with bioleaching, but not of copper"
+IDEAS,Cornell University,ALUMNI,Non-profit,8/17/16,8/16/17,Transportation Fuels,Secondary Lithium Metal Batteries,Persist,Super broad definition of project
+IDEAS,Cree Fayetteville,ALUMNI,For-profit,2/3/17,2/2/18,Distributed Generation,Diamond Capacitors for Power Electronics,Perish,listed as former project on partner (femto) website
+IDEAS,Gas Technology Institute (GTI),ALUMNI,For-profit,9/7/16,9/30/17,Transportation Fuels,Methane Soft Oxidation,Perish,Seems hypothetical not first recommended tech
+IDEAS,GeneSiC Semiconductor,ALUMNI,For-profit,12/20/16,9/19/18,Distributed Generation,Novel Gallium Nitride Transistors,Perish,"No GaN products, publications"
+IDEAS,George Washington University (GWU),ALUMNI,Non-profit,8/2/17,11/16/18,Distributed Generation,Transfer Printed Virtual Substrates,Persist,
+IDEAS,Georgia Tech Research Corporation,ALUMNI,Non-profit,7/27/16,12/31/17,Manufacturing Efficiency,Hollow Fibers for Separations,Persist,Licensed by Phillips?
+IDEAS,Grid Logic,ALUMNI,For-profit,6/1/15,6/30/16,Electrical Efficiency,Nanostructured Core/Shell Powders for Magnets,Perish,
+IDEAS,Harvard University,ALUMNI,Non-profit,6/1/17,11/30/18,Electrical Efficiency,Transistor-less Power Supply Technology,Perish,"can't find any arpa-e credited publications, very researchy, no recent patents"
+IDEAS,Hi Fidelity Genetics,ALUMNI,For-profit,5/5/16,11/10/17,Transportation Fuels,Plant Root Phenotyping,Persist,
+IDEAS,Inventev,ALUMNI,For-profit,1/6/16,4/5/17,Transportation Vehicles,Transmission-Based Power Generator,Perish,They do consulting now
+IDEAS,Iowa State University (ISU),ALUMNI,Non-profit,8/11/16,12/31/17,Transportation Fuels,Catalytic Autothermal Pyrolysis,Pivot,"Research project, still not commercial"
+IDEAS,Johns Hopkins University,ALUMNI,Non-profit,10/1/15,3/31/17,Manufacturing Efficiency,Carbon Fiber from Methane,Pivot,"Switching to hydrogen, new OPEN project"
+IDEAS,Johns Hopkins University,ALUMNI,Non-profit,2/15/16,12/31/17,Resource Efficiency,Adsorption Compression on Chemical Reactions,Pivot,Not many actual publications (dissertations)
+IDEAS,Lawrence Berkeley National Laboratory (LBNL),ALUMNI,Non-profit,9/1/17,8/31/18,Transportation Storage,Metal-Supported SOFC for Vehicles,Pivot,tried a bunch of formulas?
+IDEAS,Northeastern University,ALUMNI,Non-profit,9/1/16,12/31/17,Building Efficiency,Materials for Magnetocaloric Applications,Pivot,"Research project, still not commercial"
+IDEAS,Northeastern University,ALUMNI,Non-profit,12/6/16,12/5/17,Distributed Generation,Power Converter for Photovoltaic Applications,Pivot,
+IDEAS,Oregon State University (OSU),ALUMNI,Non-profit,7/15/14,7/31/16,Distributed Generation,Home Generator Benchmarking Program,Pivot,
+IDEAS,Otherlab,ALUMNI,For-profit,3/1/17,3/19/18,Grid,Visualizing Energy Dat,Perish,we paid $500k for this?
+IDEAS,Palo Alto Research Center (PARC),ALUMNI,For-Profit,12/17/15,3/31/17,Resource Efficiency,Large-Area Thermoelectric Generators,Pivot,"Still not quite cheap enough, but might be in-use for niche applicatins"
+IDEAS,Princeton Optronics,ALUMNI,For-Profit,10/1/14,9/30/15,Transportation Vehicles,Development of a New Type of Laser Ignition System,Perish,"Patented, no licensee"
+IDEAS,Princeton University,ALUMNI,Non-profit,10/1/15,3/30/17,Electrical Efficiency,Acoustic Analysis for Battery Testing,Pivot,How did this change for feasible's application
+IDEAS,Qromis,ALUMNI,For-Profit,4/1/17,9/30/18,Electrical Efficiency,Reliable and Self-Clamped GaN Switch,Pivot,"seems pretty researchy, not offering products"
+IDEAS,Ricardo,ALUMNI,For-Profit,1/1/15,9/30/15,Manufacturing Efficiency,Reducing Automotive CAPEX Entry Barriers,Persist,"Made a model, seem to be using it"
+IDEAS,Rice University,ALUMNI,Non-profit,9/15/16,12/14/17,Transportation Fuels,Biological Ammonia Production,Pivot,"not making ammonia, consuming it"
+IDEAS,Saint-Gobain Ceramics & Plastics,ALUMNI,For-Profit,1/19/16,4/30/17,Distributed Generation,High Temperature Ceramics for Solar Fuel Production,Perish,can't find any info/newly introduced products
+IDEAS,Sandia National Laboratories,ALUMNI,Non-profit,12/21/16,12/20/17,Distributed Generation,High Gain Step-Up Converters,Pivot,Tried a couple of configurations
+IDEAS,Sandia National Laboratories,ALUMNI,Non-profit,5/1/17,10/31/18,Electrical Efficiency,Power Conversion with Photoconductive Switches,Pivot,
+IDEAS,Signetron,ALUMNI,For-profit,7/6/15,7/5/16,Building Efficiency,Mobile Building Audits,Perish,
+IDEAS,Space Orbital Services,ALUMNI,For-profit,8/1/14,12/31/15,Transportation Fuels,Low Temperature Methane Conversion Through Impacting Common Alloy Catalysts,Perish,
+IDEAS,Tandem PV,ALUMNI,For-profit,10/31/17,12/15/18,Distributed Generation,Unlock Perovskite Photovoltaics,Pivot,Combining w/ existing Si panels
+IDEAS,Tetramer Technologies,ALUMNI,For-profit,3/31/17,6/30/18,Transportation Storage,Enhanced Stability AEM at High Temperatures,Perish,"Can't find any publications, Tetramer only sells PEM stuff"
+IDEAS,United Technologies Research Center (UTRC),ALUMNI,For-profit,4/1/17,3/31/18,Manufacturing Efficiency,Design of Ultra-Efficient Thermal-Fluid Components,Pivot,"research project, kind of dead"
+IDEAS,United Technologies Research Center (UTRC),ALUMNI,For-profit,7/2/15,7/1/16,Storage,High Performance Transportation Redox-Air Flow Cells,Pivot,Went back to grid stuff?
+IDEAS,"University of California, San Diego (UC San Diego)",ALUMNI,Non-profit,4/1/14,8/31/15,Storage,Novel Electrolytes,Persist,
+IDEAS,"University of Colorado, Boulder (CU-Boulder)",ALUMNI,Non-profit,10/15/15,8/14/17,Transportation Vehicles,Capacitive Wireless Power System,Pivot,
+IDEAS,University of Maryland (UMD),ALUMNI,Non-profit,4/14/16,4/13/17,Storage,Current Collectors for Aqueous Batteries,Persist,"New funding, def a research project"
+IDEAS,University of Maryland (UMD),ALUMNI,Non-profit,2/13/15,2/12/16,Electrical Efficiency,High-Capacity Carbon Wires,Perish,"couldn't find directly related publications, had another DELTA project later"
+IDEAS,University of Maryland (UMD),ALUMNI,Non-profit,7/25/14,10/24/15,Manufacturing Efficiency,Next-Generation Air-Cooled Heat Exchangers,Pivot,
+IDEAS,University of Michigan,ALUMNI,Non-profit,1/1/15,3/31/16,Distributed Generation,Benchtop Growth of High Quality Thin Film Photovoltaics,Pivot,"using hybrid electrodeposition, but for many things not just PV"
+IDEAS,"University of Nebraska, Lincoln (UNL)",ALUMNI,Non-profit,9/1/16,8/31/17,Electrical Efficiency,Electromagnetic Induction Power Converter,Pivot,"University patent, recent work very different"
+IDEAS,University of Tennessee (UT),ALUMNI,Non-profit,11/10/16,3/19/18,Manufacturing Efficiency,Reversible Air Batteries,Perish,"No publications related to this, has a DAY program for fuel cells"
+IMPACCT,Alliant Techsystems (ATK),ALUMNI,For-profit,7/1/10,6/30/13,Resource Efficiency,Supersonic Technology for CO2 Capture,Perish,Bought by northrup grumman
+IMPACCT,Codexis,ALUMNI,For-profit,7/1/10,6/30/12,Resource Efficiency,Better Enzymes for Carbon Capture,Pivot,
+IMPACCT,Columbia University,ALUMNI,Non-profit,7/16/10,1/15/14,Resource Efficiency,Chemically Accelerated Carbon Mineralization,Pivot,"seems to be continuing the research, not many specifics in the proposal description"
+IMPACCT,General Electric (GE) Global Research,ALUMNI,For-profit,10/1/10,9/30/13,Resource Efficiency,CO2 Capture with Liquid-to-Solid Absorbents,Perish,"In NETL doc, GE reorg killed it"
+IMPACCT,Georgia Tech Research Corporation,ALUMNI,Non-profit,7/1/10,10/31/12,Resource Efficiency,Composite Membranes for CO2 Capture,Pivot,"others got follow-on funding, was it different?"
+IMPACCT,Lawrence Livermore National Laboratory (LLNL),ALUMNI,Non-profit,8/15/10,12/31/14,Resource Efficiency,Synthetic Catalysts for CO2 Storage,Pivot,"Still working on the microcapsules, have some patents"
+IMPACCT,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,7/1/10,1/31/13,Resource Efficiency,CO2 Capture Using Electrical Energy,Perish,"Different research direction, Siemens not selling, not licensing MIT patent"
+IMPACCT,Oak Ridge National Laboratory (ORNL),ALUMNI,Non-profit,7/1/10,8/15/13,Resource Efficiency,High Surface-Area CO2 Sponge,Pivot,"Some research in CO2 capture, but totally different tech"
+IMPACCT,Research Triangle Institute (RTI),ALUMNI,Non-profit,7/1/10,9/30/13,Resource Efficiency,CO2 Capture and Regeneration at Low Temperatures,Persist,This was exploratory research
+IMPACCT,Sustainable Energy Solutions (SES),ALUMNI,For-profit,7/14/10,3/31/15,Resource Efficiency,Capturing CO2 from Exhaust Gas,Persist,
+IMPACCT,Texas A&M University,ALUMNI,Non-profit,7/1/10,9/30/12,Resource Efficiency,Stimuli-Responsive Metal Organic Frameworks,Pivot,"the research direction has changed, but still selling the original?"
+IMPACCT,"University of California, Berkeley (UC Berkeley)",ALUMNI,Non-profit,7/1/10,9/25/15,Resource Efficiency,Metal Organic Framework Research,Pivot,Focusing on biomethane
+IMPACCT,"University of Colorado, Boulder (CU-Boulder)",ALUMNI,Non-profit,2/1/11,7/31/14,Resource Efficiency,Gelled Ionic Liquid-Based Membranes,Pivot,"Gelled ionic liquids didn't really work, combining with membranes"
+IMPACCT,University of Notre Dame,ALUMNI,Non-profit,7/1/10,12/31/13,Resource Efficiency,Phase-Changing Ionic Liquids,Pivot,"Tested different ionic liquids, moved to encapsulated system"
+IMPACCT,University of Kentucky,CANCELLED,Non-profit,7/1/10,4/18/13,Resource Efficiency,Hybrid Solvent-Membrane CO2 Capture,Pivot,
+IONICS,24M Technologies,ACTIVE,,1/3/17,1/2/20,Storage,Lithium Electrode Sub-Assemblies,,
+IONICS,3M,ACTIVE,,1/2/17,1/1/20,Storage,Polymeric Anion Exchange Membranes,,
+IONICS,Ionic Materials,ACTIVE,,1/16/17,7/15/19,Storage,Novel Polymer Electrolyte,,
+IONICS,Iowa State University (ISU),ACTIVE,,2/1/17,1/31/20,Storage,Glassy Solid Electrolytes,,
+IONICS,Oak Ridge National Laboratory (ORNL),ACTIVE,,2/8/17,8/30/19,Storage,Metastable And Glassy Ionic Conductors,,
+IONICS,PolyPlus Battery Company,ACTIVE,,1/20/17,7/19/19,Storage,Solid Electrolyte Protected LI Metal Electrodes,,
+IONICS,Rensselaer Polytechnic Institute (RPI),ACTIVE,,1/20/17,1/19/20,Storage,Hydroxide Ion Exchange Polymers,,
+IONICS,United Technologies Research Center (UTRC),ACTIVE,,2/17/17,8/16/19,Storage,Smart-FBS,,
+IONICS,"University of California, San Diego (UC San Diego)",ACTIVE,,1/24/17,7/31/19,Storage,Self-Forming Solid-State Batteries,,
+IONICS,"University of Colorado, Boulder (CU-Boulder)",ACTIVE,,12/1/16,11/30/19,Storage,Anion Channel Membranes,,
+IONICS,University of Delaware (UD),ACTIVE,,1/1/17,6/30/19,Storage,Hydroxide Exchange Membranes,,
+IONICS,Washington University,ACTIVE,,1/1/17,12/31/19,Storage,Reinforced AEM Separators,,
+IONICS,American Manufacturing,ALUMNI,For-profit,12/20/16,9/19/18,Storage,Flash Sintering System,Pivot,"Research, limited commercial apps"
+IONICS,Pennsylvania State University (Penn State),ALUMNI,Non-profit,1/1/17,12/31/18,Storage,Cold Sintering Composite Structures,Pivot,"Research, not commercialized"
+IONICS,Sila Nanotechnologies,ALUMNI,For-profit,12/1/16,5/31/18,Storage,Melt-Infiltration Solid Electrolyte,Persist,Not much out there publically about this
+IONICS,Colorado School of Mines,EXCLUDE,,1/1/17,11/30/18,Transportation Storage,Hybrid Polyoxometalate Membranes,,
+METALS,Materials & Electrochemical Research (MER),ACTIVE,,1/13/15,3/31/19,Manufacturing Efficiency,Advanced Electrowinning of Titanium,,
+METALS,UHV Technologies,ACTIVE,,1/1/14,7/15/19,Manufacturing Efficiency,X-Ray Diagnostics for Scrap Metal Sorting,,
+METALS,University of Utah,ACTIVE,Non-profit,2/18/14,6/30/19,Manufacturing Efficiency,Direct Titanium Production from Titanium Slag,,
+METALS,Alcoa,ALUMNI,For-profit,3/31/14,7/20/18,Manufacturing Efficiency,Aluminum Electrolytic Cell with Heat Recovery,Pivot,
+METALS,BlazeTech,ALUMNI,For-profit,1/1/14,3/31/15,Manufacturing Efficiency,Specialized Imaging System for Light Metal Sorting,Perish,"Nothing about recycling on their website, contact person no longer with company"
+METALS,Case Western Reserve University,ALUMNI,Non-profit,1/1/14,6/30/16,Manufacturing Efficiency,Segmented Cell for Electrowinning Titanium,Perish,"Missed target, doesn't seem to be going anywhere"
+METALS,Energy Research Company (ERCo),ALUMNI,For-profit,1/1/14,9/30/18,Manufacturing Efficiency,Integrated Minimill to Produce Aluminum from Scrap,Pivot,seems like they were already doing what they were working on
+METALS,Gas Technology Institute (GTI),ALUMNI,Non-profit,1/1/14,3/31/15,Manufacturing Efficiency,Membrane Extraction for Aluminum Production,Perish,https://patents.google.com/patent/US9315914B2/en?q=aluminum&assignee=Gas+Technology+Institute&country=US&after=priority:20100101&language=ENGLISH
+METALS,INFINIUM,ALUMNI,For-profit,12/12/13,12/10/16,Manufacturing Efficiency,Aluminum Production Using Zirconia Solid Electrolyte,Perish,"Don't seem to be doing anything with Aluminum, just rare earth elements"
+METALS,Palo Alto Research Center (PARC),ALUMNI,For-profit,12/12/13,5/31/16,Manufacturing Efficiency,Electrochemical Probe for Rapid Scrap Metal Sorting,Perish,"Nothing recent, no licensee"
+METALS,Phinix,ALUMNI,For-profit,12/3/13,3/1/15,Manufacturing Efficiency,Electrochemical Magnesium Extraction from Scrap,Perish,"Nothing updated, 1 patent app"
+METALS,Research Triangle Institute (RTI),ALUMNI,Non-profit,2/6/14,3/6/17,Manufacturing Efficiency,High-Temperature Thermal Storage for Light Metal Production,Perish,"natural gas prices fell, which bottomed out metal production market, switched to glass in some international markets (maybe)"
+METALS,SRI International,ALUMNI,Non-profit,12/10/13,4/30/15,Manufacturing Efficiency,Direct Production of Titanium Powder,Perish,can't find anything after 2015
+METALS,"University of Colorado, Boulder (CU-Boulder)",ALUMNI,Non-profit,1/1/14,6/30/17,Manufacturing Efficiency,Solar/Electric Powered Magnesium Production,Pivot,Don't seem to be bothering with the solar stuff
+METALS,University of Utah,ALUMNI,Non-profit,1/10/14,3/19/18,Manufacturing Efficiency,Electromagnetic Light Metal Sorting,Persist,"making progress, but still haven't reached specified targets"
+METALS,Valparaiso University,ALUMNI,Non-profit,1/1/14,12/29/18,Manufacturing Efficiency,Solar/Electrolytic Production of Magnesium from Ore,Perish,"Didn't hit cost target, no recent work"
+METALS,iMetalx Group,CANCELLED,For-profit,2/24/14,7/14/14,Manufacturing Efficiency,Advanced Electrowinning of Titanium,Perish,"Seems like everyone's quit, no updates beyond original soliciation info"
+METALS,Pacific Northwest National Laboratory (PNNL),CANCELLED,Non-profit,1/1/14,6/30/16,Manufacturing Efficiency,Extracting Magnesium from Seawater,Perish,"Partner company folded, didn't meet targets"
+METALS,Titanium Metals Corporation (TIMET),CANCELLED,For-profit,1/13/14,4/30/16,Manufacturing Efficiency,Electrochemical Cell for Advanced Titanium Production,Perish,"Partner company was bought, but parent company seems to have folded"
+MONITOR,Bridger Photonics,ACTIVE,,6/15/15,4/14/19,Resource Efficiency,Mobile Methane Sensing System,,
+MONITOR,Colorado State University (CSU),ACTIVE,,10/1/16,6/30/19,Resource Efficiency,MONITOR Field Test Site,,
+MONITOR,Duke University,ACTIVE,,5/14/15,2/13/19,Resource Efficiency,Advanced Spectrometer for Methane Detection,,
+MONITOR,"University of Colorado, Boulder (CU-Boulder)",ACTIVE,,5/8/15,3/10/20,Resource Efficiency,Frequency Combs for Methane Detection,,
+MONITOR,Aeris Technologies,ALUMNI,For-profit,4/15/15,8/26/18,Resource Efficiency,Methane Leak Detection System,Persist,
+MONITOR,General Electric (GE) Global Research,ALUMNI,For-profit,5/8/15,8/7/18,Resource Efficiency,Optical Fibers for Methane Detection,Persist,https://www.scientia.global/dr-bill-challener-exploiting-fibre-optics-for-detecting-pipeline-leaks/
+MONITOR,IBM T.J. Watson Research Center,ALUMNI,For-profit,8/10/15,8/9/18,Resource Efficiency,Multi-Modal Methane Measurement System,Pivot,
+MONITOR,Maxion Technologies,ALUMNI,For-profit,6/2/15,12/1/18,Resource Efficiency,Tunable Laser for Methane Detection,Persist,
+MONITOR,Palo Alto Research Center (PARC),ALUMNI,For-profit,5/11/15,9/30/18,Resource Efficiency,System of Printed Hybrid Intelligent Nano-Chemical Sensors (SPHINCS),Persist,
+MONITOR,Physical Sciences Inc. (PSI),ALUMNI,For-profit,4/16/15,12/31/18,Resource Efficiency,Methane Leak Detection System,Pivot,
+MONITOR,Rebellion Photonics,ALUMNI,For-profit,4/16/15,8/15/18,Resource Efficiency,Portable Methane Detection System,Pivot,
+MONITOR,LI-COR Biosciences,CANCELLED,For-profit,5/15/15,8/12/17,Resource Efficiency,Optical Sensors for Methane Detection,Perish,Stuck with original technology
+MOSAIC,California Institute of Technology (Caltech),ACTIVE,,2/11/16,2/10/19,Distributed Generation,Micro-Optical Tandem Luminescent Solar Concentrator,,
+MOSAIC,George Washington University (GWU),ACTIVE,,12/15/17,12/14/19,Distributed Generation,Micro-Scale Ultra-High Efficiency CPV/Diffuse Hybrid Arrays Using Transfer Printing,,
+MOSAIC,Glint Photonics,ACTIVE,,1/1/16,6/30/19,Distributed Generation,Stationary Wide-Angle Concentrator PV System,,
+MOSAIC,Massachusetts Institute of Technology (MIT),ACTIVE,,12/15/15,4/30/19,Distributed Generation,Integrated Micro-Optical Concentrator Photovoltaics,,
+MOSAIC,Massachusetts Institute of Technology (MIT),ACTIVE,,1/1/16,4/4/19,Distributed Generation,Wafer-Level Integrated Concentrating Photovoltaics,,
+MOSAIC,Palo Alto Research Center (PARC),ACTIVE,For-profit,12/29/15,3/31/19,Distributed Generation,Micro-Chiplet Printer for MOSAIC,,
+MOSAIC,Panasonic Boston Laboratory,ACTIVE,,1/15/16,4/14/19,Distributed Generation,Low Profile CPV Panel with Sun Tracking for Rooftop Installation,,
+MOSAIC,Pennsylvania State University (Penn State),ACTIVE,,2/10/16,8/9/19,Distributed Generation,Wide-Angle Planar Microtracking Microcell Concentrating Photovoltaics,,
+MOSAIC,University of Arizona,ACTIVE,,4/1/17,9/30/19,Distributed Generation,A High Efficiency Flat Plate PV with Integrated Micro-CPV Atop a 1-Sun Panel,,
+MOSAIC,University of Rochester,ACTIVE,,1/1/16,9/30/19,Distributed Generation,Planar Light Guide Concentrated Photovoltaics,,
+MOSAIC,Texas Engineering Experiment Station (TEES),ALUMNI,Non-profit,2/1/16,12/31/18,Distributed Generation,Waveguiding Solar Concentrator,Pivot,"Seems like they're using it for research funding, not much info on actual commercialization"
+MOVE,Blackpak,ALUMNI,For-profit,10/1/12,9/30/16,Transportation Fuels,Sorbent-Based Natural Gas Tank,Perish,
+MOVE,Eaton Corporation,ALUMNI,For-profit,1/1/13,12/31/15,Transportation Fuels,Liquid-Piston Isothermal Home Natural Gas Compressor,Perish,"No related products, lots of articles about development, nothing about launch"
+MOVE,Gas Technology Institute (GTI),ALUMNI,Non-profit,1/1/13,12/31/14,Transportation Fuels,Adsorbent Materials for Natural Gas Storage,Pivot,"Not sure what's happening with this, have a patent"
+MOVE,Gas Technology Institute (GTI),ALUMNI,Non-profit,10/1/12,3/31/14,Transportation Fuels,Low-Pressure Conformable Natural Gas Vehicle Tank,Pivot,Partners working on hydrogen now
+MOVE,OnBoard Dynamics,ALUMNI,For-profit,10/1/12,1/14/18,Transportation Fuels,On-Vehicle Engine-Compressor System,Pivot,
+MOVE,Otherlab,ALUMNI,For-profit,9/3/12,3/31/16,Transportation Fuels,Intestinal Natural Gas Storage,Pivot,Linamar licenscing it from spinn off
+MOVE,Pacific Northwest National Laboratory (PNNL),ALUMNI,Non-profit,10/1/12,9/30/14,Transportation Fuels,Ultra-Light Conformable Natural Gas Tank,Perish,"seem to be focused on hydrogen, not natural gas"
+MOVE,REL,ALUMNI,For-profit,9/1/12,9/30/16,Transportation Fuels,Conformable Core Gas Tank,Persist,"Not sure about cost, but they put this in a car and it worked"
+MOVE,Texas A&M University,ALUMNI,Non-profit,9/17/12,12/31/14,Transportation Fuels,Highly Adsorbent Materials for Natural Gas Storage,Pivot,"this guy does MOFs, for a bunch of applications"
+MOVE,United Technologies Research Center (UTRC),ALUMNI,For-profit,10/1/12,3/31/16,Transportation Fuels,Modular Natural Gas Tank,Persist,
+MOVE,University of Texas at Austin (UT Austin),ALUMNI,Non-profit,10/1/12,12/31/15,Transportation Fuels,Single-Piston Natural Gas Compressor,Perish,"built a prototype, couldn't find any publications, no patents, no specific partners"
+MOVE,Ford Motor Company,CANCELLED,For-profit,9/17/12,3/31/15,Transportation Fuels,Low Pressure Material-Based Natural Gas Fuel System,Perish,
+MOVE,GE Global Research,CANCELLED,For-profit,1/1/13,4/20/14,Transportation Fuels,Chilled Natural Gas for At-Home Refueling,Perish,the CNG in a box system never got downsized
+PETRO,Arcadia Biosciences,ALUMNI,For-profit,1/1/12,9/30/15,Transportation Fuels,Vegetable Oil from Leaves and Stems,Perish,Doesn't seem like they're doing anything with sorghum anymore
+PETRO,Donald Danforth Plant Science Center,ALUMNI,Non-profit,1/1/12,12/31/16,Transportation Fuels,Improved Light Utilization in Camelina,Pivot,"Research, didn't hit cost targets, patents aren't licensed to anyone"
+PETRO,Lawrence Berkeley National Laboratory (LBNL),ALUMNI,Non-profit,1/1/12,3/26/15,Transportation Fuels,Oil from Tobacco Leaves,Pivot,PI working with sorgum
+PETRO,North Carolina State University (NC State),ALUMNI,Non-profit,1/1/12,3/31/17,Transportation Fuels,Jet Fuel from Camelina,Pivot,
+PETRO,Texas A&M Agrilife Research,ALUMNI,Non-profit,2/15/12,3/6/17,Transportation Fuels,Fuel from Tobacco and Arundo Donax,Pivot,
+PETRO,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,1/1/12,9/30/15,Transportation Fuels,Efficient CO2 Fixation Pathways,Perish,Not doing anything with biofuels recently
+PETRO,University of Florida,ALUMNI,Non-profit,1/1/12,9/9/17,Transportation Fuels,Tappable Pine Trees,Pivot,
+PETRO,"University of Illinois, Urbana-Champaign (UIUC)",ALUMNI,Non-profit,2/15/12,3/31/17,Transportation Fuels,Genetically Enhanced Sorghum and Sugarcane,Pivot,
+PETRO,University of Massachusetts at Amherst (UMass Amherst),ALUMNI,Non-profit,1/1/12,12/31/15,Transportation Fuels,Enhanced Carbon Concentration in Camelina,Pivot,
+PETRO,Chromatin,CANCELLED,For-profit,1/1/12,12/31/15,Transportation Fuels,Biofuels from Sorghum,Perish,
+RANGE,University of Maryland (UMD),ACTIVE,Non-profit,1/16/17,1/15/20,Transportation Storage,Solid-State Lithium-Ion Battery With Ceramic Electrolyte,,
+RANGE,University of Maryland (UMD),ACTIVE,Non-profit,3/18/14,1/31/20,Transportation Storage,Multiple-Electron Aqueous Battery,,
+RANGE,Arizona State University (ASU),ALUMNI,Non-profit,11/25/13,12/31/15,Transportation Storage,Multifunctional Cells for Electric Vehicles,Perish,"Not a thing, but main guy worked at fluidic"
+RANGE,Bettergy,ALUMNI,For-profit,12/1/13,9/30/15,Transportation Storage,Beyond Lithium-Ion Solid-State Battery,Pivot,"ARPA-E Tech was zinc based, now mostly doing li metal/li sulfur"
+RANGE,Cadenza Innovation,ALUMNI,For-profit,2/10/14,12/1/17,Transportation Storage,Low-Cost Electric Vehicle Battery Architecture,Persist,Cadenza met the RANGE program’s pack goal of $125/kWh and is now making strides towards deployment. It received private sector follow-on funding to expand its 25-person team and is currently marketing its technology to potential licensees.
+RANGE,Ceramatec,ALUMNI,For-profit,1/1/14,1/14/17,Transportation Storage,Advanced Lithium-Sulfur Batteries,Perish,
+RANGE,EnZinc,ALUMNI,For-profit,2/19/14,3/27/15,Transportation Storage,"Rechargeable, Long-Life, Zinc-Air Battery",Persist,
+RANGE,General Electric (GE) Power & Water,ALUMNI,For-profit,3/28/14,4/2/15,Transportation Storage,Water-Based Flow Battery for EVs,Perish,"Nothing on their website, seems like they spun out transportation"
+RANGE,Jet Propulsion Laboratory (JPL),ALUMNI,Non-profit,4/30/14,5/18/16,Transportation Storage,Metal Hydride-Air Battery,Perish,"Patents, but no recent pubs"
+RANGE,National Renewable Energy Laboratory (NREL),ALUMNI,Non-profit,1/6/14,2/18/15,Transportation Storage,Renewable Organics for Flow Battery,Perish,Chemtura bought by Lanxess
+RANGE,Oak Ridge National Laboratory (ORNL),ALUMNI,Non-profit,6/1/14,12/31/15,Transportation Storage,Light-weight Battery with Built-in Safety Features,Pivot,"Published a paper, not patent, seems to be doing regular battery work"
+RANGE,Oak Ridge National Laboratory (ORNL),ALUMNI,Non-profit,11/1/13,10/31/15,Transportation Storage,Impact-Resistant Electrolyte,Pivot,What's the difference between SAFIRE & EXPIRE?
+RANGE,Pennsylvania State University (Penn State),ALUMNI,Non-profit,11/1/13,12/31/15,Transportation Storage,Structural Battery Power Panels,Pivot,"Working on aircraft, not cars"
+RANGE,Princeton University,ALUMNI,Non-profit,12/11/13,3/31/15,Transportation Storage,Long-Life Rechargeable Alkaline Batteries for EVs,Perish,We arent doing this?
+RANGE,Purdue University,ALUMNI,Non-profit,12/2/13,12/31/15,Transportation Storage,Impact-Tolerant Electric Vehicle Batteries,Perish,"No recent work, patent not licensed"
+RANGE,Solid Power,ALUMNI,For-profit,1/1/14,6/30/17,Transportation Storage,All Solid-State Lithium-Ion Battery,Pivot,"Haven't really sold anything, still working on electrolyte"
+RANGE,Stanford University,ALUMNI,Non-profit,2/11/14,9/30/17,Transportation Storage,Multifunctional Battery Chassis Systems,Pivot,"Different mechanical sensors, aerospace more interested than ev"
+RANGE,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,9/29/16,9/28/17,Transportation Storage,"Long-Life, Acid-Based Battery",Perish,Only pub associated with grant is for something totally different?
+RANGE,"University of California, San Diego (UC San Diego)",ALUMNI,Non-profit,2/19/14,4/28/17,Transportation Storage,Multifunctional Battery Systems for Electric Vehicles,Pivot,
+RANGE,University of Houston,ALUMNI,Non-profit,11/13/13,8/12/15,Transportation Storage,Low-Cost Water-Based Electric Vehicle Batteries,Pivot,"Using similar technology, but for solid-state batteries"
+RANGE,BASF,CANCELLED,For-profit,2/18/14,6/30/15,Transportation Storage,Rare-Earth Free EV Batteries,Perish,
+RANGE,Illinois Institute of Technology (IIT),CANCELLED,Non-profit,1/1/14,12/31/15,Transportation Storage,Nanoelectrofuel Flow Battery for Electric Vehicles,Perish,"No recent work, patent not licensed"
+REACT,Ames National Laboratory,ALUMNI,Non-profit,1/1/12,5/31/15,Resource Efficiency,Cerium-Based Magnets,Perish,
+REACT,Argonne National Laboratory (ANL),ALUMNI,Non-profit,1/1/12,9/30/15,Resource Efficiency,Exchange-Spring Magnets,Perish,"Can't find any projects/papers/publications, main (original) guy left"
+REACT,Baldor Electric Company,ALUMNI,For-profit,1/31/12,2/15/15,Resource Efficiency,Rare-Earth-Free Traction Motor,Perish,website not working
+REACT,Brookhaven National Laboratory,ALUMNI,Non-profit,1/1/12,3/31/16,Resource Efficiency,Improved Superconducting Wire for Wind Generators,Persist,
+REACT,Case Western Reserve University,ALUMNI,Non-profit,1/1/12,6/30/15,Resource Efficiency,Iron-Nitride Alloy Magnets,Perish,"Can't find recent materials research, mostly systems-level wind stuff"
+REACT,Dartmouth College,ALUMNI,Non-profit,1/1/12,3/30/13,Resource Efficiency,Manganese-Aluminum-Based Magnets,Persist,
+REACT,Northeastern University,ALUMNI,Non-profit,2/24/12,12/31/13,Resource Efficiency,Iron-Nickel-Based Supermagnets,Pivot,"Research, no commercialization plan"
+REACT,Pacific Northwest National Laboratory (PNNL),ALUMNI,Non-profit,1/1/12,9/30/15,Resource Efficiency,Manganese-Based Magnets,Pivot,"Research focus, still needs work to commercialize"
+REACT,QM Power,ALUMNI,For-profit,1/1/12,2/28/15,Resource Efficiency,"Efficient, High-Torque Electric Vehicle Motor",Pivot,"Make motors, but nothing for EVs"
+REACT,University of Alabama,ALUMNI,Non-profit,2/8/12,9/30/13,Resource Efficiency,Rare-Earth-Free Nanostructure Magnets,Pivot,
+REACT,University of Houston,ALUMNI,Non-profit,1/1/12,6/30/15,Resource Efficiency,Low-Cost Superconducting Wire for Wind Generators,Persist,
+REACT,University of Minnesota (UMN),ALUMNI,Non-profit,1/1/12,9/30/15,Resource Efficiency,Iron-Nitride-Based Magnets,Pivot,Research-based
+REACT,University of Texas at Dallas (UT Dallas),ALUMNI,Non-profit,6/7/12,2/15/15,Resource Efficiency,Double-Stator Motor Design,Pivot,Efficiency seems low (in patent) but still churning out papers
+REACT,Virginia Commonwealth University (VCU),ALUMNI,Non-profit,1/1/12,12/31/13,Resource Efficiency,Carbon-Based Magnets,Perish,Do consulting/materials development
+REBELS,Colorado School of Mines,ACTIVE,Non-profit,10/1/14,9/21/20,Distributed Generation,Fuel-Flexible Protonic Ceramic Fuel Cell Stack,,
+REBELS,Argonne National Laboratory,ALUMNI,Non-profit,10/1/14,3/31/17,Distributed Generation,Electricity and Liquid Fuels from Natural Gas,Perish,
+REBELS,Georgia Tech Research Corporation,ALUMNI,Non-profit,10/1/14,9/30/18,Distributed Generation,Fuel Cell Tailored for Efficient Utilization of Methane,Persist,"Recent patent, publications"
+REBELS,Oak Ridge National Laboratory (ORNL),ALUMNI,Non-profit,10/1/14,10/7/17,Distributed Generation,Nanocomposite Electrodes for a Solid Acid Fuel Cell Stack,Pivot,Still publishing/presenting similar projects
+REBELS,Redox Power Systems,ALUMNI,For-profit,10/1/14,3/31/18,Distributed Generation,Low-Temperature Solid Oxide Fuel Cells,Perish,Filed for bankruptcy
+REBELS,SAFCell,ALUMNI,For-profit,10/1/14,6/30/18,Distributed Generation,Solid Acid Fuel Cell Stack,Pivot,They reapplied for another grant to do ammonia conversion
+REBELS,United Technologies Research Center (UTRC),ALUMNI,For-profit,10/1/14,3/19/18,Distributed Generation,Intermediate Temperature Solid Oxide Fuel Cell Stack,Pivot,https://www.nature.com/articles/s41560-017-0085-9
+REBELS,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,11/1/14,4/30/17,Distributed Generation,Fuel Cells with Dynamic Response Capability,Perish,Doesn't seem like they're continuing this research
+REBELS,University of South Carolina,ALUMNI,Non-profit,10/1/14,9/30/17,Distributed Generation,Bi-functional Ceramic Fuel Cell Energy System,Pivot,"Research, no patents"
+REBELS,FuelCell Energy,CANCELLED,For-profit,10/1/14,9/30/17,Distributed Generation,Liquid Fuels and Electricity from Intermediate-Temperature Fuel Cells,Pivot,Still doing fuel cells (but may go bankrupt?)
+REBELS,"Materials & Systems Research, Inc. (MSRI)",CANCELLED,For-profit,11/1/14,12/31/16,Distributed Generation,Electrogenerative Cells for Flexible Cogeneration of Power and Liquid Fuel,Perish,"Website no longer works, CEO gone"
+REBELS,Palo Alto Research Center (PARC),CANCELLED,For-profit,10/1/14,3/15/16,Distributed Generation,Reformer-less Fuel Cell,Perish,"No patents for PI, no other info"
+REBELS,SiEnergy Systems,CANCELLED,For-Profit,9/17/14,11/20/15,Distributed Generation,Hybrid Fuel Cell-Battery System,Perish,permanently closed (according to google)
+REFUEL,Bettergy,ACTIVE,,6/9/17,6/8/20,Transportation Fuels,Ammonia Cracking Membrane Reactor,,
+REFUEL,Chemtronergy,ACTIVE,,11/15/17,5/14/19,Transportation Fuels,Solid Oxide Fuel Cell System,,
+REFUEL,FuelCell Energy,ACTIVE,,5/22/17,5/21/20,Transportation Fuels,Protonic Ceramics for Ammoni,,
+REFUEL,Gas Technology Institute (GTI),ACTIVE,Non-profit,6/1/17,5/31/20,Transportation Fuels,Dimethyl Ether Synthesis from Renewables,,
+REFUEL,Giner,ACTIVE,,6/1/17,5/31/19,Transportation Fuels,Anion Exchange Membrane Ammonia Production,,
+REFUEL,Molecule Works,ACTIVE,,6/6/17,9/5/20,Transportation Fuels,Electrochemical Membrane Reactor for Ammoni,,
+REFUEL,Rensselaer Polytechnic Institute (RPI),ACTIVE,,11/30/17,3/31/19,Transportation Fuels,H2 From Thermal Catalytic Ammonia Decomposition,,
+REFUEL,Research Triangle Institute (RTI),ACTIVE,,4/10/17,4/9/20,Transportation Fuels,Renewables-Based Catalytic Ammonia Production,,
+REFUEL,SAFCell,ACTIVE,,5/22/17,5/21/20,Transportation Fuels,Electrochemical Ammonia Conversion,,
+REFUEL,Storagenergy Technologies,ACTIVE,,6/5/17,12/4/20,Transportation Fuels,Solid-State Alkaline Electrolyzer Ammonia Synthesis,,
+REFUEL,University of Delaware (UD),ACTIVE,Non-profit,4/1/17,3/31/20,Transportation Fuels,Direct Ammonia Fuel Cells,,
+REFUEL,University of Minnesota (UMN),ACTIVE,Non-profit,7/10/17,7/9/19,Transportation Fuels,Wind Energy to Ammonia Synthesis,,
+REFUEL,West Virginia University Research Corporation (WVURC),ACTIVE,Non-profit,4/1/17,3/31/19,Transportation Fuels,Microwave-Plasma Ammonia Synthesis,,
+REFUEL,Wichita State University,ACTIVE,Non-profit,6/19/17,6/18/19,Transportation Fuels,Alkaline Membrane-Based Ammonia Electrosynthesis,,
+REFUEL,Skyre,ALUMNI,,6/9/17,9/30/18,Transportation Fuels,Carbon Dioxide to Dimethyl Ether,Pivot,Moved to focus on hydrogen
+REFUEL,Opus 12,EXCLUDE,,6/16/17,10/31/18,Transportation Fuels,Carbon Dioxide Conversion to Ethanol,,Wouldn't have been finished
+REMOTE,LanzaTech,ACTIVE,For-profit,1/29/14,8/31/19,Transportation Fuels,Bioreactor with Improved Methane Transfer,,
+REMOTE,"University of California, Los Angeles (UCLA)",ACTIVE,Non-profit,3/20/15,12/31/19,Manufacturing Efficiency,Renewable Production of Commodity Chemicals,,
+REMOTE,University of Delaware (UD),ACTIVE,Non-profit,1/13/14,12/31/19,Transportation Fuels,Methanol to Liquid Fuel,,
+REMOTE,ARZEDA,ALUMNI,For-profit,1/1/14,9/30/15,Transportation Fuels,Metalloenzymes for Methane Activation,Perish,"Still doing original tech, no mention of biofuels/other energy"
+REMOTE,Calysta Energy,ALUMNI,For-profit,1/6/14,1/5/15,Transportation Fuels,Bioreactor Designs for Rapid Fermentation,Perish,"Technology works, but using it for fish food"
+REMOTE,GreenLight Biosciences,ALUMNI,For-profit,2/3/14,3/6/17,Transportation Fuels,Cell-Free Bioconversion of Natural Gas,Perish,"seems like the tech is the same, but not specifically working on biofuels"
+REMOTE,Lawrence Berkeley National Laboratory (LBNL),ALUMNI,Non-profit,1/1/14,12/31/16,Transportation Fuels,Enzymes for Methane Conversion,Perish,"One patent, the corporate partners aren't doing anything with it"
+REMOTE,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,2/3/14,6/30/17,Transportation Fuels,Single-Step Methane to Liquid Fuels,Pivot,
+REMOTE,MOgene Green Chemicals,ALUMNI,For-profit,1/1/14,6/30/17,Transportation Fuels,Sunlight-Assisted Methane Conversion,Perish,couldn't find any publications or related patents
+REMOTE,Northwestern University,ALUMNI,Non-profit,2/12/14,11/15/15,Transportation Fuels,New Synthetic Catalysts for Methane Activation,Pivot,
+REMOTE,Oregon State University (OSU),ALUMNI,Non-profit,1/1/14,8/31/17,Transportation Fuels,Bioreactor Using Ultra-Thin Plates,Perish,"No publications, no recent info, no website"
+REMOTE,Pennsylvania State University (Penn State),ALUMNI,Non-profit,1/1/14,6/30/17,Transportation Fuels,Methane-to-Acetate,Pivot,
+REMOTE,"University of California, Davis (UC Davis)",ALUMNI,Non-profit,1/7/14,9/30/17,Transportation Fuels,Ethylene-to-Butanol,Pivot,
+REMOTE,"University of California, Los Angeles (UCLA)",ALUMNI,Non-profit,1/1/14,6/30/17,Transportation Fuels,Synthetic Pathway for Methanol Conversion,Perish,
+REMOTE,University of Michigan,ALUMNI,Non-profit,1/23/14,3/6/17,Transportation Fuels,Methane-to-Methanol,Pivot,
+REMOTE,Coskata,CANCELLED,For-profit,1/15/14,6/13/14,Transportation Fuels,Methanol Fermentation in Clostridium Bacteri,Perish,IP purchased by synata bio
+SHIELD,Arizona State University (ASU),ACTIVE,Non-profit,12/13/16,12/12/19,Building Efficiency,Insulating Particulate Coatings,,
+SHIELD,Aspen Aerogels,ACTIVE,,11/18/16,11/17/19,Building Efficiency,Aerogel Insulated Pane,,
+SHIELD,IR Dynamics,ACTIVE,,1/10/17,4/9/19,Building Efficiency,Dynamic IR Window Film,,
+SHIELD,NanoSD,ACTIVE,,10/1/16,9/30/20,Building Efficiency,Nanobubble Thermal Barrier,,
+SHIELD,Palo Alto Research Center (PARC),ACTIVE,For-profit,12/8/16,12/7/19,Building Efficiency,Window Thermal Barrier,,
+SHIELD,"University of California, Los Angeles (UCLA)",ACTIVE,Non-profit,1/4/17,7/3/19,Building Efficiency,Thinner Coatings,,
+SHIELD,"University of California, San Diego (UC San Diego)",ACTIVE,Non-profit,11/3/16,11/2/19,Building Efficiency,Polymer-Based Window Coating,,
+SHIELD,"University of Colorado, Boulder (CU-Boulder)",ACTIVE,Non-profit,11/14/16,2/13/19,Building Efficiency,Cellulose Nanocrystal Film,,
+SHIELD,Virginia Commonwealth University (VCU),ACTIVE,Non-profit,2/1/17,7/31/19,Building Efficiency,Crosslink Aerogels,,
+SHIELD,SRI International,ACTIVE,Non-profit,12/5/16,12/4/19,Building Efficiency,Engineered Polymer Film,,
+SHIELD,Triton Systems,ALUMNI,For-profit,2/6/17,3/13/18,Building Efficiency,Multifunctional Glazing System,Perish,"Only patent is from before arpa-e, no products"
+SHIELD,Argonne National Laboratory (ANL),EXCLUDE,Non-profit,1/12/17,1/11/20,Building Efficiency,Transparent Nanofoam Polymer,,
+SHIELD,Eclipse Energy Systems,EXCLUDE,,1/23/17,1/22/19,Building Efficiency,Eclipse Shield,,
+SHIELD,Oak Ridge National Laboratory (ORNL),EXCLUDE,Non-profit,2/6/17,6/19/17,Building Efficiency,Multilayer Insulating Film,,
+Solar ADEPT,Carnegie Mellon University (CMU),ALUMNI,Non-profit,2/27/12,3/28/15,Distributed Generation,Magnet Technology for Power Converters,Pivot,"looking at EV, wind turbine applications"
+Solar ADEPT,Cree,ALUMNI,For-profit,1/25/12,7/31/17,Distributed Generation,Utility-Scale Solar Power Converter,Pivot,"similar products, what about the timeline?"
+Solar ADEPT,Ideal Power,ALUMNI,For-profit,1/30/12,5/29/15,Distributed Generation,Lightweight PV Inverters,Pivot,
+Solar ADEPT,SolarBridge Technologies,ALUMNI,For-profit,2/23/12,6/22/15,Distributed Generation,Efficient Power Converters for PV Arrays,Pivot,Acquired by sunpower
+Solar ADEPT,Transphorm,ALUMNI,For-profit,2/13/12,3/31/15,Distributed Generation,Efficient Switches for Solar Power Conversion,Pivot,"They make the underlying tech, but nothing explictly for solar pv"
+Solar ADEPT,"University of Colorado, Boulder (CU-Boulder)",ALUMNI,Non-profit,2/9/12,8/31/15,Distributed Generation,Integrated Solar Power Converters,Pivot,
+Solar ADEPT,Rutgers University SiCLAB,CANCELLED,Non-profit,12/23/11,1/20/13,Distributed Generation,New Switches for Utility Scale Inverters,Perish,"Not sure they're doing much with SiC, couldn't find any directly linked pubs"
+SWITCHES,Arizona State University (ASU),ACTIVE,Non-profit,2/20/14,2/15/19,Electrical Efficiency,Diamond Power Transistors,,
+SWITCHES,Columbia University,ACTIVE,Non-profit,4/1/14,7/31/19,Electrical Efficiency,Spalling GaN Transistors,,
+SWITCHES,Beam Materials,ACTIVE,For-profit,3/10/14,3/31/19,Electrical Efficiency,GaN LEDs on Flexible Metal Foils,,
+SWITCHES,SixPoint Materials,ACTIVE,For-profit,3/10/14,3/28/19,Electrical Efficiency,Vertical GaN Substrates,,
+SWITCHES,"University of California, Santa Barbara (UCSB)",ACTIVE,Non-profit,3/10/14,6/21/19,Electrical Efficiency,Vertical GaN Devices,,
+SWITCHES,Cornell University,ALUMNI,Non-profit,8/1/15,10/16/17,Electrical Efficiency,GaN Power Transistor,Pivot,"Research, not licensed?"
+SWITCHES,Fairfield Crystal Technology,ALUMNI,For-profit,3/5/14,6/22/15,Electrical Efficiency,GaN Crystal Substrates,Perish,"Not for sale, no patents for GaN"
+SWITCHES,HRL Laboratories,ALUMNI,For-profit,3/7/14,4/15/18,Electrical Efficiency,Vertical GaN Transistor,Persist,http://www.hrl.com/horizons/deploy/pdf/May2019.pdf
+SWITCHES,Michigan State University (MSU),ALUMNI,Non-profit,2/19/14,9/30/17,Electrical Efficiency,Diamond Semiconductor Devices,Pivot,"researchy, no patent"
+SWITCHES,MicroLink Devices,ALUMNI,For-profit,3/10/14,12/9/17,Electrical Efficiency,High-Power Transistor Fabrication,Perish,"nothing about GaN liftoff, using different substrates"
+SWITCHES,Monolith Semiconductor,ALUMNI,For-profit,1/1/14,9/30/17,Electrical Efficiency,Advanced Manufacturing for SiC MOSFETS,Pivot,Acquired by littlefuse
+SWITCHES,Soraa,ALUMNI,For-profit,2/17/14,5/17/15,Electrical Efficiency,Low-Cost GaN Substrates,Persist,
+SWITCHES,Avogy,CANCELLED,For-profit,1/1/14,12/12/16,Electrical Efficiency,Vertical GaN Transistors,Perish,"Avogy collapses, IP bought by nexgen"
+SWITCHES,Kyma Technologies,CANCELLED,For-profit,3/10/14,3/9/18,Electrical Efficiency,GaN Substrate Technology,Pivot,https://arpa-e.energy.gov/?q=slick-sheet-project/reliable-and-self-clamped-gan-switch
+TERRA,Clemson University,ACTIVE,Non-profit,9/30/15,5/28/19,Transportation Fuels,Breeding High Yielding Bioenergy Sorghum,,
+TERRA,Donald Danforth Plant Science Center,ACTIVE,,9/15/15,9/14/19,Transportation Fuels,A Reference Phenotyping System for Energy Sorghum,,
+TERRA,Pacific Northwest National Laboratory (PNNL),ACTIVE,Non-profit,9/15/15,9/14/19,Transportation Fuels,The Consortium for Advanced Sorghum Phenomics (CASP),,
+TERRA,Purdue University,ACTIVE,Non-profit,8/24/15,5/23/19,Transportation Fuels,Automated Sorghum Phenotyping and Trait Development Platform,,
+TERRA,"University of Illinois, Urbana-Champaign (UIUC)",ACTIVE,Non-profit,10/1/15,12/31/19,Transportation Fuels,TERRA MEPP (Mobile Energy-crop Phenotyping Platform),,
+TERRA,Texas A&M University,ALUMNI,Non-profit,10/1/15,10/31/18,Transportation Fuels,Automated TERRA Phenotyping System,Pivot,"No publications using the proposed gantry system, everything ended up being uav"
+TRANSNET,Georgia Tech Research Corporation,ALUMNI,Non-profit,1/6/16,8/15/18,Transportation Network,Network Performance Monitoring and Distributed Simulation,Perish,"Website not working, never referenced by other research groups (they seem to cite everyone else)"
+TRANSNET,Massachusetts Institute of Technology (MIT),ALUMNI,Non-profit,12/11/15,9/10/18,Transportation Network,"Sustainable Travel Incentives with Prediction, Optimization and Personalization (TRIPOD)",Persist,
+TRANSNET,National Renewable Energy Laboratory (NREL),ALUMNI,Non-profit,1/20/16,12/31/18,Transportation Network,The Connected Traveler: A Framework to Reduce Energy Use in Transportation,Persist,
+TRANSNET,Palo Alto Research Center (PARC),ALUMNI,For-profit,12/28/15,7/27/18,Transportation Network,Collaborative Optimization and Planning for Transportation Energy Reduction (COPTER),Persist,
+TRANSNET,University of Maryland (UMD),ALUMNI,Non-profit,11/23/15,8/30/18,Transportation Network,Traveler Information and Incentive Technology,Persist,

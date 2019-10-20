@@ -15,13 +15,14 @@ def runDatasetAnalysis():
     y.endDate = b
 
     # add a binary value for OPEN Projects
-    Z = []
-    for n in y.program:
-        a = str(n)
+    print(y.shape[0])
+    Z = np.zeros((y.shape[0],1))
+    for n in range(len(y.program)):
+        a = str(y.program[n])
         b = a.find('OPEN')
-        Z.append(b)
+        if b != -1 or a == 'IDEAS':
+            Z[n] = 1
     y['OPEN'] = Z
-    y.OPEN = y.OPEN+1
 
     # remove cancelled projects that would be active if they had finished
     dropList = []
@@ -88,6 +89,15 @@ def runDatasetAnalysis():
     Z = Z.reset_index(drop=True)
     print(Z.shape)
 
+    # add the costTarget Data
+    Z['costTarget'] = ['blank']*Z.shape[0]
+    targetData = pd.read_csv("costTargets.csv")
+    for n in range(targetData.shape[0]):
+        for m in range(Z.shape[0]):
+            if targetData.Program[n] == Z.program[m]:
+                Z.costTarget[m] = targetData.CostTarget[n]
+    print(Z.head(10))
+
     # make a histogram of award sizes
     sumStats = awardSizeHistogram(Z)
     print(sumStats)
@@ -99,11 +109,30 @@ def runDatasetAnalysis():
     print('Program Names')
     print(Z.program.unique())
 
+    # how many projects have cost targets
+    print('cost target counts')
+    print(Z.costTarget.value_counts())
+
+    print('cost target total funding')
+    print(Z.groupby('costTarget')['awardAmount'].sum())
+
+    print('OPEN total funding')
+    print(Z.groupby('OPEN')['awardAmount'].sum())
+   
+    print('total awarded')
+    print(Z['awardAmount'].sum())
+
+    print('OPEN unspecified funding')
+    print(Z.groupby('OPEN')['awardAmount'].sum()[1]/Z['awardAmount'].sum())
+
+    print('other unspecified funding')
+    print((Z.groupby('costTarget')['awardAmount'].sum()[0]-Z.groupby('OPEN')['awardAmount'].sum()[1])/Z['awardAmount'].sum())
+
+    print('specified funding')
+    print(Z.groupby('costTarget')['awardAmount'].sum()[1]/Z['awardAmount'].sum())
+
     # make a histogram of projects by starting year
     t = Z.startDate[0].year
-    print(type(t))
-    print(Z.startDate[0].year)
-    print(type(Z.startDate[0]))
     startDateHistogram(Z)
 
     print('Tech categories')
