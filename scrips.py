@@ -403,9 +403,9 @@ def loadFinalData(df):
 	# add follow-on funding info 
 
 	# add final decision info from other docs
-	#x = pd.read_csv('disagreementscoder1coder2.csv') #tom 
+	x = pd.read_csv('disagreementscoder1coder2.csv') #tom 
 	#y = cleanCoderData(x)
-	#df = matchCodedData(df, y, 'FinalDecision', 'Notes')
+	df = matchCodedData(df, y, 'FinalDecision', 'Notes')
 
 	x = pd.read_csv('reconciledcoder1coder3.csv') # erin
 	#y = cleanCoderData(x)
@@ -426,7 +426,12 @@ def loadFinalData(df):
 	return(df)
 
 def disagreementsSummary(df):
-	print('hello world')
+	df['endYr'] = ""# df.endDate.year
+	for n in range(df.shape[0]):
+		df.endYr[n] = df.endDate[n].year
+	x = df.endYr.value_counts()
+	return(x)
+
 	#run some summary statistics to find commonalities in disagreements. look within coder pairs and as a group 
 
 def chi2calc(df, outcomeCol):
@@ -434,6 +439,7 @@ def chi2calc(df, outcomeCol):
 	new_df = count_series.to_frame(name = 'breakdown').reset_index()
 	new_df = new_df[new_df.FinalDecision !='blank']
 	print(new_df)
+	print(type(new_df))
 	stat, p, dof, expected = stats.chi2_contingency([new_df.breakdown[0:3], new_df.breakdown[3:6]])# ddof = 2)
 	return(stat, p, dof, expected)
 
