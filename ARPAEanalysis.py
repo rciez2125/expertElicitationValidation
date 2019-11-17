@@ -16,7 +16,6 @@ Z = runDatasetAnalysis()
 df = addCodedData(Z)
 #print(df)
 
-
 # run cohen's kappa calculations
 k14 = cohensKappa(df, 'coder1', 'coder4')
 print('k14', k14)
@@ -37,7 +36,11 @@ d = idDisagreements(df, 'coder1', 'coder3')
 x = disagreementsSummary(d)
 print(x)
 
-# tom, jeff, erin, sarah 
+k15 = cohensKappa(df, 'coder1', 'coder5')
+print('k15', k15)
+d = idDisagreements(df, 'coder1', 'coder5')
+x = disagreementsSummary(d)
+print(x)
 
 # load the final data 
 df = loadFinalData(Z)

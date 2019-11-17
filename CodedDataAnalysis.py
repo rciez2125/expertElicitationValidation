@@ -5,7 +5,11 @@ import matplotlib.pyplot as plt
 import statsmodels.api as sm
 from scipy.optimize import minimize 
 stats.chisqprob = lambda chisq, df: stats.chi2.sf(chisq, df)
+from matplotlib.cm import get_cmap
+from matplotlib.colors import rgb2hex
+from matplotlib.colors import to_rgb
 import random
+
 #import rpy2
 #from rpy2.robjects.packages import importr
 #base = importr('base')
@@ -128,29 +132,32 @@ def cleanData(df):
 
 	df.to_csv('cleanedFinalData.csv')
 	return(df)
-	
-
 df = cleanData(df)
-
-df.awardAmount = np.log(df.awardAmount)
+print(df.columns)
+#df.awardAmount = np.log(df.awardAmount)
 
 
 # calculate the chi2 based on open/designed outcomes 
 stat, p, dof, expected = chi2calc(df, 'FinalDecision')
 print('stat', stat, 'p', p, 'dof', dof, 'expected', expected)
 
-def makeTables(): #makes a csv version of the odds ratio 
+def makeAMETables(modmg): #makes a csv version of the odds ratio 
+	outdf = pd.DataFrame(columns = ('Parameter', 'Perish', 'Persist', 'Pivot'))
+	outdf[0]['Parameter'] = modmg(['dy/dx'][('FinalDecision=Perish', 'OPEN')])
+	print(outdf)
+
+
 	print('hello world')
 
 # define some regression models 
 
 def runMod1(pooling): #just open
 	if pooling == 'total':
-		exog = df[['OPEN']] 
+		exog = (df[['OPEN']]) #sm.add_constant
 	elif pooling == 'none':
-		exog = df[['OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
+		exog = (df[['OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']])
 	elif pooling == 'fakePartial':
-		exog = df[['OPEN', 'early', 'middle', 'late']]
+		exog = (df[['OPEN', 'early', 'middle', 'late']])
 	else:
 		print('hello world') #figure out if true partial pooling is a thing for multinomial logit models, does it really mean anything? 
 
@@ -169,7 +176,7 @@ def runMod2(pooling): # add award amounts
 	elif pooling == 'none':
 		exog = df[['awardAmount', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
 	elif pooling == 'fakePartial':
-		exog = df[['awardAmount', 'OPEN', 'early', 'middle']]
+		exog = df[['awardAmount', 'OPEN', 'early', 'middle', 'late']]
 	else:
 		print('hello world')
 
@@ -186,7 +193,7 @@ def runMod3(pooling): # for profit
 	elif pooling == 'none':
 		exog = df[['ForProf', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
 	elif pooling == 'fakePartial':
-		exog = df[['ForProf', 'OPEN', 'early', 'middle']]
+		exog = df[['ForProf', 'OPEN', 'early', 'middle', 'late']]
 	else:
 		print('hello world')
 
@@ -201,7 +208,7 @@ def runMod4(pooling): # tech category, relative to storage baseline
 	elif pooling == 'none':
 		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
 	elif pooling == 'fakePartial':
-		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'OPEN', 'early', 'middle']]
+		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'OPEN', 'early', 'middle', 'late']]
 	else:
 		print('hello world')
 
@@ -209,27 +216,32 @@ def runMod4(pooling): # tech category, relative to storage baseline
 	print(mdl4.summary())
 	mod4mg = mdl4.get_margeff()
 	print(mod4mg.summary())
+	return(mod4mg.summary_frame())
 
 def runMod5(pooling): # partners
 	if pooling == 'total':
-		exog = df[['OPEN']]
+		exog = df[['Partners', 'OPEN']]
 	elif pooling == 'none':
-		exog = df[['OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
+		exog = df[['Partners', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
 	elif pooling == 'fakePartial':
-		exog = df[['OPEN', 'early', 'middle']]
+		exog = df[['Partners', 'OPEN', 'early', 'middle', 'late']]
 	else:
 		print('hello world')
-
-	print('hello world')
+	
+	mdl5 = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit()
+	print(mdl5.summary())
+	mod5mg = mdl5.get_margeff()
+	print(mod5mg.summary())
+	return(mod5mg.summary_frame())
 
 def runMod6(pooling): # everything
 	# add partner info 
 	if pooling == 'total':
-		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'OPEN']]
+		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners', 'OPEN']]
 	elif pooling == 'none':
-		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
+		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
 	elif pooling == 'fakePartial':
-		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'OPEN', 'early', 'middle']]
+		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners', 'OPEN', 'early', 'middle', 'late']]
 	else:
 		print('hello world')
 
@@ -238,15 +250,16 @@ def runMod6(pooling): # everything
 	print(mdl6.summary())
 	mod6mg = mdl6.get_margeff()
 	print(mod6mg.summary())
+	return(mod6mg.summary_frame())
 
 def runMod7(pooling): # everything w/o open
 	# add partner info 
 	if pooling == 'total':
-		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT']]
+		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners']]
 	elif pooling == 'none':
-		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
+		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
 	elif pooling == 'fakePartial':
-		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'early', 'middle']]
+		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners', 'early', 'middle', 'late']]
 	else:
 		print('hello world')
 
@@ -254,56 +267,85 @@ def runMod7(pooling): # everything w/o open
 	print(mdl7.summary())
 	mod7mg = mdl7.get_margeff()
 	print(mod7mg.summary())
+	return(mod7mg.summary_frame())
 
 #runMod1('total')
-runMod1('fakePartial')
-#runMod1('none')
+#runMod2('total')
+runMod3('total')
+#y = runMod4('total')
+#runMod5('total')
+#y2 = runMod6('total')
+#runMod7('total')
 
-#x1 = runMod2('total')
 #x2 = runMod2('none')
 #x3 = runMod2('fakePartial')
+cmap = plt.get_cmap("tab10")
+print(cmap)
 
-#print('perish')
-#print(x1['dy/dx'][('FinalDecision=Perish', 'awardAmount')], x1['Pr(>|z|)'][('FinalDecision=Perish', 'awardAmount')])
-#print(x2['dy/dx'][('FinalDecision=Perish', 'awardAmount')],  x2['Pr(>|z|)'][('FinalDecision=Perish', 'awardAmount')])
-#print(x3['dy/dx'][('FinalDecision=Perish', 'awardAmount')],  x3['Pr(>|z|)'][('FinalDecision=Perish', 'awardAmount')])
+c1 = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf', '#afc7e4', '#fcbc7e', '#92e285']
+def addADatapoint(barx, bary, ub, lb, label, colorinfo):
+	fs = 14
+	plt.bar(barx, bary, color = c1[colorinfo])
+	plt.plot([barx, barx], [lb, ub], '-k')
+	if bary> 0:
+		plt.text(barx, ub+0.025, label, rotation = 270, horizontalalignment = 'center', verticalalignment = 'bottom', fontsize = fs)
+	else:
+		plt.text(barx, lb-0.025, label, rotation = 270, horizontalalignment = 'center', verticalalignment = 'top', fontsize = fs)
+def makeAFig(modmg, figname):
+	fs = 14
+	outcomes = ('FinalDecision=Perish', 'FinalDecision=Persist', 'FinalDecision=Pivot')
+	outcomeLabels = ("Perish", "Persist", "Pivot")
+	plt.figure(figsize=(11.5,4.75))
 
-#print('persist')
-#print(x1['dy/dx'][('FinalDecision=Persist', 'awardAmount')], x1['Pr(>|z|)'][('FinalDecision=Persist', 'awardAmount')])
-#print(x2['dy/dx'][('FinalDecision=Persist', 'awardAmount')], x2['Pr(>|z|)'][('FinalDecision=Persist', 'awardAmount')])
-#print(x3['dy/dx'][('FinalDecision=Persist', 'awardAmount')], x3['Pr(>|z|)'][('FinalDecision=Persist', 'awardAmount')])
+	plt.subplot(position = [0.07, 0.05, 0.9, 0.9])
+	m = modmg.shape[0]/3
+	for n in range(len(outcomes)):
+		addADatapoint(1+n*m, modmg['dy/dx'][(outcomes[n], 'OPEN')], modmg['Cont. Int. Hi.'][(outcomes[n], 'OPEN')], modmg['Conf. Int. Low'][(outcomes[n], 'OPEN')], 'OPEN', 0)
+		if m==13:
+			addADatapoint(2+n*m, modmg['dy/dx'][(outcomes[n], 'awardAmount')], modmg['Cont. Int. Hi.'][(outcomes[n], 'awardAmount')], modmg['Conf. Int. Low'][(outcomes[n], 'awardAmount')], 'Award Amt.', 1)
+			addADatapoint(3+n*m, modmg['dy/dx'][(outcomes[n], 'ForProf')], modmg['Cont. Int. Hi.'][(outcomes[n], 'ForProf')], modmg['Conf. Int. Low'][(outcomes[n], 'ForProf')], 'For-Profit', 2)
+			addADatapoint(4+n*m, modmg['dy/dx'][(outcomes[n], 'Partners')], modmg['Cont. Int. Hi.'][(outcomes[n], 'Partners')], modmg['Conf. Int. Low'][(outcomes[n], 'Partners')], 'Partners', 3)
 
-#print('pivot')
-#print(x1['dy/dx'][('FinalDecision=Pivot', 'awardAmount')], x1['Pr(>|z|)'][('FinalDecision=Pivot', 'awardAmount')])
-#print(x2['dy/dx'][('FinalDecision=Pivot', 'awardAmount')], x2['Pr(>|z|)'][('FinalDecision=Pivot', 'awardAmount')])
-#print(x3['dy/dx'][('FinalDecision=Pivot', 'awardAmount')], x3['Pr(>|z|)'][('FinalDecision=Pivot', 'awardAmount')])
+		addADatapoint((n+1)*m-8, modmg['dy/dx'][(outcomes[n], 'TC_TF')], modmg['Cont. Int. Hi.'][(outcomes[n], 'TC_TF')], modmg['Conf. Int. Low'][(outcomes[n], 'TC_TF')], 'Trans. Fuels', 4)
+		addADatapoint((n+1)*m-7, modmg['dy/dx'][(outcomes[n], 'TC_DG')], modmg['Cont. Int. Hi.'][(outcomes[n], 'TC_DG')], modmg['Conf. Int. Low'][(outcomes[n], 'TC_DG')], 'Dist. Gen.', 5)
+		addADatapoint((n+1)*m-6, modmg['dy/dx'][(outcomes[n], 'TC_TS')], modmg['Cont. Int. Hi.'][(outcomes[n], 'TC_TS')], modmg['Conf. Int. Low'][(outcomes[n], 'TC_TS')], 'Trans. Storage', 6)
+		addADatapoint((n+1)*m-5, modmg['dy/dx'][(outcomes[n], 'TC_BE')], modmg['Cont. Int. Hi.'][(outcomes[n], 'TC_BE')], modmg['Conf. Int. Low'][(outcomes[n], 'TC_BE')], 'Building Eff.', 7)
+		addADatapoint((n+1)*m-4, modmg['dy/dx'][(outcomes[n], 'TC_RE')], modmg['Cont. Int. Hi.'][(outcomes[n], 'TC_RE')], modmg['Conf. Int. Low'][(outcomes[n], 'TC_RE')], 'Resource Eff.', 8)
+		addADatapoint((n+1)*m-3, modmg['dy/dx'][(outcomes[n], 'TC_ME')], modmg['Cont. Int. Hi.'][(outcomes[n], 'TC_ME')], modmg['Conf. Int. Low'][(outcomes[n], 'TC_ME')], 'Manufact. Eff.', 9)
+		addADatapoint((n+1)*m-2, modmg['dy/dx'][(outcomes[n], 'TC_EE')], modmg['Cont. Int. Hi.'][(outcomes[n], 'TC_EE')], modmg['Conf. Int. Low'][(outcomes[n], 'TC_EE')], 'Elec. Eff.', 10)
+		addADatapoint((n+1)*m-1, modmg['dy/dx'][(outcomes[n], 'TC_GR')], modmg['Cont. Int. Hi.'][(outcomes[n], 'TC_GR')], modmg['Conf. Int. Low'][(outcomes[n], 'TC_GR')], 'Grid', 11)
+		addADatapoint((n+1)*m, modmg['dy/dx'][(outcomes[n], 'TC_OT')], modmg['Cont. Int. Hi.'][(outcomes[n], 'TC_OT')], modmg['Conf. Int. Low'][(outcomes[n], 'TC_OT')], 'Other', 12)
 
+		plt.plot([(n+1)*m+0.5, (n+1)*m+0.5], [-2, 2], '--k')
+		plt.text((n*m)+m/2+0.5, 1.45, outcomeLabels[n], horizontalalignment = 'center', fontsize = fs)
 
-print('perish')
-#print(x1['dy/dx'][('FinalDecision=Perish', 'OPEN')], x1['Pr(>|z|)'][('FinalDecision=Perish', 'OPEN')])
-#print(x2['dy/dx'][('FinalDecision=Perish', 'OPEN')],  x2['Pr(>|z|)'][('FinalDecision=Perish', 'OPEN')])
-#print(x3['dy/dx'][('FinalDecision=Perish', 'OPEN')],  x3['Pr(>|z|)'][('FinalDecision=Perish', 'OPEN')])
+	plt.ylabel('Average Marginal Effect', fontsize = fs)
+	plt.plot([0,m*4],[0,0], '-k')
+	plt.ylim(-1.4, 1.4)
+	plt.xticks(np.linspace(0,40,9), ' ')
+	plt.xlim(0.5, m*3+0.5)
+	#plt.xticks('')
+	plt.savefig(figname, dpi = 300)
 
-print('persist')
-#print(x1['dy/dx'][('FinalDecision=Persist', 'OPEN')], x1['Pr(>|z|)'][('FinalDecision=Persist', 'OPEN')])
-#print(x2['dy/dx'][('FinalDecision=Persist', 'OPEN')], x2['Pr(>|z|)'][('FinalDecision=Persist', 'OPEN')])
-#print(x3['dy/dx'][('FinalDecision=Persist', 'OPEN')], x3['Pr(>|z|)'][('FinalDecision=Persist', 'OPEN')])
+#makeAFig(y, 'bargraph_TechCat.png')
+#makeAFig(y2, 'bargraph_allVars.png')
 
-print('pivot')
-#print(x1['dy/dx'][('FinalDecision=Pivot', 'OPEN')], x1['Pr(>|z|)'][('FinalDecision=Pivot', 'OPEN')])
-#print(x2['dy/dx'][('FinalDecision=Pivot', 'OPEN')], x2['Pr(>|z|)'][('FinalDecision=Pivot', 'OPEN')])
-#print(x3['dy/dx'][('FinalDecision=Pivot', 'OPEN')], x3['Pr(>|z|)'][('FinalDecision=Pivot', 'OPEN')])
+def makeBarChart(df):
+	print(df.columns)
+	y1=(df.FinalDecision.value_counts())
+	print(y1)
+	subDf = df[df.techCat1 == 'Storage']
+	y2 = (subDf.FinalDecision.value_counts())
+	print(df.FinalDecision)
 
-# which pooling version? 
-#runMod3('total')
-#runMod4('total') # this works, is better than null 
-#runMod5('total') # still need partner 
-#runMod6('total') # still need partner, but works better than null 
-#runMod7('total') # no open, still need partner  
-
-
-#runMod3('none')
-#runMod4('none')
-#runMod5('none')
-#runMod6('none')
-#runMod7('none')
+	plt.figure(figsize=(4,4.75))
+	plt.subplot(position = [0.15, 0.1, 0.85, 0.85])
+	plt.bar(range(3), y1)
+	plt.bar(range(3), y2, color = c1[1])
+	plt.ylabel('Frequency')
+	plt.xticks(range(3), ('Pivot', 'Perish', 'Persist'))
+	plt.xlim(-0.5, 3.5)
+	plt.text(2.45, 5, 'Storage')
+	plt.text(2.45, 57, 'Other\nCategories')
+	plt.savefig('outcomeStorage.png', dpi = 300)
+#makeBarChart(df)

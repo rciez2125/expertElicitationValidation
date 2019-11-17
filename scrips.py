@@ -300,6 +300,7 @@ def matchCodedData(df, cf, col, notes):
 		if col == 'coder1':
 			df['recipientType'][z] = cf['Recipient Type'][n]
 			df['coder1notes'][z] = cf['Comments'][n]
+			df['Partners'][z] = cf['Parners'][n]
 		else:
 			df[notes][z]=cf['Comments'][n]
 	df = df.reset_index(drop=True)
@@ -307,9 +308,13 @@ def matchCodedData(df, cf, col, notes):
 
 def addCodedData(df):
 	#x = pd.read_csv('coder1.csv')
-	x = pd.read_csv('Coder1 - Sheet1.csv')
+	#x = pd.read_csv('Coder1 - Sheet1.csv')
+	x = pd.read_csv('Coding Framework - Coder 1 - Coding Framework - Coder 1.csv')
 	y = cleanCoderData(x)
+	print(y.columns)
+	print(y.Parners[2])
 	df['recipientType'] = ['blank']*(df.shape[0])
+	df['Partners'] = ['blank']*(df.shape[0])
 	df['coder1'] = ['blank']*(df.shape[0])
 	df['coder2'] = ['blank']*(df.shape[0])
 	df['coder3'] = ['blank']*(df.shape[0])
@@ -340,10 +345,9 @@ def addCodedData(df):
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder4', 'coder4notes')
 
-	#x = pd.read_csv('coder5.csv') # jeff
-	#y = cleanCoderData(x)
-	#df = matchCodedData(df, y, 'coder5')
-
+	x = pd.read_csv('Coder5.csv') # jeff
+	y = cleanCoderData(x)
+	df = matchCodedData(df, y, 'coder5', 'coder5notes')
 
 	return(df)
 
@@ -391,9 +395,12 @@ def addFollowOnData(df):
 	print('hello world')
 
 def loadFinalData(df):
-	x = pd.read_csv('Coder1 - Sheet1.csv') # change file name after this is done 
+	#x = pd.read_csv('Coder1 - Sheet1.csv') # change file name after this is done 
+	x = pd.read_csv('Coding Framework - Coder 1 - Coding Framework - Coder 1.csv')
+	#x = pd.read_csv('Coding Framework - Coder 1 - Coding Framework - Coder 1.csv')
 	y = cleanCoderData(x)
 	df['recipientType'] = ['blank']*(df.shape[0])
+	df['Partners'] = ['blank']*(df.shape[0])
 	df['coder1'] = ['blank']*(df.shape[0])
 	df['coder1notes'] = ['blank']*(df.shape[0])
 	df['FinalDecision'] = ['blank']*(df.shape[0])
@@ -402,24 +409,40 @@ def loadFinalData(df):
 	
 	# add follow-on funding info 
 
-	# add final decision info from other docs
-	x = pd.read_csv('disagreementscoder1coder2.csv') #tom 
-	#y = cleanCoderData(x)
-	df = matchCodedData(df, y, 'FinalDecision', 'Notes')
 
 	x = pd.read_csv('reconciledcoder1coder3.csv') # erin
+	print(x.shape)
 	#y = cleanCoderData(x)
 	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
+	print(df.FinalDecision.value_counts())
+	
+	# add final decision info from other docs
+	x = pd.read_csv('reconciledcoder1coder2.csv') #tom 
+	print(x.shape)
+	#y = cleanCoderData(x)
+	df = matchCodedData(df, x, 'FinalDecision', 'Notes') 
+	print(df.FinalDecision.value_counts())
+	# count
+
+	
 
 	x = pd.read_csv('reconciledcoder1coder4.csv') # sarah
+	print(x.shape)
 	#y = cleanCoderData(x)
 	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
+	print(df.FinalDecision.value_counts())
+
+	df.to_csv('intermediates.csv')
 
 	#x = pd.read_csv('reconciledcoder1coder5.csv') # jeff
 	#y = cleanCoderData(x)
 	#df = matchCodedData(df, y, 'FinalDecision', 'Notes')
 
-	# for now, keep only coder 1 data for blank info 
+	# for now, keep only coder 1 data for blank info, write a csv file where there are still blanks 
+	blankdf = df[df.FinalDecision=='blank']
+	blankdf.to_csv(('Stragglers.csv'))
+	print(blankdf.shape)
+	
 	for n in range(df.shape[0]):
 		if df.FinalDecision[n] == 'blank':
 			df.FinalDecision[n] = df.coder1[n]
@@ -438,8 +461,8 @@ def chi2calc(df, outcomeCol):
 	count_series = df.groupby(['OPEN', outcomeCol]).size()
 	new_df = count_series.to_frame(name = 'breakdown').reset_index()
 	new_df = new_df[new_df.FinalDecision !='blank']
-	print(new_df)
-	print(type(new_df))
+	#print(new_df)
+	#print(type(new_df))
 	stat, p, dof, expected = stats.chi2_contingency([new_df.breakdown[0:3], new_df.breakdown[3:6]])# ddof = 2)
 	return(stat, p, dof, expected)
 
