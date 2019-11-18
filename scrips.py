@@ -297,6 +297,7 @@ def matchCodedData(df, cf, col, notes):
 			df[col][z] = cf.Outcome[n]
 		elif hasattr(cf, 'Final Decision'):
 			df[col][z] = cf['Final Decision'][n]
+
 		if col == 'coder1':
 			df['recipientType'][z] = cf['Recipient Type'][n]
 			df['coder1notes'][z] = cf['Comments'][n]
@@ -397,7 +398,6 @@ def addFollowOnData(df):
 def loadFinalData(df):
 	#x = pd.read_csv('Coder1 - Sheet1.csv') # change file name after this is done 
 	x = pd.read_csv('Coding Framework - Coder 1 - Coding Framework - Coder 1.csv')
-	#x = pd.read_csv('Coding Framework - Coder 1 - Coding Framework - Coder 1.csv')
 	y = cleanCoderData(x)
 	df['recipientType'] = ['blank']*(df.shape[0])
 	df['Partners'] = ['blank']*(df.shape[0])
@@ -405,48 +405,44 @@ def loadFinalData(df):
 	df['coder1notes'] = ['blank']*(df.shape[0])
 	df['FinalDecision'] = ['blank']*(df.shape[0])
 	df['Notes'] = ['blank']*(df.shape[0])
+	df['counter'] = 0
 	df = matchCodedData(df, y, 'coder1', 'coder1notes')
-	
-	# add follow-on funding info 
+	df = matchCodedData(df, y, 'FinalDecision', 'Notes')
 
 
-	x = pd.read_csv('reconciledcoder1coder3.csv') # erin
-	print(x.shape)
-	#y = cleanCoderData(x)
-	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
-	print(df.FinalDecision.value_counts())
-	
-	# add final decision info from other docs
+	x = pd.read_csv('Coder2.csv') #tom 
+	y = cleanCoderData(x)
+	df = matchCodedData(df, y, 'coder2', 'coder2notes')
 	x = pd.read_csv('reconciledcoder1coder2.csv') #tom 
-	print(x.shape)
-	#y = cleanCoderData(x)
 	df = matchCodedData(df, x, 'FinalDecision', 'Notes') 
-	print(df.FinalDecision.value_counts())
-	# count
 
+	x = pd.read_csv('Resource Efficiency, Building Efficiency, Grid Projects - Projects.csv') #erin  
+	y = cleanCoderData(x)
+	df = matchCodedData(df, y, 'coder3', 'coder3notes')
+	x = pd.read_csv('reconciledcoder1coder3.csv') # erin
+	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
 	
-
+	x = pd.read_csv('Transportation Fuels.csv') #sarah 
+	y = cleanCoderData(x)
+	df = matchCodedData(df, y, 'coder4', 'coder4notes')
 	x = pd.read_csv('reconciledcoder1coder4.csv') # sarah
 	print(x.shape)
-	#y = cleanCoderData(x)
 	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
 	print(df.FinalDecision.value_counts())
 
-	df.to_csv('intermediates.csv')
-
+	x = pd.read_csv('Coder5.csv') # jeff
+	y = cleanCoderData(x)
+	df = matchCodedData(df, y, 'coder5', 'coder5notes')
 	#x = pd.read_csv('reconciledcoder1coder5.csv') # jeff
 	#y = cleanCoderData(x)
 	#df = matchCodedData(df, y, 'FinalDecision', 'Notes')
 
-	# for now, keep only coder 1 data for blank info, write a csv file where there are still blanks 
-	blankdf = df[df.FinalDecision=='blank']
+	# find stragglers 
+	blankdf = df[(df.coder2=='blank') & (df.coder3 =='blank') & (df.coder4 == 'blank') & (df.coder5 =='blank')]
 	blankdf.to_csv(('Stragglers.csv'))
-	print(blankdf.shape)
-	
-	for n in range(df.shape[0]):
-		if df.FinalDecision[n] == 'blank':
-			df.FinalDecision[n] = df.coder1[n]
-	return(df)
+	print('blankdata', blankdf.shape)
+
+	return df
 
 def disagreementsSummary(df):
 	df['endYr'] = ""# df.endDate.year
