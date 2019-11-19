@@ -408,6 +408,7 @@ def loadFinalData(df):
 	df['counter'] = 0
 	df = matchCodedData(df, y, 'coder1', 'coder1notes')
 	df = matchCodedData(df, y, 'FinalDecision', 'Notes')
+	
 
 
 	x = pd.read_csv('Coder2.csv') #tom 
@@ -415,6 +416,7 @@ def loadFinalData(df):
 	df = matchCodedData(df, y, 'coder2', 'coder2notes')
 	x = pd.read_csv('reconciledcoder1coder2.csv') #tom 
 	df = matchCodedData(df, x, 'FinalDecision', 'Notes') 
+	
 
 	x = pd.read_csv('Resource Efficiency, Building Efficiency, Grid Projects - Projects.csv') #erin  
 	y = cleanCoderData(x)
@@ -426,9 +428,8 @@ def loadFinalData(df):
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder4', 'coder4notes')
 	x = pd.read_csv('reconciledcoder1coder4.csv') # sarah
-	print(x.shape)
 	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
-	print(df.FinalDecision.value_counts())
+
 
 	x = pd.read_csv('Coder5.csv') # jeff
 	y = cleanCoderData(x)
@@ -436,6 +437,7 @@ def loadFinalData(df):
 	#x = pd.read_csv('reconciledcoder1coder5.csv') # jeff
 	#y = cleanCoderData(x)
 	#df = matchCodedData(df, y, 'FinalDecision', 'Notes')
+
 
 	# find stragglers 
 	blankdf = df[(df.coder2=='blank') & (df.coder3 =='blank') & (df.coder4 == 'blank') & (df.coder5 =='blank')]

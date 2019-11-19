@@ -133,8 +133,11 @@ def cleanData(df):
 	df.to_csv('cleanedFinalData.csv')
 	return(df)
 df = cleanData(df)
-print(df.columns)
+
+count = df.groupby(['OPEN', 'FinalDecision']).size() 
+print(count) 
 #df.awardAmount = np.log(df.awardAmount)
+
 
 
 # calculate the chi2 based on open/designed outcomes 
@@ -271,7 +274,7 @@ def runMod7(pooling): # everything w/o open
 
 #runMod1('total')
 #runMod2('total')
-runMod3('total')
+#runMod3('total')
 #y = runMod4('total')
 #runMod5('total')
 #y2 = runMod6('total')
@@ -280,7 +283,6 @@ runMod3('total')
 #x2 = runMod2('none')
 #x3 = runMod2('fakePartial')
 cmap = plt.get_cmap("tab10")
-print(cmap)
 
 c1 = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf', '#afc7e4', '#fcbc7e', '#92e285']
 def addADatapoint(barx, bary, ub, lb, label, colorinfo):
