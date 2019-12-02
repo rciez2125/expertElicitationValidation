@@ -321,12 +321,14 @@ def addCodedData(df):
 	df['coder3'] = ['blank']*(df.shape[0])
 	df['coder4'] = ['blank']*(df.shape[0])
 	df['coder5'] = ['blank']*(df.shape[0])
+	df['coder22'] = ['blank']*(df.shape[0])
 	df['coder1notes'] = ['blank']*(df.shape[0])
 	df['coder2notes'] = ['blank']*(df.shape[0])
 	df['coder3notes'] = ['blank']*(df.shape[0])
 	df['coder4notes'] = ['blank']*(df.shape[0])
 	df['coder5notes'] = ['blank']*(df.shape[0])
-	df['dummyCoder'] = ['blank']*(df.shape[0])
+	df['coder22notes'] = ['blank']*(df.shape[0])
+	#df['dummyCoder'] = ['blank']*(df.shape[0])
 	
 	df = matchCodedData(df, y, 'coder1', 'coder1notes')
 	
@@ -349,6 +351,10 @@ def addCodedData(df):
 	x = pd.read_csv('Coder5.csv') # jeff
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder5', 'coder5notes')
+
+	x = pd.read_csv('Transportation Storage - Transportation Storage.csv')
+	y = cleanCoderData(x)
+	df = matchCodedData(df, y, 'coder22', 'coder22notes')
 
 	return(df)
 
@@ -434,9 +440,8 @@ def loadFinalData(df):
 	x = pd.read_csv('Coder5.csv') # jeff
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder5', 'coder5notes')
-	#x = pd.read_csv('reconciledcoder1coder5.csv') # jeff
-	#y = cleanCoderData(x)
-	#df = matchCodedData(df, y, 'FinalDecision', 'Notes')
+	x = pd.read_csv('reconciledcoder1coder5.csv') # jeff
+	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
 
 
 	# find stragglers 

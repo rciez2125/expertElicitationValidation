@@ -42,6 +42,11 @@ d = idDisagreements(df, 'coder1', 'coder5')
 x = disagreementsSummary(d)
 print(x)
 
+k122 = cohensKappa(df, 'coder1', 'coder22')
+print('k122', k122)
+d = idDisagreements(df, 'coder1', 'coder22')
+x = disagreementsSummary(d)
+
 # load the final data 
 df = loadFinalData(Z)
 df.to_csv(('FinalData.csv'))
