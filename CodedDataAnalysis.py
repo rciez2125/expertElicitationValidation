@@ -272,13 +272,13 @@ def runMod7(pooling): # everything w/o open
 	print(mod7mg.summary())
 	return(mod7mg.summary_frame())
 
-#runMod1('total')
-#runMod2('total')
-#runMod3('total')
-#y = runMod4('total')
-#runMod5('total')
-#y2 = runMod6('total')
-#runMod7('total')
+runMod1('total')
+runMod2('total')
+runMod3('total')
+y = runMod4('total')
+runMod5('total')
+y2 = runMod6('total')
+runMod7('total')
 
 #x2 = runMod2('none')
 #x3 = runMod2('fakePartial')
@@ -329,10 +329,10 @@ def makeAFig(modmg, figname):
 	#plt.xticks('')
 	plt.savefig(figname, dpi = 300)
 
-#makeAFig(y, 'bargraph_TechCat.png')
-#makeAFig(y2, 'bargraph_allVars.png')
+makeAFig(y, 'bargraph_TechCat.png')
+makeAFig(y2, 'bargraph_allVars.png')
 
-def makeBarChart(df):
+def makeFrequencyBarChart(df):
 	print(df.columns)
 	y1=(df.FinalDecision.value_counts())
 	print(y1)
@@ -350,4 +350,4 @@ def makeBarChart(df):
 	plt.text(2.45, 5, 'Storage')
 	plt.text(2.45, 57, 'Other\nCategories')
 	plt.savefig('outcomeStorage.png', dpi = 300)
-#makeBarChart(df)
+makeFrequencyBarChart(df)
