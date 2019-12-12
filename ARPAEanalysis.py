@@ -24,28 +24,30 @@ x = disagreementsSummary(d)
 print(x)
 print(type(x))
 
-k12 = cohensKappa(df, 'coder1', 'coder2')
-print('k12', k12)
+#k12 = cohensKappa(df, 'coder1', 'coder2')
+#k122 = cohensKappa(df, 'coder1', 'coder22')
+k12c = cohensKappa(df, 'coder1', 'coder2combined')
+#print('k12', k12, k122, k12c)
+print('k12', k12c)
+
 d = idDisagreements(df, 'coder1', 'coder2')
 x = disagreementsSummary(d)
-print(x)
+print(len(d))
+
+d = idDisagreements(df, 'coder1', 'coder22')
+x = disagreementsSummary(d)
 
 k13 = cohensKappa(df, 'coder1', 'coder3')
 print('k13', k13)
 d = idDisagreements(df, 'coder1', 'coder3')
 x = disagreementsSummary(d)
-print(x)
 
 k15 = cohensKappa(df, 'coder1', 'coder5')
 print('k15', k15)
 d = idDisagreements(df, 'coder1', 'coder5')
 x = disagreementsSummary(d)
-print(x)
 
-k122 = cohensKappa(df, 'coder1', 'coder22')
-print('k122', k122)
-d = idDisagreements(df, 'coder1', 'coder22')
-x = disagreementsSummary(d)
+
 
 # load the final data 
 df = loadFinalData(Z)

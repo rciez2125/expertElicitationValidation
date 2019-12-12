@@ -308,8 +308,6 @@ def matchCodedData(df, cf, col, notes):
 	return(df)
 
 def addCodedData(df):
-	#x = pd.read_csv('coder1.csv')
-	#x = pd.read_csv('Coder1 - Sheet1.csv')
 	x = pd.read_csv('Coding Framework - Coder 1 - Coding Framework - Coder 1.csv')
 	y = cleanCoderData(x)
 	print(y.columns)
@@ -322,20 +320,17 @@ def addCodedData(df):
 	df['coder4'] = ['blank']*(df.shape[0])
 	df['coder5'] = ['blank']*(df.shape[0])
 	df['coder22'] = ['blank']*(df.shape[0])
+	df['coder2combined'] = ['blank']*(df.shape[0])
 	df['coder1notes'] = ['blank']*(df.shape[0])
 	df['coder2notes'] = ['blank']*(df.shape[0])
 	df['coder3notes'] = ['blank']*(df.shape[0])
 	df['coder4notes'] = ['blank']*(df.shape[0])
 	df['coder5notes'] = ['blank']*(df.shape[0])
 	df['coder22notes'] = ['blank']*(df.shape[0])
-	#df['dummyCoder'] = ['blank']*(df.shape[0])
+	df['coder2combinednotes'] = ['blank']*(df.shape[0])
 	
 	df = matchCodedData(df, y, 'coder1', 'coder1notes')
 	
-	#x = pd.read_csv('dummyCoder.csv')
-	#y = cleanCoderData(x)
-	#df = matchCodedData(df, y, 'dummyCoder')
-
 	x = pd.read_csv('Coder2.csv') #tom 
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder2', 'coder2notes')
@@ -356,10 +351,17 @@ def addCodedData(df):
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder22', 'coder22notes')
 
+	x = pd.read_csv('Coder2combined.csv')
+	y = cleanCoderData(x)
+	df = matchCodedData(df, y, 'coder2combined', 'coder2combinednotes')
+
 	return(df)
 
 def cohensKappa(df, coderA, coderB):
 	p0 = 0
+	pivotPersist = 0 
+	pivotPerish = 0 
+	persistPerish = 0 
 	# keep only non-blank for coder B
 	dropList = np.array([])
 	for n in range(len(df[coderA])):
@@ -369,9 +371,23 @@ def cohensKappa(df, coderA, coderB):
 	df = df.reset_index(drop = True)
 	for n in range(len(df[coderA])):
 		if df[coderA][n] == df[coderB][n]:
-			p0 = p0 + 1
+			p0 += 1
+		elif (df[coderA][n] == 'Pivot' and df[coderB][n] == 'Persist'): 
+			pivotPersist += 1
+		elif (df[coderA][n] == 'Persist' and df[coderB][n] == 'Pivot'):
+			pivotPersist += 1
+		elif (df[coderA][n] == 'Pivot' and df[coderB][n] == 'Perish'):
+			pivotPerish += 1
+		elif (df[coderA][n] == 'Perish' and df[coderB][n]=='Pivot'):
+			pivotPerish += 1
+		else:
+			persistPerish += 1 
+
+	print('pivot/persist', pivotPersist/len(df[coderA]), 'pivot/perish', pivotPerish/len(df[coderA]), 'persist/perish', persistPerish/len(df[coderA]), 'overall diff', (1-p0/len(df[coderA])))
+
 	x = df[coderA].value_counts(sort=False)
 	x1 = df[coderA].value_counts(sort=False).index.tolist()
+
 	y = df[coderB].value_counts(sort=False)
 	y1 = df[coderB].value_counts(sort=False).index.tolist()
 
@@ -381,7 +397,10 @@ def cohensKappa(df, coderA, coderB):
 	ck['Pivot'] = [x[x1.index('Pivot')], y[y1.index('Pivot')]]
 	ck['Perish'] = [x[x1.index('Perish')], y[y1.index('Perish')]]
 
+	print('percentage same', p0, p0/ck.Total[0])
 	pe = (np.product(ck.Persist/ck.Total)) + (np.product(ck.Pivot/ck.Total)) + (np.product(ck.Perish/ck.Total))
+	p0 = p0/len(df[coderA])
+	print(p0, pe, len(df[coderA]))
 	c = (p0 - pe)/(1-pe)
 	return(c)
 
