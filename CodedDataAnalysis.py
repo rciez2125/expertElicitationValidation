@@ -149,16 +149,13 @@ def makeAMETables(modmg): #makes a csv version of the odds ratio
 	outdf[0]['Parameter'] = modmg(['dy/dx'][('FinalDecision=Perish', 'OPEN')])
 	print(outdf)
 
-
-	print('hello world')
-
 # define some regression models 
 
 def runMod1(pooling): #just open
 	if pooling == 'total':
 		exog = (df[['OPEN']]) #sm.add_constant
 	elif pooling == 'none':
-		exog = (df[['OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']])
+		exog = (df[['OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']])
 	elif pooling == 'fakePartial':
 		exog = (df[['OPEN', 'early', 'middle', 'late']])
 	else:
@@ -177,7 +174,7 @@ def runMod2(pooling): # add award amounts
 	if pooling == 'total':
 		exog = df[['awardAmount','OPEN']] 
 	elif pooling == 'none':
-		exog = df[['awardAmount', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
+		exog = df[['awardAmount', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']]
 	elif pooling == 'fakePartial':
 		exog = df[['awardAmount', 'OPEN', 'early', 'middle', 'late']]
 	else:
@@ -194,7 +191,7 @@ def runMod3(pooling): # for profit
 	if pooling == 'total':
 		exog = df[['ForProf', 'OPEN']] 
 	elif pooling == 'none':
-		exog = df[['ForProf', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
+		exog = df[['ForProf', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']]
 	elif pooling == 'fakePartial':
 		exog = df[['ForProf', 'OPEN', 'early', 'middle', 'late']]
 	else:
@@ -209,7 +206,7 @@ def runMod4(pooling): # tech category, relative to storage baseline
 	if pooling == 'total':
 		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'OPEN']]
 	elif pooling == 'none':
-		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
+		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']]
 	elif pooling == 'fakePartial':
 		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'OPEN', 'early', 'middle', 'late']]
 	else:
@@ -225,7 +222,7 @@ def runMod5(pooling): # partners
 	if pooling == 'total':
 		exog = df[['Partners', 'OPEN']]
 	elif pooling == 'none':
-		exog = df[['Partners', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
+		exog = df[['Partners', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']]
 	elif pooling == 'fakePartial':
 		exog = df[['Partners', 'OPEN', 'early', 'middle', 'late']]
 	else:
@@ -242,7 +239,7 @@ def runMod6(pooling): # everything
 	if pooling == 'total':
 		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners', 'OPEN']]
 	elif pooling == 'none':
-		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
+		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners', 'OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']]
 	elif pooling == 'fakePartial':
 		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners', 'OPEN', 'early', 'middle', 'late']]
 	else:
@@ -260,7 +257,7 @@ def runMod7(pooling): # everything w/o open
 	if pooling == 'total':
 		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners']]
 	elif pooling == 'none':
-		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16', 'dum17']]
+		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']]
 	elif pooling == 'fakePartial':
 		exog = df[['awardAmount', 'ForProf', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'Partners', 'early', 'middle', 'late']]
 	else:
@@ -273,16 +270,33 @@ def runMod7(pooling): # everything w/o open
 	return(mod7mg.summary_frame())
 
 runMod1('total')
-runMod2('total')
-runMod3('total')
-y = runMod4('total')
-runMod5('total')
-y2 = runMod6('total')
-runMod7('total')
+runMod1('fakePartial')
+runMod1('none')
+
+#print(df.dum09.value_counts())
+#print(df.dum10.value_counts())
+#print(df.dum11.value_counts())
+#print(df.dum12.value_counts())
+#print(df.dum13.value_counts())
+#print(df.dum14.value_counts())
+#print(df.dum15.value_counts())
+#print(df.dum16.value_counts())
+#print(df.dum17.value_counts())
+#print(df.dum18.value_counts())
+
+#runMod2('total')
+#runMod3('total')
+#y = runMod4('total')
+#runMod4('fakePartial')
+#runMod5('total')
+#runMod5('fakePartial')
+#y2 = runMod6('total')
+#runMod6('fakePartial')
+#runMod7('total')
 
 #x2 = runMod2('none')
 #x3 = runMod2('fakePartial')
-cmap = plt.get_cmap("tab10")
+#cmap = plt.get_cmap("tab10")
 
 c1 = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf', '#afc7e4', '#fcbc7e', '#92e285']
 def addADatapoint(barx, bary, ub, lb, label, colorinfo):
@@ -329,8 +343,8 @@ def makeAFig(modmg, figname):
 	#plt.xticks('')
 	plt.savefig(figname, dpi = 300)
 
-makeAFig(y, 'bargraph_TechCat.png')
-makeAFig(y2, 'bargraph_allVars.png')
+#makeAFig(y, 'bargraph_TechCat.png')
+#makeAFig(y2, 'bargraph_allVars.png')
 
 def makeFrequencyBarChart(df):
 	print(df.columns)
@@ -350,4 +364,4 @@ def makeFrequencyBarChart(df):
 	plt.text(2.45, 5, 'Storage')
 	plt.text(2.45, 57, 'Other\nCategories')
 	plt.savefig('outcomeStorage.png', dpi = 300)
-makeFrequencyBarChart(df)
+#makeFrequencyBarChart(df)

@@ -441,7 +441,8 @@ def loadFinalData(df):
 	df = matchCodedData(df, y, 'coder2', 'coder2notes')
 	x = pd.read_csv('reconciledcoder1coder2.csv') #tom 
 	df = matchCodedData(df, x, 'FinalDecision', 'Notes') 
-	
+	x = pd.read_csv('reconciledcoder1coder22.csv')
+	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
 
 	x = pd.read_csv('Resource Efficiency, Building Efficiency, Grid Projects - Projects.csv') #erin  
 	y = cleanCoderData(x)
