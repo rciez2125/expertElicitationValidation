@@ -1,3 +1,5 @@
+# runs some preliminary data analysis on basic project statistics, loads decision data
+
 # master file that runs each of the components for dataset creation/formatting, 
 # pretesting + power analysis, figure generation, and final analysis
 from scrips import addCodedData, cohensKappa, idDisagreements, loadFinalData, disagreementsSummary
@@ -45,14 +47,13 @@ print('k15', k15)
 d = idDisagreements(df, 'coder1', 'coder5')
 x = disagreementsSummary(d)
 
-
 # load the final data 
+print('loading final data')
 df = loadFinalData(Z)
-df.to_csv(('FinalData.csv'))
+
+df.to_csv(('Data/FinalData.csv'))
 df['endYr'] = ""
 for n in range(df.shape[0]):
 	df.endYr[n] = df.endDate[n].year
 x = df.endYr.value_counts()
-print(x)
-
-# run final analysis 
+#print(x)

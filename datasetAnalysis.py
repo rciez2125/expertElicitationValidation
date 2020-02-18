@@ -3,11 +3,13 @@ import numpy as np
 from datetime import datetime
 from dateutil.parser import parse
 from scrips import awardSizeHistogram, awardSizeHistogramPoster, startDateHistogram
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 # load the CSV file with the data
 def runDatasetAnalysis():
-    x = pd.read_csv('arpaeSummaryDataWithAward.csv')
+    x = pd.read_csv('Data/arpaeSummaryDataWithAward.csv')
     y = x.drop(x.columns[0], axis=1)
     a = [datetime.strptime(n, '%m/%d/%Y') for n in y.startDate]
     b = [datetime.strptime(n, '%m/%d/%Y') for n in y.endDate]
@@ -91,7 +93,7 @@ def runDatasetAnalysis():
 
     # add the costTarget Data
     Z['costTarget'] = ['blank']*Z.shape[0]
-    targetData = pd.read_csv("costTargets.csv")
+    targetData = pd.read_csv("Data/costTargets.csv")
     for n in range(targetData.shape[0]):
         for m in range(Z.shape[0]):
             if targetData.Program[n] == Z.program[m]:

@@ -4,6 +4,8 @@ import time
 import pandas as pd
 import numpy as np
 from scipy import stats
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from matplotlib.dates import DayLocator, HourLocator, DateFormatter, drange
 from datetime import datetime
@@ -302,18 +304,25 @@ def matchCodedData(df, cf, col, notes):
 			df['recipientType'][z] = cf['Recipient Type'][n]
 			df['coder1notes'][z] = cf['Comments'][n]
 			df['Partners'][z] = cf['Parners'][n]
+			df['Size'][z] = cf['Size'][n]
+			df['Follow-on'][z] = cf['Follow-on (Y/N)'][n]
+			df['CompanyType'][z] = cf['Company Type'][n]
 		else:
 			df[notes][z]=cf['Comments'][n]
 	df = df.reset_index(drop=True)
 	return(df)
 
 def addCodedData(df):
-	x = pd.read_csv('Coding Framework - Coder 1 - Coding Framework - Coder 1.csv')
+	#x = pd.read_csv('Coding Framework - Coder 1 - Coding Framework - Coder 1.csv')
+	x = pd.read_csv('Data/Coder1_withCompanySize - Coder 1.csv')
 	y = cleanCoderData(x)
 	print(y.columns)
 	print(y.Parners[2])
 	df['recipientType'] = ['blank']*(df.shape[0])
 	df['Partners'] = ['blank']*(df.shape[0])
+	df['Size'] = ['blank']*(df.shape[0])
+	df['Follow-on'] = ['blank']*(df.shape[0])
+	df['CompanyType'] = ['blank']*(df.shape[0])
 	df['coder1'] = ['blank']*(df.shape[0])
 	df['coder2'] = ['blank']*(df.shape[0])
 	df['coder3'] = ['blank']*(df.shape[0])
@@ -331,27 +340,27 @@ def addCodedData(df):
 	
 	df = matchCodedData(df, y, 'coder1', 'coder1notes')
 	
-	x = pd.read_csv('Coder2.csv') #tom 
+	x = pd.read_csv('Data/Coder2.csv') #tom 
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder2', 'coder2notes')
 
-	x = pd.read_csv('Resource Efficiency, Building Efficiency, Grid Projects - Projects.csv') #erin  
+	x = pd.read_csv('Data/Resource Efficiency, Building Efficiency, Grid Projects - Projects.csv') #erin  
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder3', 'coder3notes')
 
-	x = pd.read_csv('Transportation Fuels.csv') #sarah 
+	x = pd.read_csv('Data/Transportation Fuels.csv') #sarah 
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder4', 'coder4notes')
 
-	x = pd.read_csv('Coder5.csv') # jeff
+	x = pd.read_csv('Data/Coder5.csv') # jeff
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder5', 'coder5notes')
 
-	x = pd.read_csv('Transportation Storage - Transportation Storage.csv')
+	x = pd.read_csv('Data/Transportation Storage - Transportation Storage.csv')
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder22', 'coder22notes')
 
-	x = pd.read_csv('Coder2combined.csv')
+	x = pd.read_csv('Data/Coder2combined.csv')
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder2combined', 'coder2combinednotes')
 
@@ -422,51 +431,59 @@ def addFollowOnData(df):
 
 def loadFinalData(df):
 	#x = pd.read_csv('Coder1 - Sheet1.csv') # change file name after this is done 
-	x = pd.read_csv('Coding Framework - Coder 1 - Coding Framework - Coder 1.csv')
+	#x = pd.read_csv('Data/Coding Framework - Coder 1 - Coding Framework - Coder 1.csv')
+	x = pd.read_csv('Data/Coder1_withCompanySize - Coder 1.csv')
 	y = cleanCoderData(x)
+
+	print(y.columns)
+
 	df['recipientType'] = ['blank']*(df.shape[0])
 	df['Partners'] = ['blank']*(df.shape[0])
 	df['coder1'] = ['blank']*(df.shape[0])
 	df['coder1notes'] = ['blank']*(df.shape[0])
 	df['FinalDecision'] = ['blank']*(df.shape[0])
 	df['Notes'] = ['blank']*(df.shape[0])
+	df['Size'] = ['blank']*(df.shape[0])
+	df['Follow-on'] = ['blank']*(df.shape[0])
+	df['CompanyType'] = ['blank']*(df.shape[0])
 	df['counter'] = 0
 	df = matchCodedData(df, y, 'coder1', 'coder1notes')
 	df = matchCodedData(df, y, 'FinalDecision', 'Notes')
 	
 
 
-	x = pd.read_csv('Coder2.csv') #tom 
+	x = pd.read_csv('Data/Coder2.csv') #tom 
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder2', 'coder2notes')
-	x = pd.read_csv('reconciledcoder1coder2.csv') #tom 
+	x = pd.read_csv('Data/reconciledcoder1coder2.csv') #tom 
 	df = matchCodedData(df, x, 'FinalDecision', 'Notes') 
-	x = pd.read_csv('reconciledcoder1coder22.csv')
+	#x = pd.read_csv('reconciledcoder1coder22.csv')
+	x = pd.read_csv('Data/reconciledcoder1coder22 - disagreementscoder1coder22 (1).csv')
 	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
 
-	x = pd.read_csv('Resource Efficiency, Building Efficiency, Grid Projects - Projects.csv') #erin  
+	x = pd.read_csv('Data/Resource Efficiency, Building Efficiency, Grid Projects - Projects.csv') #erin  
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder3', 'coder3notes')
-	x = pd.read_csv('reconciledcoder1coder3.csv') # erin
+	x = pd.read_csv('Data/reconciledcoder1coder3.csv') # erin
 	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
 	
-	x = pd.read_csv('Transportation Fuels.csv') #sarah 
+	x = pd.read_csv('Data/Transportation Fuels.csv') #sarah 
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder4', 'coder4notes')
-	x = pd.read_csv('reconciledcoder1coder4.csv') # sarah
+	x = pd.read_csv('Data/reconciledcoder1coder4.csv') # sarah
 	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
 
 
-	x = pd.read_csv('Coder5.csv') # jeff
+	x = pd.read_csv('Data/Coder5.csv') # jeff
 	y = cleanCoderData(x)
 	df = matchCodedData(df, y, 'coder5', 'coder5notes')
-	x = pd.read_csv('reconciledcoder1coder5.csv') # jeff
+	x = pd.read_csv('Data/reconciledcoder1coder5.csv') # jeff
 	df = matchCodedData(df, x, 'FinalDecision', 'Notes')
 
 
 	# find stragglers 
 	blankdf = df[(df.coder2=='blank') & (df.coder3 =='blank') & (df.coder4 == 'blank') & (df.coder5 =='blank')]
-	blankdf.to_csv(('Stragglers.csv'))
+	blankdf.to_csv(('Data/Stragglers.csv'))
 	print('blankdata', blankdf.shape)
 
 	return df
@@ -480,8 +497,8 @@ def disagreementsSummary(df):
 
 	#run some summary statistics to find commonalities in disagreements. look within coder pairs and as a group 
 
-def chi2calc(df, outcomeCol):
-	count_series = df.groupby(['OPEN', outcomeCol]).size()
+def chi2calc(df, iv, outcomeCol):
+	count_series = df.groupby([iv, outcomeCol]).size()
 	new_df = count_series.to_frame(name = 'breakdown').reset_index()
 	new_df = new_df[new_df.FinalDecision !='blank']
 	#print(new_df)

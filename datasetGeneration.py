@@ -1,3 +1,5 @@
+# pulls projects from the ARPA-E website to create blank spreadsheets for project outcome categorization
+
 from bs4 import BeautifulSoup
 import pandas as pd
 import requests

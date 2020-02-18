@@ -1,14 +1,17 @@
 import numpy as np 
 import pandas as pd 
 from scipy import stats
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
-from scipy.optimize import minimize 
+from scipy.optimize import minimize, rosen 
 stats.chisqprob = lambda chisq, df: stats.chi2.sf(chisq, df)
 from matplotlib.cm import get_cmap
 from matplotlib.colors import rgb2hex
 from matplotlib.colors import to_rgb
 import random
+import math
 
 #import rpy2
 #from rpy2.robjects.packages import importr
@@ -19,7 +22,7 @@ import random
 from scrips import chi2calc
 
 # load the final compiled dataset
-df = pd.read_csv('FinalData.csv')
+df = pd.read_csv('Data/FinalData_cleaned.csv')
 
 # do some data cleaning
 def cleanData(df):
@@ -49,6 +52,9 @@ def cleanData(df):
 	df['dum16'] = 0
 	df['dum17'] = 0
 	df['dum18'] = 0
+	df['dumPersist'] = 0
+	df['dumPivot'] = 0
+	df['dumPerish'] = 0 
 	for n in range(df.shape[0]):
 		s = df.endDate[n]
 		df.endYr[n] = float(s[:4])
@@ -93,6 +99,22 @@ def cleanData(df):
 	df = df[(df.recipientType=='For-profit') | (df.recipientType=='Non-profit')]
 	df['ForProf'] = 0
 	df.loc[(df.recipientType=='For-profit'), 'ForProf'] = 1
+
+
+	# small and large for profits 
+	df['ForProfSize'] = 0
+	df.loc[(df.recipientType=='For-profit'), 'ForProfSize'] = 1
+	df.loc[(df.Size)=='Large', 'ForProfSize'] = 2	
+
+	df['SmallForProf'] = 0
+	df['LargeForProf'] = 0
+	df.loc[(df.Size)=='Small', 'SmallForProf'] = 1
+	df.loc[(df.Size)=='Large', 'LargeForProf'] = 1
+
+	df.loc[(df.FinalDecision=='Perish'), 'dumPerish'] = 1
+	df.loc[(df.FinalDecision=='Pivot'), 'dumPivot'] = 1
+	df.loc[(df.FinalDecision=='Persist'), 'dumPersist'] = 1
+
 	df = df[(df.awardAmount!=0)]
 
 	df.reset_index(drop = True)
@@ -135,14 +157,137 @@ def cleanData(df):
 df = cleanData(df)
 
 count = df.groupby(['OPEN', 'FinalDecision']).size() 
-print(count) 
-#df.awardAmount = np.log(df.awardAmount)
-
-
+#print(count) 
+##df.awardAmount = np.log(df.awardAmount)
 
 # calculate the chi2 based on open/designed outcomes 
-stat, p, dof, expected = chi2calc(df, 'FinalDecision')
-print('stat', stat, 'p', p, 'dof', dof, 'expected', expected)
+stat, p, dof, expected = chi2calc(df, 'OPEN', 'FinalDecision')
+#print('OPEN', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
+
+stat, p, dof, expected = chi2calc(df, 'recipientType', 'FinalDecision')
+#print('recipientType', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
+
+stat, p, dof, expected = chi2calc(df, 'Partners', 'FinalDecision')
+#print('Partners', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
+
+
+# nonstandard number of categories
+count_series = df.groupby(['techCat1', 'FinalDecision']).size()
+new_df = count_series.to_frame(name = 'breakdown').reset_index()
+new_df = new_df[new_df.FinalDecision !='blank']
+line = pd.DataFrame({"techCat1": "Transportation Network", "FinalDecision": 'Perish', "breakdown":0}, index=[26.5])
+new_df = new_df.append(line, ignore_index=False)
+new_df = new_df.sort_index().reset_index(drop=True)
+stat, p, dof, expected = stats.chi2_contingency([new_df.breakdown[0:3], new_df.breakdown[3:6], new_df.breakdown[6:9], new_df.breakdown[9:12], new_df.breakdown[12:15], new_df.breakdown[15:18], new_df.breakdown[18:21], new_df.breakdown[21:24], new_df.breakdown[24:27], new_df.breakdown[27:30], new_df.breakdown[30:33], new_df.breakdown[33:36]])# ddof = 2)
+print('Tech category', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
+
+count_series = df.groupby(['ForProfSize', 'FinalDecision']).size()
+new_df = count_series.to_frame(name = 'breakdown').reset_index()
+stat, p, dof, expected = stats.chi2_contingency([new_df.breakdown[0:3], new_df.breakdown[3:6], new_df.breakdown[6:9]])
+print('recipientType with size', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
+
+count_series = df.groupby(['startYr', 'FinalDecision']).size()
+new_df = count_series.to_frame(name = 'breakdown').reset_index()
+line = pd.DataFrame({"startYr": 2, "FinalDecision": 'Persist', "breakdown":0}, index=[6.5])
+new_df = new_df.append(line, ignore_index=False)
+new_df = new_df.sort_index().reset_index(drop=True)
+print(new_df)
+stat, p, dof, expected = stats.chi2_contingency([new_df.breakdown[0:3], new_df.breakdown[3:6], new_df.breakdown[6:9], new_df.breakdown[9:12], new_df.breakdown[12:15], new_df.breakdown[15:18], new_df.breakdown[18:21], new_df.breakdown[21:24], new_df.breakdown[24:27]])# ddof = 2)
+print('start year', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
+
+count_series = df.groupby(['yrGrp', 'FinalDecision']).size()
+new_df = count_series.to_frame(name = 'breakdown').reset_index()
+stat, p, dof, expected = stats.chi2_contingency([new_df.breakdown[0:3], new_df.breakdown[3:6], new_df.breakdown[6:9]])
+print('start year - grouped', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
+
+
+# continous variable test 
+exog = df[['awardAmount']] 
+awardAmttest = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
+print(awardAmttest.summary())
+
+lr = 2*(-498.57-(-493.11))
+print('LR award amt', lr)
+
+def makeMultipleModelStep2(time):
+	if time == "full":
+		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']]
+	else:
+		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount', 'early', 'middle']]
+
+	mod = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
+	print(mod.summary())
+	modmg = mod.get_margeff(at='overall')
+	#print(modmg.summary())
+	return(mod)
+m1 = makeMultipleModelStep2('short')
+print(m1.params)
+
+def makeSmallerModelStep2(time):
+	if time == 'full':
+		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'ForProf', 'awardAmount', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']]
+	else:
+		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'ForProf', 'awardAmount', 'early', 'middle']]
+	mod = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
+	print(mod.summary())
+	modmg = mod.get_margeff(at='overall')
+	#print(modmg.summary())
+	return(mod)
+m2 = makeSmallerModelStep2('short')
+print(m2.params)
+
+x1 = m1.params
+x2 = m2.params
+print(type(x2))
+print(x2[0]['TC_TF'])
+#print(x.iloc[0].TC_TF)
+
+x2 = x2.drop(['ForProf'])
+print(x2)
+print(len(x2))
+
+
+print(x2.index)
+x2['comparison11'] = ""
+x2['comparison12'] = ""
+x2['comparison21'] = ""
+x2['comparison22'] = ""
+
+for i in x2.index:
+	x2['comparison11'][i] = 100*(x2[0][i]-x1[0][i])/x2[0][i]
+	x2['comparison12'][i] = 100*(x1[0][i]-x2[0][i])/x1[0][i]
+	x2['comparison21'][i] = 100*(x2[1][i]-x1[1][i])/x2[1][i]
+	x2['comparison22'][i] = 100*(x1[1][i]-x2[1][i])/x1[1][i]
+print(x1)
+print(x2['comparison11'], x2['comparison12'])
+print(x2['comparison21'], x2['comparison22'])
+
+# check that the parameters didn't change that much 
+
+
+# Step 4 
+# adding variables back in to model 
+# open 
+
+def addOPEN():
+	exog = df[['OPEN', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount']]
+	mod = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
+	print(mod.summary())
+	modmg = mod.get_margeff(at='overall')
+	#print(modmg.summary())
+	return(mod)
+x = addOPEN()
+
+def addPartners():
+	exog = df[['Partners', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount']]
+	mod = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
+	print(mod.summary())
+	modmg = mod.get_margeff(at='overall')
+	#print(modmg.summary())
+	return(mod)
+x = addPartners()
+
+
 
 def makeAMETables(modmg): #makes a csv version of the odds ratio 
 	outdf = pd.DataFrame(columns = ('Parameter', 'Perish', 'Persist', 'Pivot'))
@@ -151,24 +296,67 @@ def makeAMETables(modmg): #makes a csv version of the odds ratio
 
 # define some regression models 
 
+#print(df.columns)
+#s = stats.ttest_ind(df.FinalDecision, df.awardAmount)
+#print(s)
+
 def runMod1(pooling): #just open
 	if pooling == 'total':
-		exog = (df[['OPEN']]) #sm.add_constant
+		#exog = (df[['OPEN']]) #sm.add_constant
+		exog = sm.add_constant(df[['OPEN']])
 	elif pooling == 'none':
 		exog = (df[['OPEN', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']])
+		#exog = sm.add_constant(exog)
 	elif pooling == 'fakePartial':
 		exog = (df[['OPEN', 'early', 'middle', 'late']])
 	else:
 		print('hello world') #figure out if true partial pooling is a thing for multinomial logit models, does it really mean anything? 
 
-	mdl1 = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 1000, full_output = True)
+	mdl1 = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
 	print(mdl1.summary())
-	print(np.exp(mdl1.params))
+	#print(np.exp(mdl1.params))
 
 	mod1mg = mdl1.get_margeff(at='overall')
-	print(mod1mg.summary())
-	print(mod1mg.summary_frame())
-	return(mod1mg.summary_frame())
+	#print(mod1mg.summary())
+	#print(mod1mg.summary_frame())
+	#return(mod1mg.summary_frame())
+	return(mdl1.summary())
+
+	#mdl1binary = 
+
+#def mod1partialPooling():
+
+x1 = math.factorial(460)/(math.factorial(sum(df.dumPersist))*math.factorial(sum(df.dumPivot))*math.factorial(sum(df.dumPerish)))
+#print(x1)
+def mod1Dupe(beta):
+	a = np.exp(df.OPEN * beta[0])
+	b = np.exp(df.OPEN * beta[1])
+	c = np.exp(df.OPEN * beta[2])
+	a1 = df.dumPersist * np.log(a/(a+b+c))
+	b1 = df.dumPivot * np.log(b/(a+b+c))
+	c1 = df.dumPerish * np.log(c/(a+b+c))
+	d = a1+b1+c1
+	LL = -1*sum(d)
+	return LL
+
+betastart = np.random.rand(3)-0.5
+#mod1dupeRun = minimize(mod1Dupe, betastart, method = 'BFGS', options = {'maxiter':10000})
+#print(mod1dupeRun)
+
+def mod1noPoolingDupe(beta):
+	a = np.exp(df.OPEN * beta[0] + df.dum09 * beta[1] + df.dum10 * beta[2] + df.dum11 * beta[3] + df.dum12*beta[4] + df.dum13*beta[5] + df.dum14*beta[6]+df.dum15*beta[7]+ df.dum16*beta[8])
+	b = np.exp(df.OPEN * beta[9] + df.dum09 * beta[10] + df.dum10 * beta[11] + df.dum11 * beta[12] + df.dum12*beta[13] + df.dum13*beta[14] + df.dum14*beta[15]+df.dum15*beta[16]+ df.dum16*beta[17])
+	c = np.exp(df.OPEN * beta[18] + df.dum09 * beta[19] + df.dum10 * beta[20] + df.dum11 * beta[21] + df.dum12*beta[22] + df.dum13*beta[23] + df.dum14*beta[24]+df.dum15*beta[25]+ df.dum16*beta[26])
+	a1 = df.dumPersist * np.log(a/(a+b+c))
+	b1 = df.dumPivot * np.log(b/(a+b+c))
+	c1 = df.dumPerish * np.log(c/(a+b+c))
+	d = a1+b1+c1
+	LL = -1*sum(d)
+	return LL
+
+betastart = np.random.rand(27)-0.5
+#mod1dupeRun = minimize(mod1noPoolingDupe, betastart, method = 'BFGS', options = {'maxiter':10000})
+#print(mod1dupeRun)
 
 def runMod2(pooling): # add award amounts
 	if pooling == 'total':
@@ -269,9 +457,14 @@ def runMod7(pooling): # everything w/o open
 	print(mod7mg.summary())
 	return(mod7mg.summary_frame())
 
-runMod1('total')
-runMod1('fakePartial')
-runMod1('none')
+def calculateAlpha():
+	print('hello world!')
+
+
+#m1 = runMod1('total')
+#print('m1', m1)
+#runMod1('fakePartial')
+#m1p = runMod1('none')
 
 #print(df.dum09.value_counts())
 #print(df.dum10.value_counts())
