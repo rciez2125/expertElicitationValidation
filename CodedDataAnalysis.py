@@ -1,5 +1,6 @@
 import numpy as np 
 import pandas as pd 
+pd.set_option('display.max_columns', 10)
 from scipy import stats
 import matplotlib
 matplotlib.use('TkAgg')
@@ -157,7 +158,7 @@ def cleanData(df):
 df = cleanData(df)
 
 count = df.groupby(['OPEN', 'FinalDecision']).size() 
-#print(count) 
+print(count) 
 ##df.awardAmount = np.log(df.awardAmount)
 
 # calculate the chi2 based on open/designed outcomes 
@@ -204,70 +205,141 @@ print('start year - grouped', 'stat', stat, 'p', p, 'dof', dof, 'expected', expe
 # continous variable test 
 exog = df[['awardAmount']] 
 awardAmttest = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
-print(awardAmttest.summary())
+#print(awardAmttest.summary())
 
 lr = 2*(-498.57-(-493.11))
-print('LR award amt', lr)
+#print('LR award amt', lr)
 
 def makeMultipleModelStep2(time):
 	if time == "full":
 		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']]
-	else:
+	elif time == "short":
 		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount', 'early', 'middle']]
+	else:
+		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount']]
 
 	mod = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
-	print(mod.summary())
+	#print(mod.summary())
 	modmg = mod.get_margeff(at='overall')
 	#print(modmg.summary())
 	return(mod)
-m1 = makeMultipleModelStep2('short')
-print(m1.params)
+m1 = makeMultipleModelStep2('none')
+#print(m1.summary())
+#r = results_summary_to_dataframe(m1)
+#print(r.summary())
+#print(m1.params)
 
 def makeSmallerModelStep2(time):
 	if time == 'full':
 		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'ForProf', 'awardAmount', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']]
-	else:
+	elif time == "short":
 		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'ForProf', 'awardAmount', 'early', 'middle']]
+	else: 
+		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'ForProf', 'awardAmount']]
 	mod = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
-	print(mod.summary())
+	#print(mod.summary())
 	modmg = mod.get_margeff(at='overall')
 	#print(modmg.summary())
 	return(mod)
-m2 = makeSmallerModelStep2('short')
-print(m2.params)
+m2 = makeSmallerModelStep2('none')
+#print(m2.params)
 
-x1 = m1.params
-x2 = m2.params
-print(type(x2))
-print(x2[0]['TC_TF'])
-#print(x.iloc[0].TC_TF)
+def compareParameterDifferences(m1, m2):
+	x1 = m1.params
+	x2 = m2.params
+	#print('index', x1.index)
+	#print('index', x2.index)
+	#print('parameters', x1)
+	#common = x2.merge(x1,on =[0,1])
+	c = x1[~x1.index.isin(x2.index)]
+	#print(c.index[0])
+	c2 = x1
+	for i in range(len(c.index)):
+		c2 = c2.drop([c.index[i]])
+	#print(c2.index)
 
-x2 = x2.drop(['ForProf'])
-print(x2)
-print(len(x2))
+	#print('common', [c])
+
+	c3 = pd.DataFrame(index=c2.index)
+	
+	c3['comparison11'] = ""
+	c3['comparison12'] = ""
+	c3['persistPvals1'] = ""
+	c3['persistPvals2'] = ""
+	c3['comparison21'] = ""
+	c3['comparison22'] = ""
+	c3['pivotPvals1'] = ""
+	c3['pivotPvals2'] = ""
 
 
-print(x2.index)
-x2['comparison11'] = ""
-x2['comparison12'] = ""
-x2['comparison21'] = ""
-x2['comparison22'] = ""
+	for i in c3.index:
+		c3['comparison11'][i] = 100*(x2[0][i]-x1[0][i])/x2[0][i]
+		c3['comparison12'][i] = 100*(x1[0][i]-x2[0][i])/x1[0][i]
+		c3['comparison21'][i] = 100*(x2[1][i]-x1[1][i])/x2[1][i]
+		c3['comparison22'][i] = 100*(x1[1][i]-x2[1][i])/x1[1][i]
+		c3['persistPvals1'][i] = m1.pvalues[0][i]
+		c3['persistPvals2'][i] = m2.pvalues[0][i]
+		c3['pivotPvals1'][i] = m1.pvalues[1][i]
+		c3['pivotPvals2'][i] = m2.pvalues[1][i]
+	print(c3)
 
-for i in x2.index:
-	x2['comparison11'][i] = 100*(x2[0][i]-x1[0][i])/x2[0][i]
-	x2['comparison12'][i] = 100*(x1[0][i]-x2[0][i])/x1[0][i]
-	x2['comparison21'][i] = 100*(x2[1][i]-x1[1][i])/x2[1][i]
-	x2['comparison22'][i] = 100*(x1[1][i]-x2[1][i])/x1[1][i]
-print(x1)
-print(x2['comparison11'], x2['comparison12'])
-print(x2['comparison21'], x2['comparison22'])
-
+# compare with no time
+print('no time, no time, big & small model')
+compareParameterDifferences(m1,m2)
 # check that the parameters didn't change that much 
 
+m3 = makeMultipleModelStep2('full')
+m4 = makeMultipleModelStep2('short')
+m5 = makeMultipleModelStep2('none')
+print('full time vs short time, big model')
+compareParameterDifferences(m3,m4)
+print('full time vs no time, big model')
+compareParameterDifferences(m3,m5)
+print('short time vs no time, big model')
+compareParameterDifferences(m4,m5)
 
 # Step 4 
 # adding variables back in to model 
 # open 
+
+def plotOutcomeByYear(df):
+	# make a plot of the different outcomes by year 
+	plt.figure(figsize=(5,4))
+	count_series = df.groupby(['startYr', 'FinalDecision']).size()
+	new_df = count_series.to_frame(name = 'breakdown').reset_index()
+	#pd.groupby.DataFrameGroupBy.plot(df, x='startYr', y='FinalDecision')
+	#df.groupby['startYr', 'FinalDecision'].plot(kind='bar')
+
+	pivots = new_df[new_df.FinalDecision == 'Pivot']
+	persists = new_df[new_df.FinalDecision == 'Persist']
+	perishes = new_df[new_df.FinalDecision == 'Perish']
+
+	
+	plt.subplot(1,3,1)
+	plt.bar(pivots.startYr, pivots.breakdown)
+	plt.title('Pivots')
+	plt.ylim(0,60)
+
+	plt.subplot(1,3,2)
+	plt.bar(persists.startYr, persists.breakdown)
+	plt.title('Persists')
+	plt.ylim(0,60)
+
+	plt.subplot(1,3,3)
+	plt.bar(perishes.startYr, perishes.breakdown)
+	plt.title('Perishes')
+	plt.ylim(0,60)
+
+	#plt.bar(range(8), [new_df.breakdown[0], new_df.breakdown[3], new_df.breakdown[6], new_df.breakdown[9], new_df.breakdown[12], new_df.breakdown[15], new_df.breakdown[18], new_df.breakdown[19]])
+	#plt.subplot(1,3,1)
+	#pivot = df[df.FinalDecision == 'Pivot']
+
+	#plt.hist(pivot.startYr, pivot.FinalDecision)
+	plt.savefig('outcomeByYear.png', dpi=300)
+	#plt.clf()
+	print(count_series)
+
+plotOutcomeByYear(df)
 
 def addOPEN():
 	exog = df[['OPEN', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount']]
@@ -276,7 +348,7 @@ def addOPEN():
 	modmg = mod.get_margeff(at='overall')
 	#print(modmg.summary())
 	return(mod)
-x = addOPEN()
+#x = addOPEN()
 
 def addPartners():
 	exog = df[['Partners', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount']]
@@ -285,7 +357,7 @@ def addPartners():
 	modmg = mod.get_margeff(at='overall')
 	#print(modmg.summary())
 	return(mod)
-x = addPartners()
+#x = addPartners()
 
 
 
