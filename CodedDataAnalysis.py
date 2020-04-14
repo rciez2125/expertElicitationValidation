@@ -13,294 +13,150 @@ from matplotlib.colors import rgb2hex
 from matplotlib.colors import to_rgb
 import random
 import math
-
-#import rpy2
-#from rpy2.robjects.packages import importr
-#base = importr('base')
-#utils = importr('utils')
-#vcov = importr('vcov')
-
+import codedDataAnalysisScripts
 from scrips import chi2calc
+
 
 # load the final compiled dataset
 df = pd.read_csv('Data/FinalData_cleaned.csv')
+d = codedDataAnalysisScripts.codedDataAnalysisScripts('a')
 
 # do some data cleaning
-def cleanData(df):
-	df = df.drop(['Unnamed: 0.1'], axis=1)
-	df.loc[(df.FinalDecision == 'Persist '), "FinalDecision"] = "Persist"
+df = d.cleanData(df)
 
-	df.awardAmount = df.awardAmount/1000000 #convert from dollars to millions of dollars
-	#print(df.recipientType.unique())
-
-	# turn all of the For Profits to For-profit
-	df.loc[(df.recipientType == 'For-Profit'), "recipientType"] = "For-profit"
-	
-	# year codes 
-	df['endYr'] = ""
-	df['startYr'] = ""
-	df['yrGrp'] = ""
-	df['early'] = 0
-	df['middle'] = 0
-	df['late'] = 0
-	df['dum09'] = 0
-	df['dum10'] = 0
-	df['dum11'] = 0
-	df['dum12'] = 0
-	df['dum13'] = 0
-	df['dum14'] = 0
-	df['dum15'] = 0
-	df['dum16'] = 0
-	df['dum17'] = 0
-	df['dum18'] = 0
-	df['dumPersist'] = 0
-	df['dumPivot'] = 0
-	df['dumPerish'] = 0 
-	for n in range(df.shape[0]):
-		s = df.endDate[n]
-		df.endYr[n] = float(s[:4])
-		s = df.startDate[n]
-		df.startYr[n] = float(s[:4])
-
-		if df.startYr[n] < float(2012):
-			df.yrGrp[n] = 0
-			df.early[n] = 1
-		elif df.startYr[n] < float(2015):
-			df.yrGrp[n] = 1
-			df.middle[n] = 1
-		else:
-			df.yrGrp[n] = 2
-			df.late[n] = 1
-
-		if df.startYr[n] < float(2010):
-			df.dum09[n] = 1
-		elif df.startYr[n] < float(2011):
-			df.dum10[n] = 1
-		elif df.startYr[n] < float(2012):
-			df.dum11[n] = 1
-		elif df.startYr[n] < float(2013):
-			df.dum12[n] = 1
-		elif df.startYr[n] < float(2014):
-			df.dum13[n] = 1
-		elif df.startYr[n] < float(2015):
-			df.dum14[n] = 1
-		elif df.startYr[n] < float(2016):
-			df.dum15[n] = 1
-		elif df.startYr[n] < float(2017):
-			df.dum16[n] = 1
-		elif df.startYr[n] < float(2018):
-			df.dum17[n] = 1
-		else:
-			df.dum18[n] = 1
-
-	df.endYr = df.endYr - 2010
-	df.startYr = df.startYr - 2009
-
-	# drop blank/nan values for recipient type (for now)
-	df = df[(df.recipientType=='For-profit') | (df.recipientType=='Non-profit')]
-	df['ForProf'] = 0
-	df.loc[(df.recipientType=='For-profit'), 'ForProf'] = 1
-
-
-	# small and large for profits 
-	df['ForProfSize'] = 0
-	df.loc[(df.recipientType=='For-profit'), 'ForProfSize'] = 1
-	df.loc[(df.Size)=='Large', 'ForProfSize'] = 2	
-
-	df['SmallForProf'] = 0
-	df['LargeForProf'] = 0
-	df.loc[(df.Size)=='Small', 'SmallForProf'] = 1
-	df.loc[(df.Size)=='Large', 'LargeForProf'] = 1
-
-	df.loc[(df.FinalDecision=='Perish'), 'dumPerish'] = 1
-	df.loc[(df.FinalDecision=='Pivot'), 'dumPivot'] = 1
-	df.loc[(df.FinalDecision=='Persist'), 'dumPersist'] = 1
-
-	df = df[(df.awardAmount!=0)]
-
-	df.reset_index(drop = True)
-
-	print(df.recipientType.value_counts())
-
-	df['TC_TF'] = 0 # transportation Fuels
-	df['TC_DG'] = 0 # distributed generation
-	df['TC_TS'] = 0 # transportation storage
-	df['TC_SS'] = 0 # stationary storage
-	df['TC_BE'] = 0 # building efficiency 
-	df['TC_RE'] = 0 # resource efficiency 
-	df['TC_ME'] = 0 # manufacturing efficiency 
-	df['TC_CG'] = 0 # centralized generation
-	df['TC_EE'] = 0 # electrical efficiency 
-	df['TC_GR'] = 0 # grid  
-	df['TC_TV'] = 0 # transportation vehicles
-	df['TC_TN'] = 0 # transportation network
-	df['TC_OT'] = 0 # fewer than 10 projects in a category #Transportation Network, Transportation Vehicles, and Centralized Generation
-
-	df.loc[(df.techCat1=='Transportation Fuels'), 'TC_TF'] = 1
-	df.loc[(df.techCat1=='Distributed Generation'), 'TC_DG'] = 1
-	df.loc[(df.techCat1=='Transportation Storage'), 'TC_TS'] = 1
-	df.loc[(df.techCat1=='Storage'), 'TC_SS'] = 1
-	df.loc[(df.techCat1=='Building Efficiency'), 'TC_BE'] = 1
-	df.loc[(df.techCat1=='Resource Efficiency'), 'TC_RE'] = 1
-	df.loc[(df.techCat1=='Manufacturing Efficiency'), 'TC_ME'] = 1
-	df.loc[(df.techCat1=='Centralized Generation'), 'TC_CG'] = 1
-	df.loc[(df.techCat1=='Electrical Efficiency'), 'TC_EE'] = 1
-	df.loc[(df.techCat1=='Grid'), 'TC_GR'] = 1
-	df.loc[(df.techCat1=='Transportation Vehicles'), 'TC_TV'] = 1
-	df.loc[(df.techCat1=='Transportation Network'), 'TC_TN'] = 1
-
-	df.loc[(df.techCat1=='Centralized Generation'), 'TC_OT'] = 1
-	df.loc[(df.techCat1=='Transportation Vehicles'), 'TC_OT'] = 1
-	df.loc[(df.techCat1=='Transportation Network'), 'TC_OT'] = 1
-
-	df.to_csv('cleanedFinalData.csv')
-	return(df)
-df = cleanData(df)
-
-count = df.groupby(['OPEN', 'FinalDecision']).size() 
-print(count) 
-##df.awardAmount = np.log(df.awardAmount)
-
-# calculate the chi2 based on open/designed outcomes 
-stat, p, dof, expected = chi2calc(df, 'OPEN', 'FinalDecision')
-#print('OPEN', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
-
-stat, p, dof, expected = chi2calc(df, 'recipientType', 'FinalDecision')
-#print('recipientType', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
-
-stat, p, dof, expected = chi2calc(df, 'Partners', 'FinalDecision')
-#print('Partners', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
-
-
+## 1) univariable analysis of each independent variable 
+#d.univariateCategorical_2Categories(df)
 # nonstandard number of categories
-count_series = df.groupby(['techCat1', 'FinalDecision']).size()
-new_df = count_series.to_frame(name = 'breakdown').reset_index()
-new_df = new_df[new_df.FinalDecision !='blank']
-line = pd.DataFrame({"techCat1": "Transportation Network", "FinalDecision": 'Perish', "breakdown":0}, index=[26.5])
-new_df = new_df.append(line, ignore_index=False)
-new_df = new_df.sort_index().reset_index(drop=True)
-stat, p, dof, expected = stats.chi2_contingency([new_df.breakdown[0:3], new_df.breakdown[3:6], new_df.breakdown[6:9], new_df.breakdown[9:12], new_df.breakdown[12:15], new_df.breakdown[15:18], new_df.breakdown[18:21], new_df.breakdown[21:24], new_df.breakdown[24:27], new_df.breakdown[27:30], new_df.breakdown[30:33], new_df.breakdown[33:36]])# ddof = 2)
-print('Tech category', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
-
-count_series = df.groupby(['ForProfSize', 'FinalDecision']).size()
-new_df = count_series.to_frame(name = 'breakdown').reset_index()
-stat, p, dof, expected = stats.chi2_contingency([new_df.breakdown[0:3], new_df.breakdown[3:6], new_df.breakdown[6:9]])
-print('recipientType with size', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
-
-count_series = df.groupby(['startYr', 'FinalDecision']).size()
-new_df = count_series.to_frame(name = 'breakdown').reset_index()
-line = pd.DataFrame({"startYr": 2, "FinalDecision": 'Persist', "breakdown":0}, index=[6.5])
-new_df = new_df.append(line, ignore_index=False)
-new_df = new_df.sort_index().reset_index(drop=True)
-print(new_df)
-stat, p, dof, expected = stats.chi2_contingency([new_df.breakdown[0:3], new_df.breakdown[3:6], new_df.breakdown[6:9], new_df.breakdown[9:12], new_df.breakdown[12:15], new_df.breakdown[15:18], new_df.breakdown[18:21], new_df.breakdown[21:24], new_df.breakdown[24:27]])# ddof = 2)
-print('start year', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
-
-count_series = df.groupby(['yrGrp', 'FinalDecision']).size()
-new_df = count_series.to_frame(name = 'breakdown').reset_index()
-stat, p, dof, expected = stats.chi2_contingency([new_df.breakdown[0:3], new_df.breakdown[3:6], new_df.breakdown[6:9]])
-print('start year - grouped', 'stat', stat, 'p', p, 'dof', dof, 'expected', expected)
-
-
+#d.univariateCategorical_multipleCategories(df)
 # continous variable test 
-exog = df[['awardAmount']] 
-awardAmttest = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
-#print(awardAmttest.summary())
+#d.univariateContinuous(df)
 
-lr = 2*(-498.57-(-493.11))
-#print('LR award amt', lr)
+# based on this analysis, which variables matter?
+# OPEN 						No
+# Partners 					No
+# Tech Category 			Yes
+# Recipinet Type (binary)	Yes
+# Recipient type (3)		Yes
+# Start year (every year)	Yes
+# Start year (grouped)		Yes
+# Award Amount 				Yes 
 
-def makeMultipleModelStep2(time):
-	if time == "full":
-		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']]
-	elif time == "short":
-		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount', 'early', 'middle']]
-	else:
-		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount']]
+### 2) Fit a multivariate model with variables identified in step 1
+# exclude open, partners
+# optionsf on recipient type and start year
 
-	mod = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
-	#print(mod.summary())
-	modmg = mod.get_margeff(at='overall')
-	#print(modmg.summary())
-	return(mod)
-m1 = makeMultipleModelStep2('none')
-#print(m1.summary())
-#r = results_summary_to_dataframe(m1)
-#print(r.summary())
-#print(m1.params)
 
-def makeSmallerModelStep2(time):
-	if time == 'full':
-		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'ForProf', 'awardAmount', 'dum09', 'dum10', 'dum11', 'dum12', 'dum13', 'dum14', 'dum15', 'dum16']]
-	elif time == "short":
-		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'ForProf', 'awardAmount', 'early', 'middle']]
+def makeModelStep2(time, forProfType):
+	ex_list = ['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT']
+
+	if forProfType == 'three':
+		ex_list.append('SmallForProf')
+		ex_list.append('LargeForProf')
 	else: 
-		exog = df[['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'ForProf', 'awardAmount']]
-	mod = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
-	#print(mod.summary())
-	modmg = mod.get_margeff(at='overall')
-	#print(modmg.summary())
+		ex_list.append('ForProf')
+
+	ex_list.append('awardAmount')
+
+	if time == 'every year':
+		ex_list.append('dum09')
+		ex_list.append('dum10') 
+		ex_list.append('dum11')
+		ex_list.append('dum12')
+		ex_list.append('dum13')
+		ex_list.append('dum14') 
+		ex_list.append('dum15')
+		ex_list.append('dum16')
+	elif time == 'grouped':
+		ex_list.append('early')
+		ex_list.append('middle')
+
+	#ex_list.append('awardAmount')
+
+	#print(ex_list)
+	exog = df[ex_list]	
+	mod = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)
+	print(mod.summary())
+	modmg = mod.get_margeff(at = 'overall')
 	return(mod)
-m2 = makeSmallerModelStep2('none')
-#print(m2.params)
 
-def compareParameterDifferences(m1, m2):
-	x1 = m1.params
-	x2 = m2.params
-	#print('index', x1.index)
-	#print('index', x2.index)
-	#print('parameters', x1)
-	#common = x2.merge(x1,on =[0,1])
-	c = x1[~x1.index.isin(x2.index)]
-	#print(c.index[0])
-	c2 = x1
-	for i in range(len(c.index)):
-		c2 = c2.drop([c.index[i]])
-	#print(c2.index)
+m1 = makeModelStep2('every year', 'three')
+m2 = makeModelStep2('grouped', 'three')
 
-	#print('common', [c])
+print('Model 3')
+m3 = makeModelStep2('every year', 'two')
 
-	c3 = pd.DataFrame(index=c2.index)
-	
-	c3['comparison11'] = ""
-	c3['comparison12'] = ""
-	c3['persistPvals1'] = ""
-	c3['persistPvals2'] = ""
-	c3['comparison21'] = ""
-	c3['comparison22'] = ""
-	c3['pivotPvals1'] = ""
-	c3['pivotPvals2'] = ""
+print('Model 4')
+m4 = makeModelStep2('grouped', 'two')
+m5 = makeModelStep2('none', 'three')
+
+print('Model 6')
+m6 = makeModelStep2('none', 'two')
 
 
-	for i in c3.index:
-		c3['comparison11'][i] = 100*(x2[0][i]-x1[0][i])/x2[0][i]
-		c3['comparison12'][i] = 100*(x1[0][i]-x2[0][i])/x1[0][i]
-		c3['comparison21'][i] = 100*(x2[1][i]-x1[1][i])/x2[1][i]
-		c3['comparison22'][i] = 100*(x1[1][i]-x2[1][i])/x1[1][i]
-		c3['persistPvals1'][i] = m1.pvalues[0][i]
-		c3['persistPvals2'][i] = m2.pvalues[0][i]
-		c3['pivotPvals1'][i] = m1.pvalues[1][i]
-		c3['pivotPvals2'][i] = m2.pvalues[1][i]
-	print(c3)
+#print(m1.llr_pvalue)
+#print(len(m1.params))
 
-# compare with no time
-print('no time, no time, big & small model')
-compareParameterDifferences(m1,m2)
-# check that the parameters didn't change that much 
+#d.modelSelectionComparison(m1, m2, 'All_3TvsGrouped_3T.csv')
+#d.modelSelectionComparison(m1, m3, 'All_3TvsAll_2T.csv')
+#d.modelSelectionComparison(m2, m4, 'Grouped_3TvsGrouped_2T.csv')
+#d.modelSelectionComparison(m5, m6, 'None_3TvsNone_2T.csv')
+d.modelSelectionComparison(m3, m4, 'All_2TvsGrouped_2T.csv')
+d.modelSelectionComparison(m4, m6, 'Grouped_2TvsNone_2T.csv')
+d.modelSelectionComparison(m3, m6, 'All_2Tvs_None_2T.csv')
 
-m3 = makeMultipleModelStep2('full')
-m4 = makeMultipleModelStep2('short')
-m5 = makeMultipleModelStep2('none')
-print('full time vs short time, big model')
-compareParameterDifferences(m3,m4)
-print('full time vs no time, big model')
-compareParameterDifferences(m3,m5)
-print('short time vs no time, big model')
-compareParameterDifferences(m4,m5)
 
-# Step 4 
-# adding variables back in to model 
-# open 
+# add other parameters back to model 4
+def addOneVariable(time, variableToAdd):
+	ex_list = ['TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'ForProf', 'awardAmount']
+
+	if time == 'every year':
+		ex_list.append('dum09')
+		ex_list.append('dum10') 
+		ex_list.append('dum11')
+		ex_list.append('dum12')
+		ex_list.append('dum13')
+		ex_list.append('dum14') 
+		ex_list.append('dum15')
+		ex_list.append('dum16')
+	elif time == 'grouped':
+		ex_list.append('early')
+		ex_list.append('middle')
+
+	ex_list.append(variableToAdd)
+	exog = df[ex_list]	
+	mod = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)
+	print(mod.summary())
+	modmg = mod.get_margeff(at = 'overall')
+	return(mod)
+
+# try OPEN and parnters 
+
+m7 = addOneVariable('every year', 'OPEN')
+m8 = addOneVariable('grouped', 'OPEN')
+m9 = addOneVariable('none', 'OPEN')
+d.modelSelectionComparison(m3, m7, 'All2T_noOpenvsAll2T_Open.csv') # doesn't seem to help
+d.modelSelectionComparison(m4, m8, 'Grouped2T_noOpenvsGrouped2T_Open.csv') #doesn't seem to help
+d.modelSelectionComparison(m6, m9, 'None2T_noOpenvsNone2T_Open.csv') # doesn't seem to help
+
+m10 = addOneVariable('every year', 'Partners')
+m11 = addOneVariable('grouped', 'Partners')
+m12 = addOneVariable('none', 'Partners')
+d.modelSelectionComparison(m3, m10, 'All2T_noPartvsAll2T_Part.csv') # doesn't seem to help
+d.modelSelectionComparison(m4, m11, 'Grouped2T_noPartvsGrouped2T_Part.csv') #doesn't seem to help
+d.modelSelectionComparison(m6, m12, 'None2T_noPartvsNone2T_Part.csv') # doesn't seem to help, but is closer than other choices (p = 0.14)
+
+
+# for 4/15:
+# look at avg marginal effects of different time models --> are they substantially different?
+# I don't think I can do an easy interpretation if I've got time in the models --> confirm this
+
+
+# check for interactions 
+
+
+
+
+# old stuff, mostly making plots
 
 def plotOutcomeByYear(df):
 	# make a plot of the different outcomes by year 
@@ -335,30 +191,10 @@ def plotOutcomeByYear(df):
 	#pivot = df[df.FinalDecision == 'Pivot']
 
 	#plt.hist(pivot.startYr, pivot.FinalDecision)
-	plt.savefig('outcomeByYear.png', dpi=300)
+	plt.savefig('Figures/outcomeByYear.png', dpi=300)
 	#plt.clf()
 	print(count_series)
-
 plotOutcomeByYear(df)
-
-def addOPEN():
-	exog = df[['OPEN', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount']]
-	mod = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
-	print(mod.summary())
-	modmg = mod.get_margeff(at='overall')
-	#print(modmg.summary())
-	return(mod)
-#x = addOPEN()
-
-def addPartners():
-	exog = df[['Partners', 'TC_TF', 'TC_DG', 'TC_TS', 'TC_BE', 'TC_RE', 'TC_ME', 'TC_EE', 'TC_GR', 'TC_OT', 'SmallForProf', 'LargeForProf', 'awardAmount']]
-	mod = sm.MNLogit(df.FinalDecision, exog.astype(float)).fit(maxiter = 10000, full_output = True)# method = 'bfgs')
-	print(mod.summary())
-	modmg = mod.get_margeff(at='overall')
-	#print(modmg.summary())
-	return(mod)
-#x = addPartners()
-
 
 
 def makeAMETables(modmg): #makes a csv version of the odds ratio 
@@ -398,7 +234,7 @@ def runMod1(pooling): #just open
 
 #def mod1partialPooling():
 
-x1 = math.factorial(460)/(math.factorial(sum(df.dumPersist))*math.factorial(sum(df.dumPivot))*math.factorial(sum(df.dumPerish)))
+#x1 = math.factorial(460)/(math.factorial(sum(df.dumPersist))*math.factorial(sum(df.dumPivot))*math.factorial(sum(df.dumPerish)))
 #print(x1)
 def mod1Dupe(beta):
 	a = np.exp(df.OPEN * beta[0])
@@ -411,7 +247,7 @@ def mod1Dupe(beta):
 	LL = -1*sum(d)
 	return LL
 
-betastart = np.random.rand(3)-0.5
+#betastart = np.random.rand(3)-0.5
 #mod1dupeRun = minimize(mod1Dupe, betastart, method = 'BFGS', options = {'maxiter':10000})
 #print(mod1dupeRun)
 
@@ -426,7 +262,7 @@ def mod1noPoolingDupe(beta):
 	LL = -1*sum(d)
 	return LL
 
-betastart = np.random.rand(27)-0.5
+#betastart = np.random.rand(27)-0.5
 #mod1dupeRun = minimize(mod1noPoolingDupe, betastart, method = 'BFGS', options = {'maxiter':10000})
 #print(mod1dupeRun)
 
@@ -628,5 +464,5 @@ def makeFrequencyBarChart(df):
 	plt.xlim(-0.5, 3.5)
 	plt.text(2.45, 5, 'Storage')
 	plt.text(2.45, 57, 'Other\nCategories')
-	plt.savefig('outcomeStorage.png', dpi = 300)
+	plt.savefig('Figures/outcomeStorage.png', dpi = 300)
 #makeFrequencyBarChart(df)
