@@ -368,9 +368,15 @@ def addCodedData(df):
 
 def cohensKappa(df, coderA, coderB):
 	p0 = 0
-	pivotPersist = 0 
-	pivotPerish = 0 
-	persistPerish = 0 
+	pivotPivot = 0 #
+	pivotPersist = 0 #
+	pivotPerish = 0 #
+	persistPivot = 0 #
+	persistPersist = 0 #
+	persistPerish = 0 #
+	perishPivot = 0 #
+	perishPersist = 0
+	perishPerish = 0 #
 	# keep only non-blank for coder B
 	dropList = np.array([])
 	for n in range(len(df[coderA])):
@@ -378,39 +384,49 @@ def cohensKappa(df, coderA, coderB):
 			dropList = np.append(dropList, n)
 	df = df.drop(dropList, axis = 0)
 	df = df.reset_index(drop = True)
+	
 	for n in range(len(df[coderA])):
 		if df[coderA][n] == df[coderB][n]:
 			p0 += 1
+			if df[coderA][n] == 'Pivot':
+				pivotPivot +=1
+			elif df[coderA][n] == 'Persist':
+				persistPersist +=1
+			else:
+				perishPerish+=1
 		elif (df[coderA][n] == 'Pivot' and df[coderB][n] == 'Persist'): 
 			pivotPersist += 1
 		elif (df[coderA][n] == 'Persist' and df[coderB][n] == 'Pivot'):
-			pivotPersist += 1
+			persistPivot += 1
 		elif (df[coderA][n] == 'Pivot' and df[coderB][n] == 'Perish'):
 			pivotPerish += 1
 		elif (df[coderA][n] == 'Perish' and df[coderB][n]=='Pivot'):
-			pivotPerish += 1
-		else:
+			perishPivot += 1
+		elif (df[coderA][n] == 'Persist' and df[coderB][n]== 'Perish'):
 			persistPerish += 1 
+		else:
+			perishPersist +=1
 
-	print('pivot/persist', pivotPersist/len(df[coderA]), 'pivot/perish', pivotPerish/len(df[coderA]), 'persist/perish', persistPerish/len(df[coderA]), 'overall diff', (1-p0/len(df[coderA])))
+
+	
+	print(persistPersist, persistPivot, persistPerish)
+	print(pivotPersist, pivotPivot, pivotPerish)
+	print(perishPersist, perishPivot, perishPerish)
+	#print('pivot/persist', pivotPersist+persistPivot, 'pivot/perish', pivotPerish+perishPivot, 'persist/perish', persistPerish+perishPersist)
 
 	x = df[coderA].value_counts(sort=False)
-	x1 = df[coderA].value_counts(sort=False).index.tolist()
-
 	y = df[coderB].value_counts(sort=False)
-	y1 = df[coderB].value_counts(sort=False).index.tolist()
-
 	data = [[coderA, len(df[coderA])], [coderB, len(df[coderB])]]
 	ck = pd.DataFrame(data, columns = ['Coder', 'Total'])
-	ck['Persist'] = [x[x1.index('Persist')], y[y1.index('Persist')]]
-	ck['Pivot'] = [x[x1.index('Pivot')], y[y1.index('Pivot')]]
-	ck['Perish'] = [x[x1.index('Perish')], y[y1.index('Perish')]]
-
+	ck['Persist'] = [x['Persist'], y['Persist']]
+	ck['Pivot'] = [x['Pivot'], y['Pivot']]
+	ck['Perish'] = [x['Perish'], y['Perish']]
 	print('percentage same', p0, p0/ck.Total[0])
 	pe = (np.product(ck.Persist/ck.Total)) + (np.product(ck.Pivot/ck.Total)) + (np.product(ck.Perish/ck.Total))
 	p0 = p0/len(df[coderA])
-	print(p0, pe, len(df[coderA]))
 	c = (p0 - pe)/(1-pe)
+	print(len(df[coderA]))
+
 	return(c)
 
 def idDisagreements(df, coderA, coderB):

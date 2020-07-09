@@ -22,8 +22,9 @@ z = scrapeSummaryData(page_link)
 
 result = pd.concat([x, y, z], axis=0)
 resultOut = result.reset_index(drop = True)
-resultOut.to_csv('arpaeSummaryData.csv')
+#resultOut.to_csv('arpaeSummaryData.csv')
+#resultOut.to_csv('arpaeSummaryDataJune2020.csv')
 
 # this takes ~15-20 minutes to run
-a = scrapeFundingData('arpaeSummaryData.csv')
-a.to_csv('arpaeSummaryDataWithAward.csv')
+#a = scrapeFundingData('arpaeSummaryData.csv')
+#a.to_csv('arpaeSummaryDataWithAward.csv')

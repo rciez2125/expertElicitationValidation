@@ -22,8 +22,8 @@ k14 = cohensKappa(df, 'coder1', 'coder4')
 print('k14', k14)
 d = idDisagreements(df, 'coder1', 'coder4')
 x = disagreementsSummary(d)
-print(x)
-print(type(x))
+#print(x)
+#print(type(x))
 
 #k12 = cohensKappa(df, 'coder1', 'coder2')
 #k122 = cohensKappa(df, 'coder1', 'coder22')
@@ -51,7 +51,7 @@ x = disagreementsSummary(d)
 print('loading final data')
 df = loadFinalData(Z)
 
-df.to_csv(('Data/FinalData.csv'))
+#df.to_csv(('Data/FinalData.csv'))
 df['endYr'] = ""
 for n in range(df.shape[0]):
 	df.endYr[n] = df.endDate[n].year
